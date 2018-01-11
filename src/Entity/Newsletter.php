@@ -19,6 +19,7 @@ class Newsletter
      * @ORM\Column(type="string", length=128)
      */
     private $email;
+    ///getters et setters
     public function getEmail(){
         return $this->email;
     }
