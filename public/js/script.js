@@ -133,7 +133,7 @@ $(document).ready(function(){
 
  
 
-// AJAX
+// AJAX affichage des produits d'une même catégorie
 $(function(){
 
     // ON PREND LA MAIN SUR LE CLICK SUR LES LIENS .ajax
@@ -145,7 +145,7 @@ $(function(){
 
         // RECUPERER LA CATEGORIE SUR LAQUELLE ON VA FILTRER
         ajaxCategorie = $(this).attr("data-categorie");
-        
+
         // ON VEUT ENVOYER UNE REQUETE AJAX POUR REMPLACER LE CONTENU .grid
         // AVEC JQUERY C'EST ASSEZ SIMPLE
         urlAjax = "/msh/public/ajax"; // A AMELIORER POUR LE RENDRE DYNAMIQUE
