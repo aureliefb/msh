@@ -18,18 +18,8 @@
 	
 		error_reporting(E_ALL);
 
-		// $objetProduitRepository = $this->getDoctrine()->getRepository(App\Entity\Produit::class);
-
-		// $afficherProduits = $objetProduitRepository->showCatalogue($objetConnection, $objetRequest);
-
-
-
-
-
 		$objetProduitRepository = $this->getDoctrine()->getRepository(App\Entity\Produit::class);
-		
 		$objetCategorieRepository = $this->getDoctrine()->getRepository(App\Entity\Categorie::class);
-
 
 	    // récupère la liste des produits de cette categorie
 	    $listProduits = $objetProduitRepository->findBy([]);
@@ -54,12 +44,9 @@
     <img src="$urlAccueil/img/produits/$photo" title="$photo">
 CODEHTML;
     }
-
     
     // CREER L'URL POUR LA ROUTE DYNAMIQUE (AVEC PARAMETRE)
      $urlProduit  = $this->generateUrl("catalogue", [ "id" => $id, "nomProduit" => $urlProduit ]);
-    
-    
     
 			echo
 <<<CODEHTML
@@ -113,6 +100,6 @@ CODEHTML;
         $listeAllergene .= "$icone ($allergene)";
     }
 
-/*  TEST affichage icones allergènes  */ -->
+-->
 
-</section>
+	</section>
