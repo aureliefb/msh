@@ -1,60 +1,34 @@
-
-
-<section class="actus">
-    <h3>LISTE DES ARTICLES DE TOUTES CATEGORIES</h3>
-
 <?php
-// ALLER CHERCHER LA LISTE DES ARTICLES DANS LA CATEGORIE $cat
 
-// JE VAIS RECUPERER LE REPOSITORY POUR L'ENTITE Article
-// $objetRepository = $this->getDoctrine()->getRepository("App\Entity\MonArticle");
-$objetRepository     = $this->getDoctrine()->getRepository(App\Entity\MonArticle::class);
+// http://fb2rss.altervista.org/?id=905114732908799
+$pathSimplePie = "$path/Simplepie";
+require_once("$pathSimplePie/autoloader.php");
 
-// PLUS PRATIQUE => findBy
-// http://www.doctrine-project.org/api/orm/2.5/class-Doctrine.ORM.EntityRepository.html
-// ATTENTION: ON UTILISE LE NOM DES PROPRIETES
-//$tabResultat = $objetRepository->findBy([], [ "datePublication" => "DESC" ]);
+// We'll process this feed with all of the default options.
+$feed = new SimplePie();
+ 
+// Set the feed to process.
+$feed->set_cache_location($path. '/var/cache');
+$feed->set_feed_url("http://fb2rss.altervista.org/?id=905114732908799");
+ 
+// Run SimplePie.
+$feed->init();
+ 
+// This makes sure that the content is sent to the browser as text/html and the UTF-8 character set (since we didn't change it).
+$feed->handle_content_type();
 
-$tabResultat = $objetRepository->trouverArticleUser($objetConnection);
-
-// ON A UN TABLEAU D'OBJETS DE CLASSE Article
-foreach($tabResultat as $tabLigne)
+foreach ($feed->get_items() as $item)
 {
-    
-    extract($tabLigne);
-
-    $htmlImage = "";
-    if ($chemin_image)
-    {
-        $htmlImage = 
+    $title = $item->get_title();
+    $description = $item->get_description();
+    echo 
 <<<CODEHTML
-
-    <img src="$urlAccueil/$chemin_image" title="$chemin_image">
-
-CODEHTML;
-    }
-    
-    // CREER L'URL POUR LA ROUTE DYNAMIQUE (AVEC PARAMETRE)
-    $urlArticle     = $this->generateUrl("article", [ "id" => $idArticle ]);
-    $urlCategorie   = $this->generateUrl("categorie", [ "cat" => $categorie ]);
-    
-    echo
-<<<CODEHTML
-
     <article>
-        <h4 title="$id"><a href="$urlArticle">$titre</a></h4>
-        <div>CREE PAR $pseudo</div>
-        <div><a href="$urlCategorie">$categorie</a></div>
-        <p>$contenu</p>
-        <div>$htmlImage</div>
-        <div>$date_publication</div>
+        <h4>$title</h4>
+        <p>$description
+        </p>
     </article>
-    
 CODEHTML;
-    
 }
-
+    
 ?>
-
-
-</section>
