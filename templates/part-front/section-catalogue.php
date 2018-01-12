@@ -1,8 +1,60 @@
 <section class="page-catalogue">
 	<h2>Catalogue</h2>
+
+
+
+<div class="pagination">
+<?php
+
+$objetProduitRepository = $this->getDoctrine()->getRepository(App\Entity\Produit::class);
+
+$nbLigne = $objetProduitRepository->compterLigne("produit", $objetConnection);
+echo "$nbLigne produits inscrits au catalogue";
+
+
+
+$numeroPage     = 1;
+// ON RECUPERE LE NUMERO DE PAGE DU PARAMETRE GET DANS L'URL
+if (isset($_REQUEST["numeroPage"])) {
+    $numeroPage = intval($_REQUEST["numeroPage"]);
+}
+
+// JE VEUX AFFICHER 3 LIGNES PAR PAGE
+$nbLigneParPage = 12;
+// ON RECUPERE LE NUMERO DE PAGE DU PARAMETRE GET DANS L'URL
+if (isset($_REQUEST["nbLigneParPage"])) {
+    $nbLigneParPage = intval($_REQUEST["nbLigneParPage"]);
+}
+
+$nbPage         = ceil($nbLigne / $nbLigneParPage);
+$indiceDepart   = ($numeroPage -1) * $nbLigneParPage;
+
+?>
+
+    <nav>
+        <ul>
+<?php        
+// ON CREE DYNAMIQUEMENT LE NOMBRE DE LIENS NECESSAIRES POUR NAVIGUER
+// AVEC LA PAGINATION
+for($p=1; $p <= $nbPage; $p++) {
+    echo
+<<<CODEHTML
+	<li><a href="?numeroPage=$p&nbLigneParPage=$nbLigneParPage">Page $p</a></li>
+CODEHTML;
+}
+?>
+        </ul>
+    </nav>
+</div>
+
+
+
+
+
 	<section class="contenu-catalogue">
 		<nav class="nav-catalogue">
 			<ul>
+				<li><a href="catalogue">Tous nos produits</a></li>
 				<li><a data-categorie="pain" class="ajax" href="#">Pains</a></li>
 				<li><a data-categorie="focaccia" class="ajax" href="#">Foccacia</a></li>
 				<li><a data-categorie="cakes" class="ajax" href="#">Cakes salés et sucrés</a></li>
@@ -13,17 +65,16 @@
 			</ul>
 		</nav>
 
+
 		<div class="grid">
 			
 		<?php
-	
-		error_reporting(E_ALL);
 
 		$objetProduitRepository = $this->getDoctrine()->getRepository(App\Entity\Produit::class);
 		$objetCategorieRepository = $this->getDoctrine()->getRepository(App\Entity\Categorie::class);
 
 	    // récupère la liste des produits de cette categorie
-	    $listProduits = $objetProduitRepository->findBy([], ["nomProduit" => "ASC"], 9);
+	    $listProduits = $objetProduitRepository->findBy([], ["nomProduit" => "ASC"], $nbLigneParPage, $nbPage);
 
 		// ON A UN TABLEAU D'OBJETS DE CLASSE Article
 	    foreach ($listProduits as $objetProduit){

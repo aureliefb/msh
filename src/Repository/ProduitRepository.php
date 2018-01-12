@@ -13,23 +13,29 @@ class ProduitRepository extends ServiceEntityRepository
     }
 
 
-
-
-    public function trouverArticleUser ($objetConnection) {
+    // COMPTE TOUTES LES LIGNES D'UNE TABLE
+    // TODO: 
+    // IL FAUDRAIT POUVOIR SELECTIONNER SEULEMENT UN CERTAIN NOMBRE DE LIGNE 
+    // (ET PAS TOUTES...)
+    public function compterLigne ($nomTable, $objetConnection) {
         
         $requeteSQL =
 <<<CODESQL
-SELECT *
-FROM produits
-WHERE cat = '2'
-ORDER BY nom_produit
+SELECT COUNT(*) AS nbLigne FROM $nomTable
 CODESQL;
 
         $objetStatement = $objetConnection->prepare($requeteSQL);
         $objetStatement->execute();
-        
-        return $objetStatement;
+        $nbLigne = 0;
+        foreach($objetStatement as $tabLigne) {
+        // VA ME FOURNIR LA VALEUR DANS LA VARIABLE $nbLigne
+        // extract($tabLigne);
+        $nbLigne = $tabLigne["nbLigne"];
     }
+    
+    return $nbLigne;
+    }
+
 
 
     /*

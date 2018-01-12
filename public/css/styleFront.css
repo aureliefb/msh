@@ -6,15 +6,14 @@ html {
 
 body {
 	margin: 0;
-	background: radial-gradient(center center, circle cover, #c9c2b6, #5F677D);
+ 	background: radial-gradient(center center, circle cover, #c9c2b6, #5F677D);
 	background: -moz-radial-gradient(center center, circle cover, #c9c2b6 0%, #5F677D 100%);
 	background: -webkit-radial-gradient(center center, circle cover, #c9c2b6 0%, #5F677D 100%);
-	font-family: 'Barlow Condensed', sans-serif;
+	 font-family: 'Barlow Condensed', sans-serif;
 }
 
 header {
-	border: 1px red solid;
-	height: 100vh;
+	
 }
 
 h2, h3 {
@@ -41,45 +40,59 @@ li {
 	list-style-type: none;
 }
 
-#parent {
-	/*margin: 0 auto;*/
-	/*width:100vw !important;*/
-	/*height: 100vh !important;*/
-	/*text-align: center;
-	position: relative;*/
-	/*display: flex;
+.pagination {
+}
+
+.pagination ul {
+	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-content: space-around;*/
-	padding: 600px;
-	object-fit: cover;
-	-moz-box-shadow:    inset 0 0 25px #000000;
-	-webkit-box-shadow: inset 0 0 25px #000000;
-	box-shadow:         inset 0 0 25px #000000;
-	opacity: 0;
-	-webkit-transition: opacity 3s ease-in;
-	-moz-transition: opacity 3s ease-in;
-	-ms-transition: opacity 3s ease-in;
-	-o-transition: opacity 3s ease-in;
-	transition: opacity 3s ease-in;
+}
+
+.pagination li {
+	margin: 0 10px;
+	padding: 8px;
+	border-radius: 10px;
+	text-align: center;
+	border: 1px solid lightgrey;
+}
+
+#parent {
+	border: 3px dashed green;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: space-around;
+	opacity: 0;	
+	position: fill;
+	height: 100vh !important;
+	width: 100% !important;
+
 }
 
 #parent.load {
     opacity: 1;
 }
 
-#content {
-	width: 100vw !important;
+#flou {
+	z-index: 10;
+  	-webkit-box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,1);
+    border: 2px orange solid;
 }
 
 /* RESPONSIVE ICI */
 .sandwich {
+	/* en relative : image invisible MAIS dans son bloc, bien positionnée*/
+	/* en absolute : image visible MAIS sort de son bloc*/
 	position: absolute;
 	left:0;
 	top: 0;
 /* RESPONSIVE ICI */
-	width: 100vw !important;
-	height: auto !important;
+	/*width: 100vw !important;*/
+	height: 100% !important;
+	object-fit: cover !important;
 /* RESPONSIVE ICI */
 }
  
@@ -87,6 +100,7 @@ li {
 	margin-left: 80px;
 	margin-right: 80px;
 	font-size:80px;
+	border: 2px red solid;
 }
 
 a {
@@ -254,13 +268,6 @@ a:hover {
 
 #ensemble {
 	z-index: 7;
-}
-
-#flou {
-	z-index: 10;
-  	-webkit-box-shadow: inset 0px 0px 51px 39px rgba(0,0,0,1);
-    -moz-box-shadow: inset 0px 0px 51px 39px rgba(0,0,0,1);
-    box-shadow: inset 0px 0px 51px 39px rgba(0,0,0,1);
 }
 
 /* -------------------------- PENDULE -----------------------------*/
@@ -624,7 +631,6 @@ footer form {
 	color: black;
 	transition: color 0.3s ease;
 }
-
 
 /* Affichage CSS avancé */
 /* http://epicadesign.fr/demos/HoverEffectImg/index.html */

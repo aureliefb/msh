@@ -34,6 +34,7 @@ $(document).ready(function() {
 
 
 
+
 ///
 function CSVToArray( strData, strDelimiter ){
         // Check to see if the delimiter is defined. If not,
@@ -118,6 +119,10 @@ function CSVToArray( strData, strDelimiter ){
         return( arrData );
     }
 
+
+
+
+
 $(document).ready(function(){
     $("p").click(function(){
         $(this).hide();
@@ -130,6 +135,9 @@ $(document).ready(function(){
     
     alert("x=" + x + ",y=" + y);
 });
+
+
+
 
  
 
