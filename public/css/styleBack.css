@@ -1,0 +1,155 @@
+/* style css de la page ADMIN */
+
+/* ------------------- box-sizing ------------------- */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* ------------------- GLOBAL ------------------- */
+body {
+	font-family: 'Barlow Condensed', sans-serif;
+	color: #5F677D;
+
+	font-size:1.4em;
+	margin: 0 auto;
+	text-align:center;
+	background: radial-gradient(center center, circle cover, #c9c2b6, #5F677D);
+	background: -moz-radial-gradient(center center, circle cover, #c9c2b6 0%, #5F677D 100%);
+	background: -webkit-radial-gradient(center center, circle cover, #c9c2b6 0%, #5F677D 100%);
+
+}
+
+main {
+	width: 50%;
+	
+	margin: 0 auto;
+	text-align:center;
+	border-radius: 4px;
+}
+
+/* ------------------- Admin Menu ------------------- */
+
+.admin-header{
+    background-color: #5f677d;
+	background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+}
+
+nav{
+   width: 50%;
+	background-color: rgba(255,255,255, 0.5);
+	margin: 0 auto;
+	text-align:center;
+	border-radius: 4px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.fa {
+    
+    margin-right: 10px;
+}
+
+.admin-user{
+    color: #f26D31;
+    text-transform: uppercase;
+   
+}
+
+
+/* ------------------- Debut Admin ------------------- */
+
+.logoadmin{
+	width: 25%;
+}
+
+li{
+    list-style-type: none;
+	text-decoration: none;
+	text-align:left;
+	
+	
+}
+
+
+/* ------------------- Fin Admin ------------------- */
+
+/* formulaire */
+
+
+
+.formulaire-contact {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: silver;
+    margin: 0 auto;
+}
+
+.formulaire-contact label {
+    display: inline-block;
+    text-align: left;
+    margin-top: 30px;
+}
+.formulaire-contact input {
+    width: 50%;
+    height: 40px;
+    padding: 8px;
+    margin-left: 10px;
+}
+.formulaire-contact textarea {
+    margin-left: 10px;
+}
+
+.reponseOK {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #143A52;
+    color: silver;
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+    display: visible;
+}
+
+
+
+.reponseKO {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #143A52;
+    color: #f53b3b;
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+    }
+    /* fin formulaire */
+
+
+/* ------------------- FOOTER ------------------- */
+footer {
+
+	margin: 40px auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding: 15px;
+
+}
+
+
+
+footer p {
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+

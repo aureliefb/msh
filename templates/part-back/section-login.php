@@ -1,4 +1,4 @@
-
+<?php $urlAccueil = $this->generateUrl("accueil"); ?>
             <section>
                 <h3>SECTION LOGIN</h3>
                 <form method="POST" action="">
@@ -8,9 +8,7 @@
                     <input type="hidden" name="codebarre" value="login">
                     <div class="response">
 <?php
-// TRAITER LE FORMULAIRE
-// AVEC SYMFONY JE VAIS UTILISER UN OBJET DE LA CLASSE Request
-// FOURNI PAR SYMFONY QUAND JE RAJOUTE LE PARAMETRE DANS MA METHODE contact
+
 if ($objetRequest->get("codebarre", "") == "login")
 {
     $objetTraitementForm = new App\Controller\TraitementForm;
@@ -25,4 +23,5 @@ if ($objetRequest->get("codebarre", "") == "login")
 ?>
                     </div>
                 </form>
+                <a class= "admin-back-button" href ="<?php echo $urlAccueil?>">RETOUR SUR LA PAGE PRINCIPALE</a>
             </section>

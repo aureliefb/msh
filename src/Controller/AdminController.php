@@ -89,7 +89,7 @@ class AdminController extends Controller{
         else
         {
           
-            $urlAdminNewsletter = $this->generateUrl("login");
+            $urlLogin = $this->generateUrl("login");
             return new RedirectResponse($urlLogin);
             
         }
@@ -127,7 +127,7 @@ class AdminController extends Controller{
         else
         {
           
-            $urlAdminNewsletter = $this->generateUrl("login");
+            $urlLogin = $this->generateUrl("login");
             return new RedirectResponse($urlLogin);
             
         }
@@ -164,7 +164,7 @@ class AdminController extends Controller{
         else
         {
           
-            $urlAdminCatalogue  = $this->generateUrl("login");
+           $urlLogin = $this->generateUrl("login");
             return new RedirectResponse($urlLogin);
             
         }
@@ -202,7 +202,7 @@ class AdminController extends Controller{
         else
         {
           
-            $urlAdminBoutique = $this->generateUrl("login");
+           $urlLogin = $this->generateUrl("login");
             return new RedirectResponse($urlLogin);
             
         }
