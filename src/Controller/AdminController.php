@@ -61,10 +61,10 @@ class AdminController extends Controller{
             ob_start();
             
                  
-            $filePathSymfony    = $this->getParameter('kernel.project_dir');
-            $filePathTemplate  = "$filePathSymfony/templates"; 
-            $pathtoBack     = "$filePathTemplate/parts"; 
-            require_once("$filePathTemplate/template-admin.php");
+            $path     = $this->getParameter('kernel.project_dir');
+            $pathtoTemplate  = "$path/templates"; 
+            $pathtoBack     = "$pathtoTemplate//part-back"; 
+            require_once("$pathtoTemplate/back/admin.php");
             
         
             $hiddenContent = ob_get_clean();

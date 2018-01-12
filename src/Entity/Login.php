@@ -37,6 +37,10 @@ class Login
     private $level;
     
     // METHODES GETTER ET SETTER
+       function getId ()
+    {
+        return $this->id;
+    }
     function getPassword ()
     {
         return $this->password;

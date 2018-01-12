@@ -4,3 +4,27 @@
 [11-Jan-2018 13:54:22 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/msh/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/msh/public/index.php on line 8
 [11-Jan-2018 13:54:48 UTC] PHP Warning:  require(/home/ubuntu/workspace/msh/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/msh/public/index.php on line 8
 [11-Jan-2018 13:54:48 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/msh/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/msh/public/index.php on line 8
+[12-Jan-2018 09:11:54 UTC] PHP Warning:  Uncaught ErrorException: Warning: require_once(/home/ubuntu/workspace/msh/templates/template-admin.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/msh/src/Controller/AdminController.php:67
+Stack trace:
+#0 /home/ubuntu/workspace/msh/src/Controller/AdminController.php(67): require_once()
+#1 /home/ubuntu/workspace/msh/vendor/symfony/http-kernel/HttpKernel.php(149): App\Controller\AdminController->admin(Object(Symfony\Component\HttpFoundation\Request), Object(Doctrine\DBAL\Connection), Object(Symfony\Component\HttpFoundation\Session\Session))
+#2 /home/ubuntu/workspace/msh/vendor/symfony/http-kernel/HttpKernel.php(66): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#3 /home/ubuntu/workspace/msh/vendor/symfony/http-kernel/Kernel.php(190): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#4 /home/ubuntu/workspace/msh/public/index.php(37): Symfony\Component\HttpKernel\Ker in /home/ubuntu/workspace/msh/src/Controller/AdminController.php on line 67
+[12-Jan-2018 09:11:54 UTC] PHP Fatal error:  App\Controller\AdminController::admin(): Failed opening required '/home/ubuntu/workspace/msh/templates/template-admin.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/msh/src/Controller/AdminController.php on line 67
+[12-Jan-2018 09:12:42 UTC] PHP Warning:  Uncaught ErrorException: Warning: require_once(/home/ubuntu/workspace/msh/templates/admin.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/msh/src/Controller/AdminController.php:67
+Stack trace:
+#0 /home/ubuntu/workspace/msh/src/Controller/AdminController.php(67): require_once()
+#1 /home/ubuntu/workspace/msh/vendor/symfony/http-kernel/HttpKernel.php(149): App\Controller\AdminController->admin(Object(Symfony\Component\HttpFoundation\Request), Object(Doctrine\DBAL\Connection), Object(Symfony\Component\HttpFoundation\Session\Session))
+#2 /home/ubuntu/workspace/msh/vendor/symfony/http-kernel/HttpKernel.php(66): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#3 /home/ubuntu/workspace/msh/vendor/symfony/http-kernel/Kernel.php(190): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#4 /home/ubuntu/workspace/msh/public/index.php(37): Symfony\Component\HttpKernel\Kernel->hand in /home/ubuntu/workspace/msh/src/Controller/AdminController.php on line 67
+[12-Jan-2018 09:12:42 UTC] PHP Fatal error:  App\Controller\AdminController::admin(): Failed opening required '/home/ubuntu/workspace/msh/templates/admin.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/msh/src/Controller/AdminController.php on line 67
+[12-Jan-2018 09:12:57 UTC] PHP Warning:  Uncaught ErrorException: Warning: require_once(/home/ubuntu/workspace/msh/templates/parts/admin-header.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/msh/templates/back/admin.php:3
+Stack trace:
+#0 /home/ubuntu/workspace/msh/templates/back/admin.php(3): require_once()
+#1 /home/ubuntu/workspace/msh/src/Controller/AdminController.php(67): require_once('/home/ubuntu/wo...')
+#2 /home/ubuntu/workspace/msh/vendor/symfony/http-kernel/HttpKernel.php(149): App\Controller\AdminController->admin(Object(Symfony\Component\HttpFoundation\Request), Object(Doctrine\DBAL\Connection), Object(Symfony\Component\HttpFoundation\Session\Session))
+#3 /home/ubuntu/workspace/msh/vendor/symfony/http-kernel/HttpKernel.php(66): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#4 /home/ubuntu/workspace/msh/vendor/symfony/http-kernel/Kernel.php(190): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, tru in /home/ubuntu/workspace/msh/templates/back/admin.php on line 3
+[12-Jan-2018 09:12:57 UTC] PHP Fatal error:  App\Controller\AdminController::main(): Failed opening required '/home/ubuntu/workspace/msh/templates/parts/admin-header.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/msh/templates/back/admin.php on line 3

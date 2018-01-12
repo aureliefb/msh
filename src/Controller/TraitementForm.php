@@ -8,7 +8,7 @@ class TraitementForm
     
     function __construct ()
     {
-        echo "[TraitementForm::__construct]";
+        
     }
     
     function traiterNewsletter ($objetRequest, $objetConnection)
@@ -40,7 +40,7 @@ class TraitementForm
         {
             
             $dateMessage = date("Y-m-d H:i:s"); 
-            $objectConnection->insert("contact", ["email" => $email, "name" => $name,"date_message" => $dateMessage, "message" => $message]);
+            $objetConnection->insert("contact", ["email" => $email, "name" => $name,"date_message" => $dateMessage, "message" => $message]);
             
             echo "Merci pour votre message!";
         }
@@ -64,29 +64,29 @@ class TraitementForm
                 
                 if (password_verify($password, $passwordHash))
                 {
-                    $pseudo = $objectUser->getPseudo();
-                    $level  = $objectUser->getLevel();
-                    $id     = $objectUser->getId();
+                    $pseudo = $objetUser->getPseudo();
+                    $level  = $objetUser->getLevel();
+                    $id     = $objetUser->getId();
                     echo "WELCOME $pseudo (level=$level)";
                     
                    
-                    $objectSession->set("level", $level);
-                    $objectSession->set("pseudo", $pseudo);
-                    $objectSession->set("id",  $id);
+                    $objetSession->set("level", $level);
+                    $objetSession->set("pseudo", $pseudo);
+                    $objetSession->set("id",  $id);
                     
                  
                     
                 }
                 else 
                 {
-                    echo "PASSWORD INCORRECT";
+                    echo "Identifiants de connexion incorrects.";
                 }
             }
             else 
             {
                 // KO
                 //DEBUG
-                echo "EMAIL UNKNOWN";
+                echo "Identifiants de connexion incorrects.";
             }
         }
     }
