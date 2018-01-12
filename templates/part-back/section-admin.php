@@ -1,11 +1,6 @@
-<?php
 
-$verifPseudo = $objetSession->get("pseudo");
-
-?>
 <section>
-    <h3>SECTION ADMIN</h3>
-    <h4>BIENVENUE <?php echo $verifPseudo ?></h4>
+  
 </section>
 
 
