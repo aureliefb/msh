@@ -1,12 +1,13 @@
-	<section class="contenu-catalogue"> 
+<section class="page-catalogue">
+	<h2>Catalogue</h2>
+	<section class="contenu-catalogue">
 		<nav class="nav-catalogue">
 			<ul>
 				<li><a data-categorie="pain" class="ajax" href="#">Pains</a></li>
-				<li><a href="#">Foccacia</a></li>
+				<li><a data-categorie="focaccia" class="ajax" href="#">Foccacia</a></li>
+				<li><a data-categorie="cakes" class="ajax" href="#">Cakes salés et sucrés</a></li>
 				<li><a data-categorie="viennoiserie" class="ajax" href="#">Viennoiseries</a></li>
-				<li><a href="#">Bloomers</a></li>
-				<li><a data-categorie="cake" class="ajax" href="#">Gâteaux</a></li>
-				<li><a href="#">Biscuits</a></li>
+				<li><a data-categorie="gateaux" class="ajax" href="#">Gâteaux</a></li>
 				<li><a data-categorie="saisonnier" class="ajax" href="#">Créations saisonnières</a></li>
 				<li><a data-categorie="autres" class="ajax" href="#">Et autres...</a></li>
 			</ul>
@@ -22,7 +23,7 @@
 		$objetCategorieRepository = $this->getDoctrine()->getRepository(App\Entity\Categorie::class);
 
 	    // récupère la liste des produits de cette categorie
-	    $listProduits = $objetProduitRepository->findBy([]);
+	    $listProduits = $objetProduitRepository->findBy([], ["nomProduit" => "ASC"], 9);
 
 		// ON A UN TABLEAU D'OBJETS DE CLASSE Article
 	    foreach ($listProduits as $objetProduit){
@@ -46,14 +47,14 @@ CODEHTML;
     }
     
     // CREER L'URL POUR LA ROUTE DYNAMIQUE (AVEC PARAMETRE)
-     $urlProduit  = $this->generateUrl("catalogue", [ "id" => $id, "nomProduit" => $urlProduit ]);
+     $urlProduit  = $this->generateUrl("catalogue", [ "nomCategorie" => $categorie, "nomProduit" => $urlProduit ]);
     
 			echo
 <<<CODEHTML
 <figure class="effect-winston">
 	<div>$htmlImage</div>
 	<figcaption>
-		<h2>$nomProduit</h2>
+		<h2><a href="$urlProduit">$nomProduit</a></h2>
 		<p>
 			<a href="#">
 				<i class="fa fa-plus-circle" aria-hidden="true"></i>
@@ -103,3 +104,4 @@ CODEHTML;
 -->
 
 	</section>
+</section>

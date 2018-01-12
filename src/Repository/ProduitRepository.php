@@ -22,7 +22,7 @@ class ProduitRepository extends ServiceEntityRepository
 SELECT *
 FROM produits
 WHERE cat = '2'
-ORDER BY produit
+ORDER BY nom_produit
 CODESQL;
 
         $objetStatement = $objetConnection->prepare($requeteSQL);
