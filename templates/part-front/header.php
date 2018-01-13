@@ -24,8 +24,9 @@ $urlBoutiques   = $this->generateUrl("boutiques");
         <link rel="stylesheet" href="<?php echo $urlAccueil ?>/css/styleFront.css" />
     </head>
     <body class="wrapper">
-        
+        <!--VERSION DESKTOP -->
     <header>
+    <div class="desktop-only">  
         <!-- <h1>Maison Saint-Honoré par Pierre Ragot</h1>
         <p>Boulangerie bio à Marseille</p> -->
         <div id="parent">
@@ -51,10 +52,10 @@ $urlBoutiques   = $this->generateUrl("boutiques");
                 <img class ="sandwich" id="philostext" src="<?php echo $urlAccueil ?>/img/accueil/savoirfaire.png">
                 <img class ="sandwich" id="pierretext" src="<?php echo $urlAccueil ?>/img/accueil/pierreragot.png">
                 <img class ="sandwich" id="prodtext" src="<?php echo $urlAccueil ?>/img/accueil/produits.png">
-                
+        
                 <!--clock-->
-<!--                 <div class="clock">
-    <div class="numbers">
+                <div class="clock">
+ <!--       <div class="numbers">
         <ul>
             <li>12</li>
             <li>3</li>
@@ -68,7 +69,7 @@ $urlBoutiques   = $this->generateUrl("boutiques");
         <div class="hand-hour" id="analoghour"></div>
     </div>
 </div> -->
-        
+  
             <!--photos dans les cadres-->
             <img class ="sandwich" id="back" src="<?php echo $urlAccueil ?>/img/accueil/background.png">
             <img class ="sandwich" id="light1" src="<?php echo $urlAccueil ?>/img/accueil/lamp1.png">
@@ -83,6 +84,9 @@ $urlBoutiques   = $this->generateUrl("boutiques");
             <img class ="sandwich" id="ensemble" src="<?php echo $urlAccueil ?>/img/accueil/breadandlights.png">
         </div>
         
+        
+        
+        
         <div class="sidebar">
             <div class="logo">
                 <a href="<?php echo $urlAccueil ?>">
@@ -94,5 +98,36 @@ $urlBoutiques   = $this->generateUrl("boutiques");
                 </a>
             </div>
         </div>
-            </header> 
+    </div>    
+      <!---FIN VERSION DESKTOP -->       
+ </div>       
+     <!--- VERSION MOBILE NAV--> 
+            
+            <div class="mobile-nav mobile-one-page">
+                <div class="buttonetlogo">
+                    <div class="menu-btn" id="menu-btn">
+                    	<div></div>
+                        	<span></span>
+                        	<span></span>
+                        	<span></span>
+                             </div>
+                             <img class="logoMobile" src='./img/logolighthoriz.png'>
+                </div> 
+                         <div class="responsive-menu">
+                            <ul>
+                              <li><a href="">ACTUS</a></li>
+                              <li><a href="">PIERRE RAGOT</a></li>
+                              <li><a href="">SAVOIRE FAIRE</a></li>
+                              <li><a href="">CATALOGUE</a></li>
+                              <li><a href="">NOS BOUTIQUES</a></li>
+                              <li><a href="">CONTACT</a></li>
+                            </ul>
+                     </div>
+                    
+            </div>
+            
+             
+       <!---FIN VERSION MOBILE -->  
+        
+      
     <main>

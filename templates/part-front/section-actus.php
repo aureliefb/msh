@@ -1,6 +1,8 @@
 <section>
 	<h2>Nos dernières actus</h2>
 	<section class="actus">
+        <div class="slideshow-container">
+
 <?php
 
 // http://fb2rss.altervista.org/?id=905114732908799
@@ -27,12 +29,30 @@ foreach ($feed->get_items() as $item) {
 
     echo 
 <<<CODEHTML
+<div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
     <article class="rss-article">
         <div>$description</div>
         <date>Publié le : $date</date>
     </article>
+</div>
 CODEHTML;
 }
     
 ?>
-</section>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
+
+
+    </section>
