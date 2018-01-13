@@ -107,14 +107,13 @@ $urlBoutiques   = $this->generateUrl("boutiques");
             <div class="mobile-nav mobile-one-page">
                 <div class="buttonetlogo">
                     <div class="menu-btn" id="menu-btn">
-                    	<div></div>
                         	<span></span>
                         	<span></span>
                         	<span></span>
-                             </div>
+                    </div>
                              <img class="logoMobile" src='./img/logolighthoriz.png'>
                 </div> 
-                         <div class="responsive-menu">
+                        <div class="responsive-menu">
                             <ul>
                               <li><a href="">ACTUS</a></li>
                               <li><a href="">PIERRE RAGOT</a></li>
@@ -123,8 +122,7 @@ $urlBoutiques   = $this->generateUrl("boutiques");
                               <li><a href="">NOS BOUTIQUES</a></li>
                               <li><a href="">CONTACT</a></li>
                             </ul>
-                     </div>
-                    
+                        </div>
             </div>
             
              

@@ -5,6 +5,7 @@ $(function(){
     //LOADING.....
     $("#parent").addClass("load");
 
+
     //FUNCTION HOME
     $("#pierre").mouseenter(function(){
       $("#ensemble").animate({
@@ -305,10 +306,12 @@ $(function(){
     }
   };
 
-
-
-
-
-
-
 });
+
+// BURGER MENU
+
+		$(function($){
+    	     $( '.menu-btn' ).click(function(){
+    	     $('.responsive-menu').toggleClass('expand')
+    	     })
+        });

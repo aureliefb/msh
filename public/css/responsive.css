@@ -1,5 +1,22 @@
+/*xtra resolutions only*/
+ @media screen and (min-width: 1801px) {
+   .desktop-only {
+        display:block !important;
+    }
+        
+    .mobile-one-page  {
+        display:none !important;
+    }   
+    
+    .sandwich{
+    	width:80%;
+    	margin-left: 10%;
+    	margin-right: 10%;
+    }
+}
+
 /*medium+ screen sizes*/
-@media (min-width:992px) {
+@media screen and (max-width: 1800px) and (min-width: 1401px) {  
     .desktop-only {
         display:block !important;
     }
@@ -8,10 +25,36 @@
         display:none !important;
     }    
     
+    .sandwich{
+    	width:90%;
+    	margin-left: 5%;
+    	margin-right: 5%;
+    }
+}
+
+/*medium+ screen sizes*/
+@media screen and (max-width: 1400px) and (min-width: 991px) {  
+    .desktop-only {
+        display:block !important;
+    }
+        
+    .mobile-one-page  {
+        display:none !important;
+    }   
+    
+    #parent{
+    	height: 50%;
+    }
+    
+    .sandwich{
+    	width:100%;
+    	margin-left: 0%;
+    	margin-right: 0%;
+    }
 }
  
 /*small screen sizes*/
-@media (max-width: 991px) {
+@media screen and (max-width: 990px) {
     .mobile-only {
         display:block !important;
     }
@@ -19,6 +62,8 @@
     .desktop-only {
         display:none !important;
     }
+    
+    
 }
 
 /* Version mobile*/
@@ -109,6 +154,7 @@
 .mobile-nav{
 	position: fixed; /* Set the navbar to fixed position */
     top: 0;
+    
     
 }
 
