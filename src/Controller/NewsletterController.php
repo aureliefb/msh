@@ -7,42 +7,34 @@ use Doctrine\ORM\EntityRepository;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
-use Doctrine\DBAL\Driver\Connection;
 use App\Entity\Newsletter;
-use App\Form\NewsletterType;
 
 class NewsletterController extends Controller{
-
     /**
-     * @Route("/newsletter", name="newsletter")
+     * @Route("newsletter", name="newsletter")
      */
-    function subscribeNewsletter($objetRequest, $objetConnection){
+    function subscribeNewsletter(Request $request){
+        // Récupération de l'email
+        $newsletter = new Newsletter();
+        $email = $request->get("email","");
         // Creation du formulaire
-        /*$newsletter = new Newsletter();
-        $form = $this->createForm(NewsletterType::class,$newsletter)
-                     ->handleRequest($request);
-        // PHP  if (isset($_REQUEST["submit"]) && ($_REQUEST["valid"] == "submit"))
-        if($form->isSubmitted() && $form->isValid()){
-            // sauve dans la BDD
-            $this->getDoctrine()->getManager()
-                 ->persist($newsletter)
-                 ->flush();
-            // $this->addFlash("success","yay §§§");
+        if (isset($_REQUEST["submit"]) && ($_REQUEST["submit"] == "validNL")){
+        // sauve dans la BDD
+        $newsletter->setEmail($email);
+        $em = $this->getDoctrine()->getManager();
+        $em->persist($newsletter);
+        $em->flush();
+        echo "<p>vous êtes inscrit avec $email</p>";
         }
-        return $this->render("front/newsletter.html.twig", ["form" => $form->createView()]);*/
-
-    
-        $email = $objetNewsletterController->get("email", "");       
-
-        if ($email != "")
-        {
-            $objetConnection->insert("newsletter", [ "email" => $email ]);
-            
-            // MESSAGE RETOUR POUR LE VISITEUR
-            echo "MERCI DE VOTRE INSCRIPTION AVEC $email";
+        // affiche dans $page.php
+        ob_start();
+        $path           = $this->getParameter('kernel.project_dir');
+        $pathtoTemplate = "$path/templates";
+        $pathtoFront    = "$pathtoTemplate/part-front";
+        require_once("$pathtoTemplate/front/newsletter.php");
+        $cache = ob_get_clean();
+		return new Response($cache);
         }
-
-    }
 
     /**
      * @Route("admin/envoyer-newsletter", name="creer newsletter")

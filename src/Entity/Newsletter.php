@@ -15,11 +15,16 @@ class Newsletter
      * @ORM\Column(type="integer")
      */
     private $id;
+    public function getId(){
+        return $this->id;
+    }
+    public function setId($id){
+        return $this->id = $id;
+    }
     /**
      * @ORM\Column(type="string", length=128)
      */
     private $email;
-    ///getters et setters
     public function getEmail(){
         return $this->email;
     }
