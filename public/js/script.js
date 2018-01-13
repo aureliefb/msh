@@ -34,27 +34,6 @@ function showSlides(n) {
 
 
 
-// page catalogue - action sur les images
-$(document).ready(function() {
-	$(".produits li").mouseenter(function() {
-		$(this).css({'opacity': 1});
-		// régler l'affichage des légendes au passage de la souris
-		// à faire quand la liaison avec la bdd sera faite
-		$(".produits figcaption").fadeIn(200);
-	});
-	$(".produits li").mouseleave(function() {
-		$(this).css({'opacity': 0.6});
-		// régler l'affichage des légendes au passage de la souris
-		// à faire quand la liaison avec la bdd sera faite
-		$(".produits figcaption").fadeOut(200);
-	});
-
-});
-
-
-
-
-
 ///
 function CSVToArray( strData, strDelimiter ){
         // Check to see if the delimiter is defined. If not,
