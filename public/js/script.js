@@ -14,8 +14,12 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1
+    }    
+  if (n < 1) {
+    slideIndex = slides.length
+    }
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }
@@ -25,27 +29,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-
-
-
-
-
-// page catalogue - action sur les images
-$(document).ready(function() {
-	$(".produits li").mouseenter(function() {
-		$(this).css({'opacity': 1});
-		// régler l'affichage des légendes au passage de la souris
-		// à faire quand la liaison avec la bdd sera faite
-		$(".produits figcaption").fadeIn(200);
-	});
-	$(".produits li").mouseleave(function() {
-		$(this).css({'opacity': 0.6});
-		// régler l'affichage des légendes au passage de la souris
-		// à faire quand la liaison avec la bdd sera faite
-		$(".produits figcaption").fadeOut(200);
-	});
-
-});
 
 
 
