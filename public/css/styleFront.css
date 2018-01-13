@@ -507,6 +507,7 @@ a:hover {
 	margin: 20px;
 	border-radius: 30px;
 	text-align: center;
+	font-size: 1.6em;
 }
 
 .rss-article date {
@@ -515,7 +516,7 @@ a:hover {
 
 
 /* slideshow sur fil d'actus */
-img {
+.rss-article img {
 	/*vertical-align: middle;*/
 	max-width: 370px;
 }
@@ -523,7 +524,6 @@ img {
 .mySlides {
 	display: none;
 }
-
 
 /* Slideshow container */
 .slideshow-container {
