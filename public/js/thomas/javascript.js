@@ -54,7 +54,7 @@ $(function(){
 
 
     ///FUNCTION ADDRESS
-    $("#histoire").mouseenter(function(){
+    $("#boutiques").mouseenter(function(){
       $("#ensemble").animate({
         opacity: 0
       },0, function() {
@@ -65,7 +65,7 @@ $(function(){
       });
     });
 
-    $("#histoire").mouseleave(function(){
+    $("#boutiques").mouseleave(function(){
       $("#ensemble").animate({
         opacity: 1
       },0, function() {

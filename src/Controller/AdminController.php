@@ -99,7 +99,7 @@ class AdminController extends Controller{
    
    
   /**
-      * @Route("/admin-newsletter", name="admin-newsletter")
+      * @Route("/admin/newsletter", name="admin-newsletter")
       */   
    public function showAdminNewsletter (Request $objetRequest, Connection $objetConnection, SessionInterface $objetSession)
    {
@@ -136,7 +136,7 @@ class AdminController extends Controller{
    }
    
      /**
-      * @Route("/admin-catalogue", name="admin-catalogue")
+      * @Route("/admin/catalogue", name="admin-catalogue")
       */   
    public function showAdminCatalogue (Request $objetRequest, Connection $objetConnection, SessionInterface $objetSession)
    {
@@ -174,7 +174,7 @@ class AdminController extends Controller{
    
    
      /**
-      * @Route("/admin-boutique", name="admin-boutique")
+      * @Route("/admin/boutique", name="admin-boutique")
       */   
    public function showAdminBoutique (Request $objetRequest, Connection $objetConnection, SessionInterface $objetSession)
    {
