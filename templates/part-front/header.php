@@ -92,15 +92,16 @@ $urlBoutiques   = $this->generateUrl("boutiques");
         
             <div class="mainlogo">
                 <a href="<?php echo $urlAccueil ?>">
-                    <div class="incline">
+                   <!-- <div class="incline">
                         <p>maison</p>
                         <p>saint-honoré</p>
                     </div>
-                    <p class="sidebar-pierre">par Pierre ragot</p>
+                    <p class="sidebar-pierre">par Pierre ragot</p>-->
+                    <img class="logoMobile" src='./img/logolight.png'>
                 </a>
             </div>
         
-        
+    <div class="spacing"></div>        
         
     </div>    
       <!---FIN VERSION DESKTOP -->       
