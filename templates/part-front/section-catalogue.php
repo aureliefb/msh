@@ -8,26 +8,34 @@
 
 $objetProduitRepository = $this->getDoctrine()->getRepository(App\Entity\Produit::class);
 
-$nbLigne = $objetProduitRepository->compterLigne("produit", $objetConnection);
-echo "$nbLigne produits inscrits au catalogue";
+$nbProduits = $objetProduitRepository->compterLigne("produit", $objetConnection);
+echo "$nbProduits produits inscrits au catalogue";
 
-
-
-$numeroPage     = 1;
+// // JE VEUX AFFICHER x LIGNES PAR PAGE
+$nbProduitsParPage = 9;
 // ON RECUPERE LE NUMERO DE PAGE DU PARAMETRE GET DANS L'URL
-if (isset($_REQUEST["numeroPage"])) {
-    $numeroPage = intval($_REQUEST["numeroPage"]);
+// if (isset($_REQUEST["nbProduitsParPage"])) {
+//     $nbProduitsParPage = intval($_REQUEST["nbProduitsParPage"]);
+// }
+
+$nbPage = ceil($nbProduits / $nbProduitsParPage);
+
+
+$page = 1;
+// // ON RECUPERE LE NUMERO DE PAGE DU PARAMETRE GET DANS L'URL
+if (isset($_REQUEST["page"])) {
+    $page = intval($_REQUEST["page"]);
+
+    if($page > $nbPage) {
+    	$page = $nbPage;
+    } else {
+    	$page = 1;
+    }
 }
 
-// JE VEUX AFFICHER 3 LIGNES PAR PAGE
-$nbLigneParPage = 12;
-// ON RECUPERE LE NUMERO DE PAGE DU PARAMETRE GET DANS L'URL
-if (isset($_REQUEST["nbLigneParPage"])) {
-    $nbLigneParPage = intval($_REQUEST["nbLigneParPage"]);
-}
 
-$nbPage         = ceil($nbLigne / $nbLigneParPage);
-$indiceDepart   = ($numeroPage -1) * $nbLigneParPage;
+
+$indiceDepart = ($page -1) * $nbProduitsParPage;
 
 ?>
 
@@ -39,7 +47,7 @@ $indiceDepart   = ($numeroPage -1) * $nbLigneParPage;
 for($p=1; $p <= $nbPage; $p++) {
     echo
 <<<CODEHTML
-	<li><a href="?numeroPage=$p&nbLigneParPage=$nbLigneParPage">Page $p</a></li>
+	<li><a href="?page=page$p">page $p</a></li>
 CODEHTML;
 }
 ?>
@@ -71,7 +79,7 @@ CODEHTML;
 		$objetCategorieRepository = $this->getDoctrine()->getRepository(App\Entity\Categorie::class);
 
 	    // récupère la liste des produits de cette categorie
-	    $listProduits = $objetProduitRepository->findBy([], ["nomProduit" => "ASC"], $nbLigneParPage, $nbPage);
+	    $listProduits = $objetProduitRepository->findBy([], ["nomProduit" => "ASC"], $nbProduitsParPage, $nbPage);
 
 		// ON A UN TABLEAU D'OBJETS DE CLASSE Article
 	    foreach ($listProduits as $objetProduit){

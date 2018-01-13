@@ -21,19 +21,20 @@ class ProduitRepository extends ServiceEntityRepository
         
         $requeteSQL =
 <<<CODESQL
-SELECT COUNT(*) AS nbLigne FROM $nomTable
+SELECT COUNT(*) AS nbProduits FROM $nomTable
 CODESQL;
 
-        $objetStatement = $objetConnection->prepare($requeteSQL);
+        $objetStatement = $objetConnection->prepare($requeteSQL, []);
         $objetStatement->execute();
-        $nbLigne = 0;
-        foreach($objetStatement as $tabLigne) {
-        // VA ME FOURNIR LA VALEUR DANS LA VARIABLE $nbLigne
-        // extract($tabLigne);
-        $nbLigne = $tabLigne["nbLigne"];
+
+    $nbProduits = 0;
+    foreach($objetStatement as $tabLigne) {
+    // VA ME FOURNIR LA VALEUR DANS LA VARIABLE $nbLigne
+    // extract($tabLigne);
+    $nbProduits = $tabLigne["nbProduits"];
     }
     
-    return $nbLigne;
+    return $nbProduits;
     }
 
 

@@ -27,12 +27,19 @@ foreach ($feed->get_items() as $item) {
     $description = $item->get_description();
     $date = $item->get_date();
 
+    // conversion de la date EN en FR avec encodage UTF-8
+    setlocale(LC_ALL, 'fr_FR.UTF8', 'fr_FR','fr','fr','fra','fr_FR@euro');
+    $datefr = utf8_encode(strftime('%d %B %Y', strtotime($date)));
+
+
+    // $date = mb_strimwidth($date, 0, 15, '... ');
+
     echo 
 <<<CODEHTML
 <div class="mySlides fade">
     <article class="rss-article">
         <div>$description</div>
-        <date>Publié le : $date</date>
+        <date>Publié le : $datefr</date>
     </article>
 </div>
 CODEHTML;
