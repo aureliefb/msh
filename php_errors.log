@@ -62,3 +62,11 @@ Stack trace:
 #3 /home/ubuntu/workspace/msh/vendor/symfony/http-kernel/Kernel.php(190): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
 #4 /home/ubuntu/workspace/msh/public/index.php(37): Symfony\Com in /home/ubuntu/workspace/msh/src/Controller/AdminController.php on line 156
 [12-Jan-2018 11:37:39 UTC] PHP Fatal error:  App\Controller\AdminController::showAdminCatalogue(): Failed opening required '/home/ubuntu/workspace/msh/templates/back/admin-catalogue.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/msh/src/Controller/AdminController.php on line 156
+[12-Jan-2018 15:24:40 UTC] PHP Warning:  Uncaught ErrorException: Warning: require_once(/home/ubuntu/workspace/msh/templates/part-back/admin-boutique.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/msh/templates/back/boutique.php:4
+Stack trace:
+#0 /home/ubuntu/workspace/msh/templates/back/boutique.php(4): require_once()
+#1 /home/ubuntu/workspace/msh/src/Controller/AdminController.php(194): require_once('/home/ubuntu/wo...')
+#2 /home/ubuntu/workspace/msh/vendor/symfony/http-kernel/HttpKernel.php(149): App\Controller\AdminController->showAdminBoutique(Object(Symfony\Component\HttpFoundation\Request), Object(Doctrine\DBAL\Connection), Object(Symfony\Component\HttpFoundation\Session\Session))
+#3 /home/ubuntu/workspace/msh/vendor/symfony/http-kernel/HttpKernel.php(66): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#4 /home/ubuntu/workspace/msh/vendor/symfony/http-kernel/Kernel.php(190): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFo in /home/ubuntu/workspace/msh/templates/back/boutique.php on line 4
+[12-Jan-2018 15:24:40 UTC] PHP Fatal error:  App\Controller\AdminController::main(): Failed opening required '/home/ubuntu/workspace/msh/templates/part-back/admin-boutique.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/msh/templates/back/boutique.php on line 4

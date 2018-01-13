@@ -160,3 +160,14 @@ $(function(){
         $(".grid").load(urlAjax+ "?ajaxCategorie=" + ajaxCategorie);
     });
 });
+
+
+
+// BURGER MENU
+
+	$(function($){
+    	     $( '.menu-btn' ).click(function(){
+    	     $('.responsive-menu').toggleClass('expand')
+    	     })
+        })
+
