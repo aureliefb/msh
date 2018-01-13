@@ -55,22 +55,23 @@ $urlBoutiques   = $this->generateUrl("boutiques");
                 <img class ="sandwich" id="prodtext" src="<?php echo $urlAccueil ?>/img/accueil/produits.png">
         
                 <!--clock-->
+                <!--
                 <div class="clock">
- <!--       <div class="numbers">
-        <ul>
-            <li>12</li>
-            <li>3</li>
-            <li>6</li>
-            <li>9</li>
-        </ul>
-        </div>
-    <div class="clockwise">
-        <div class="center"></div>
-        <div class="hand-minute" id="analogminute"></div>
-        <div class="hand-hour" id="analoghour"></div>
-    </div>
-</div> -->
-  
+                   <div class="numbers">
+                        <ul>
+                            <li>12</li>
+                            <li>3</li>
+                            <li>6</li>
+                            <li>9</li>
+                        </ul>
+                    </div>
+                    <div class="clockwise">
+                        <div class="center"></div>
+                        <div class="hand-minute" id="analogminute"></div>
+                        <div class="hand-hour" id="analoghour"></div>
+                    </div>
+                </div> 
+                -->
             <!--photos dans les cadres-->
             <img class ="sandwich" id="back" src="<?php echo $urlAccueil ?>/img/accueil/background.png">
             <img class ="sandwich" id="light1" src="<?php echo $urlAccueil ?>/img/accueil/lamp1.png">
@@ -88,8 +89,8 @@ $urlBoutiques   = $this->generateUrl("boutiques");
         
         
         
-        <div class="sidebar">
-            <div class="logo">
+        
+            <div class="mainlogo">
                 <a href="<?php echo $urlAccueil ?>">
                     <div class="incline">
                         <p>maison</p>
@@ -98,7 +99,9 @@ $urlBoutiques   = $this->generateUrl("boutiques");
                     <p class="sidebar-pierre">par Pierre ragot</p>
                 </a>
             </div>
-        </div>
+        
+        
+        
     </div>    
       <!---FIN VERSION DESKTOP -->       
  </div>       
