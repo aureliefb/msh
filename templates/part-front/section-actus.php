@@ -1,6 +1,6 @@
-<section>
+<section class="actus">
 	<h2>Nos dernières actus</h2>
-	<section class="actus">
+	<!-- <section class="actus"> -->
         <div class="slideshow-container">
 
 <?php
@@ -30,7 +30,6 @@ foreach ($feed->get_items() as $item) {
     echo 
 <<<CODEHTML
 <div class="mySlides fade">
-    <div class="numbertext">1 / 6</div>
     <article class="rss-article">
         <div>$description</div>
         <date>Publié le : $date</date>

@@ -66,9 +66,6 @@ li {
 	align-content: space-around;
 	opacity: 0;	
 	position: fill;
-	height: 100vh !important;
-	width: 100% !important;
-
 }
 
 #parent.load {
@@ -496,37 +493,35 @@ a:hover {
 /* ------------------------ RSS fil d'actualités ------------------------ */
 .actus {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.actus h2 {
+	margin: 0 auto;
 }
 
 .rss-article {
-	max-width: 400px;
+	width: 600px;
 	background-color: lightgrey;
-	padding: 8px;
+	padding: 45px;
 	margin: 20px;
-	border-radius: 10px;
+	border-radius: 30px;
 	text-align: center;
-}
-
-.rss-article div img {
-	max-width: 380px;
-	margin: 0 auto;
 }
 
 .rss-article date {
 	font-style: italic;
-} 
-
+}
 
 
 /* slideshow sur fil d'actus */
 img {
-	vertical-align: middle;
+	/*vertical-align: middle;*/
+	max-width: 370px;
 }
 
 .mySlides {
-	display: none
+	display: none;
 }
 
 
@@ -544,10 +539,10 @@ img {
   top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
+  margin-top: -28px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
@@ -563,40 +558,20 @@ img {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
+  margin: 20px 4px;
+  background-color: lightgrey;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.3s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #fff;
 }
 
 /* Fading animation */
@@ -619,7 +594,9 @@ img {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .prev, .next,.text {
+  	font-size: 11px;
+  }
 }
 
 
