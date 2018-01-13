@@ -24,7 +24,7 @@ class NewsletterController extends Controller{
         $em = $this->getDoctrine()->getManager();
         $em->persist($newsletter);
         $em->flush();
-        echo "<p>vous êtes inscrit avec $email</p>";
+        echo "<p>vous êtes inscrit avec $email.</p>";
         }
         // affiche dans $page.php
         ob_start();

@@ -19,19 +19,16 @@ class BoutiqueController extends Controller{
         // Récupération des datas
         $boutique = new Boutique();
         $nomBoutique = $request->get("nom_boutique","");
-        $adresse = $request->get("adresse","");
-        $horaires = $request->get("horaires","");
-        $telephone = $request->get("telephone","");
+        $adresse     = $request->get("adresse","");
+        $horaires    = $request->get("horaires","");
+        $telephone   = $request->get("telephone","");
         // Creation du formulaire
-        if (isset($_REQUEST["submit"]) && ($_REQUEST["submit"] == "validB")){
+        if (isset($_REQUEST["submit"]) && ($_REQUEST["submit"] == "validB")
+        && ($nomBoutique != "") && ($adresse != "") && ($horaires != "") && ($telephone != "")){
             $boutique->setNomBoutique($nomBoutique);
             $boutique->setAdresse($adresse);
             $boutique->setHoraires($horaires);
             $boutique->setTelephone($telephone);
-
-            $adresse = $request->get("adresse","");
-            $horaires = $request->get("horaires","");
-            $telephone = $request->get("telephone","");
             // sauve dans la BDD
             $em = $this->getDoctrine()->getManager();
             $em->persist($boutique);
@@ -71,33 +68,26 @@ class BoutiqueController extends Controller{
      * @Route("admin/modifier-boutique/{id}", name="modifier-boutique")
      */
     function updateBoutique(Request $request, $id){
-        // tout pareil qu'en haut
         $em = $this->getDoctrine()->getManager();
         $boutique = $em->getRepository(Boutique::class)
                        ->find($id);
-        if (isset($_REQUEST["submit"]) && ($_REQUEST["submit"] == "validB")){
+        if (isset($_REQUEST["submit"]) && ($_REQUEST["submit"] == "validB")
+        && ($nomBoutique != "") && ($adresse != "") && ($horaires != "") && ($telephone != "")){
             // récupère les données
             $boutique = $this->getData();
             // persist et tire la chasse
             $em = $this->getDoctrine()->getManager();
             $em->persist($boutique);
             $em->flush();
-            // return $this->render('admin/boutiques.html.twig', ['boutique' => $boutique]);
-            ob_start();
-            $path     = $this->getParameter('kernel.project_dir');
-            $pathtoTemplate  = "$path/templates";
-            $pathtoBack     = "$pathtoTemplate/part-back";
-            require_once("$pathtoTemplate/back/boutiques.php");
-            $cache = ob_get_clean();
-            return new Response($cache);
         }
+        // return $this->render('admin/boutiques.html.twig', ['boutique' => $boutique]);
         ob_start();
-            $path     = $this->getParameter('kernel.project_dir');
-            $pathtoTemplate  = "$path/templates";
-            $pathtoBack     = "$pathtoTemplate/part-back";
-            require_once("$pathtoTemplate/back/boutique-modifier.php");
-            $cache = ob_get_clean();
-            return new Response($cache);
+        $path     = $this->getParameter('kernel.project_dir');
+        $pathtoTemplate  = "$path/templates";
+        $pathtoBack     = "$pathtoTemplate/part-back";
+        require_once("$pathtoTemplate/back/boutique-modifier.php");
+        $cache = ob_get_clean();
+        return new Response($cache);
     }
 
     /**

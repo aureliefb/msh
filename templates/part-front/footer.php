@@ -11,22 +11,19 @@
                     <li><a href="<?php echo $urlSavoirFaire ?>">Savoir-faire</a></li>
                     <li><a href="<?php echo $urlBoutiques ?>">Boutiques</a></li>
                 </ul>
-            </nav>  
-
+            </nav>
+            </div>
             <!-- formulaire de contact -->
+            <h4>Inscrivez vous à la Newsletter !</h4>
             <form>
-                <label>Votre nom</label><input type="text" name="nom" placeholder="Votre nom">
-                <label>Votre email</label><input type="email" name="email" placeholder="Votre email">
-                <label>Votre message</label>
-                <textarea placeholder="Votre message"></textarea>
-                <button>Envoyer</button>
+                <input required type="email" name="email" placeholder="Votre E-mail">
+                <button type="submit" name="submit" value="validNL">Inscription</button>
             </form>
-        </div>
                 <!--réseaux sociaux icons-->
                 <li><a href="https://www.facebook.com/maisonsthonorepierreragot/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
                 <li><a href="https://www.instagram.com/maisonsainthonoremarseille/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 <!--End réseaux sociaux-->
-        <p>Maison Saint-Honoré par Pierre Ragot - 2018</p>
+        <p>Maison Saint-Honoré par Pierre Ragot 2014-<?php echo date("Y")?></p>
         </footer>
 
 
