@@ -8,7 +8,7 @@ $urlSavoirFaire = $this->generateUrl("savoirfaire");
 $urlCatalogue   = $this->generateUrl("catalogue");
 $urlPierre      = $this->generateUrl("pierre");
 $urlBoutiques   = $this->generateUrl("boutiques");
-
+$urlMentionsLegales   = $this->generateUrl("mentionslegales");
 
 
 ?>
@@ -17,8 +17,11 @@ $urlBoutiques   = $this->generateUrl("boutiques");
     <head>
         <meta charset="utf-8">
         <title>Maison Saint-Honoré par Pierre Ragot</title>
+        <!-- Links Google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+        <!-- FIN links Google fonts -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
         <link rel="stylesheet" href="<?php echo $urlAccueil ?>/css/styleFront.css" />

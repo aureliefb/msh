@@ -23,6 +23,7 @@ header {
 }
 
 h2, h3 {
+	font-family: 'Fredericka the Great', cursive;
 	font-family: 'Cookie', cursive;
 }
 
@@ -578,7 +579,6 @@ a:hover {
 /* ------------------------ FOOTER ------------------------ */
 footer {
 	text-align: center;
-	border: 1px solid red;
 }
 
 .footer {
@@ -669,6 +669,7 @@ footer form {
 .page-catalogue h2 {
 	text-align: center;
 	color: purple;
+	font-family: 'Cookie', cursive;
 }
 
 .contenu-catalogue {
@@ -844,7 +845,7 @@ figure.effect-winston{
  }
  figure.effect-winston a:hover,
  figure.effect-winston a:focus{
- 	color:#5d504f
+ 	color:#fff;
  }
  figure.effect-winston p a i{
  	opacity:0;
@@ -884,6 +885,39 @@ figure.effect-winston{
  	transition-delay:.15s
  }
 /* fin css avancé */
+
+
+/* -------------------------- Mentions légales -------------------------- */
+.mentions-legales {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 1.1em;
+}
+
+.mentions-legales h2,
+.mentions-legales h3 {
+	padding: 10px;
+	font-family: 'Fredericka the Great', cursive;
+	color: black;
+}
+
+.mentions-legales article {
+	margin: 10px 0;
+}
+
+.mentions-legales .bold {
+	font-weight: bold;
+}
+
+.mentions-legales .italic {
+	font-style: italic;
+}
+
+.mentions-legales .coordonnees {
+	color: #fff;
+}
+
+
 
 
 /* ??????????????????????????????????????? */
