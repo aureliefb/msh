@@ -459,7 +459,7 @@ a:hover {
 .actus {
 	display: flex;
 	flex-direction: column;
-	margin-top: 200px;
+	margin-top: 220px;
 }
 
 .actus h2 {
@@ -467,13 +467,13 @@ a:hover {
 }
 
 .rss-article {
-	width: 600px;
+	width: 500px;
 	background-color: lightgrey;
-	padding: 45px;
+	padding: 30px;
 	margin: 20px;
 	border-radius: 30px;
 	text-align: center;
-	font-size: 1.6em;
+	font-size: 1.1em;
 }
 
 .rss-article date {
@@ -572,6 +572,8 @@ a:hover {
 footer {
 	text-align: center;
 	margin: 10px 0;
+	border: 2px lightgrey solid;
+	border-radius: 10px;
 }
 
 .footer {
