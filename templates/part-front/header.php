@@ -97,7 +97,7 @@ $urlBoutiques   = $this->generateUrl("boutiques");
                         <p>saint-honoré</p>
                     </div>
                     <p class="sidebar-pierre">par Pierre ragot</p>-->
-                    <img class="logoMobile" src='./img/logolight.png'>
+                    <img class="logoMobile" src='./img/logomshv2.png'>
                 </a>
             </div>
         

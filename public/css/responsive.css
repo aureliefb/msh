@@ -13,6 +13,10 @@
     	margin-left: 10%;
     	margin-right: 10%;
     }
+    .mainlogo{
+    top: 10%; left: 94%;
+	width: 52%; height: 60%;
+    }
 }
 
 /*medium+ screen sizes*/
@@ -29,6 +33,11 @@
     	width:90%;
     	margin-left: 5%;
     	margin-right: 5%;
+    }
+    .mainlogo{
+    top: 10%; left: 94%;
+	width: 52%; height: 40%;
+    	
     }
 }
 
@@ -50,6 +59,11 @@
     	width:100%;
     	margin-left: 0%;
     	margin-right: 0%;
+    }
+    .mainlogo{
+    top: 10%; left: 94%;
+	width: 52%; height: 30%;
+    	
     }
 }
  
