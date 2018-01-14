@@ -122,16 +122,16 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
                 </div> 
                         <div class="responsive-menu">
                             <ul>
-                              <li><a href="">ACTUS</a></li>
-                              <li><a href="">PIERRE RAGOT</a></li>
-                              <li><a href="">SAVOIRE FAIRE</a></li>
-                              <li><a href="">CATALOGUE</a></li>
-                              <li><a href="">NOS BOUTIQUES</a></li>
-                              <li><a href="">CONTACT</a></li>
+                             <li><a href="<?php echo $urlAccueil ?>">ACCUEIL</a></li>
+                              <li><a href="<?php echo $urlActus ?>">ACTUS</a></li>
+                              <li><a href="<?php echo $urlPierre ?>">PIERRE RAGOT</a></li>
+                              <li><a href="<?php echo $urlSavoirFaire ?>">SAVOIR FAIRE</a></li>
+                              <li><a href="<?php echo $urlCatalogue ?>">CATALOGUE</a></li>
+                              <li><a href="<?php echo $urlBoutiques ?>">NOS BOUTIQUES</a></li>
+                              <li><a href="<?php echo $urlContact ?>">CONTACT</a></li>
                             </ul>
                         </div>
             </div>
-            
              
        <!---FIN VERSION MOBILE -->  
         
