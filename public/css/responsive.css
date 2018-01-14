@@ -160,16 +160,12 @@
 
 /* BURGER MENU */
 .logoMobile{
-	width: 30%;
-	
-	
+	width: 30%;	
 }
 
 .mobile-nav{
 	position: fixed; /* Set the navbar to fixed position */
-    top: 0;
-    
-    
+    top: 0;   
 }
 
 .buttonetlogo{
@@ -182,7 +178,6 @@
 	padding-right: 10px;
     background-color: #5f677d;
 	background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
-	
 }
 
 .menu-btn div {
@@ -195,9 +190,7 @@
 	font-size: 18px;
 	font-weight: 200;
 	vertical-align: middle;
-	z-index: 99;
-	
-	
+	z-index: 99;	
 }
 
 .menu-btn span {
@@ -206,9 +199,7 @@
 	height: 5px;
 	margin: 4px 0;
 	background: #f26D31;
-	z-index: 99;
-	
-	
+	z-index: 99;	
 }
 
 .responsive-menu{
@@ -216,7 +207,6 @@
 	background-color: #5f677d;
 	background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
 	padding-right: 10px;
-	
 }
 
 .expand {

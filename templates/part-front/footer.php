@@ -2,29 +2,41 @@
         </main>
         <footer>
             <div class="footer">
-            <nav class ="desktop-only">
-                <ul>
-                    <li><a href="<?php echo $urlAccueil ?>">Accueil</a></li>
-                    <li><a href="<?php echo $urlActus ?>">Actualités</a></li>
-                    <li><a href="<?php echo $urlCatalogue ?>">Catalogue</a></li>
-                    <li><a href="<?php echo $urlPierre ?>">Pierre Ragot</a></li>
-                    <li><a href="<?php echo $urlSavoirFaire ?>">Savoir-faire</a></li>
-                    <li><a href="<?php echo $urlBoutiques ?>">Boutiques</a></li>
-                    <li><a href="<?php echo $urlMentionsLegales ?>">Mentions légales</a></li>
-                </ul>
-            </nav>
-            </div>
-            <!-- formulaire de contact -->
-            <h4>Inscrivez vous à la Newsletter !</h4>
-            <form>
-                <input required type="email" name="email" placeholder="Votre E-mail">
-                <button type="submit" name="submit" value="validNL">Inscription</button>
-            </form>
+                <nav class="desktop-only">
+                    <ul>
+                        <li><a href="<?php echo $urlAccueil ?>">Accueil</a></li>
+                        <li><a href="<?php echo $urlActus ?>">Actualités</a></li>
+                        <li><a href="<?php echo $urlCatalogue ?>">Catalogue</a></li>
+                        <li><a href="<?php echo $urlPierre ?>">Pierre Ragot</a></li>
+                        <li><a href="<?php echo $urlSavoirFaire ?>">Savoir-faire</a></li>
+                        <li><a href="<?php echo $urlBoutiques ?>">Boutiques</a></li>
+                        <li><a href="<?php echo $urlMentionsLegales ?>">Mentions légales</a></li>
+                    </ul>
+                </nav>
+            
                 <!--réseaux sociaux icons-->
-                <li><a href="https://www.facebook.com/maisonsthonorepierreragot/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.instagram.com/maisonsainthonoremarseille/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <ul class="reseaux-sociaux">
+                    <p>Retrouvez-nous sur nos réseaux sociaux</p>
+                    <li>
+                        <a href="https://www.facebook.com/maisonsthonorepierreragot/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> <span>Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/maisonsainthonoremarseille/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> <span>Instagram</span></a>
+                    </li>
+                </ul>
                 <!--End réseaux sociaux-->
-        <p>Maison Saint-Honoré par Pierre Ragot 2014-<?php echo date("Y")?></p>
+
+                <!-- formulaire de contact -->
+                <div class="subscribe-newsletter">
+                    <h4>Inscrivez-vous à notre newsletter !</h4>
+                    <form>
+                        <input required type="email" name="email" placeholder="Votre E-mail">
+                        <button type="submit" name="submit" value="validNL">Inscription</button>
+                    </form>
+                </div>
+            </div>
+
+            <p>Maison Saint-Honoré par Pierre Ragot 2014-<?php echo date("Y")?></p>
         </footer>
 
 

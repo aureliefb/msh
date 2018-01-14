@@ -468,6 +468,8 @@ a:hover {
 .actus {
 	display: flex;
 	flex-direction: column;
+	margin-top: 200px;
+	border: 2px lightblue solid;
 }
 
 .actus h2 {
@@ -579,17 +581,18 @@ a:hover {
 /* ------------------------ FOOTER ------------------------ */
 footer {
 	text-align: center;
+	margin: 10px 0;
 }
 
 .footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	margin: 30px 0;
 }
 
 footer nav ul {
-	border: 1px solid black;
-	width: 40vw;
+	width: 20vw;
 	text-align: center;
 	list-style-type: none;
 	text-transform: uppercase;
@@ -607,11 +610,54 @@ footer li:hover {
 	/*border-bottom: 2px solid #F26D31;*/
 }
 
-footer form {
-	border: 1px solid black;
+.reseaux-sociaux {
+	display: flex;
+	flex-direction: column;
+}
+
+.reseaux-sociaux li{
+	margin: 5px;
+	font-size: 1.5em;
+}
+
+.reseaux-sociaux span{
+	font-size: 0.7em;
+}
+
+.reseaux-sociaux a {
+	transition: color 0.5s ease;
+}
+
+.reseaux-sociaux a:hover {
+	color: #C25A0F;
+	text-shadow: 1px 1px 1px grey;
+}
+
+.subscribe-newsletter {
+	display: flex;
+	flex-direction: column;
+}
+
+.subscribe-newsletter form {
 	width: 40vw;
 	display: flex;
 	flex-direction: column;
+}
+
+
+.subscribe-newsletter form input {
+	width: 70%;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+.subscribe-newsletter form button {
+	width: 50%;
+	margin: 10px auto;
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px black;
 }
 
 
