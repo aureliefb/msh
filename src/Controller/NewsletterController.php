@@ -40,8 +40,37 @@ class NewsletterController extends Controller{
      * @Route("admin/envoyer-newsletter", name="creer newsletter")
      */
 
-    function envoyerNewsletter(){
+    function envoyerNewsletter($name, \Swift_Mailer $mailer){
         // écrire une newsletter
+            $subscribers = $db->query("SELECT FROM newsletter");
+            $sql = $db->prepare("INSERT INTO newsletter (sujet,contenu) VALUE (:sujet,:contenu)");
+            $sql->execute([
+                ":sujet" => htmlentities($_POST["sujet"]),
+                ":contenu" => htmlentities($_POST["contenu"]),
+                ]);
+            $subject = "";
+            $body = "";
+            $message    = (new \Swift_Message('Hello Email'))
+                ->setFrom(["peter@languedepute.fr" => "Peter"])
+                ->setTo($subscriber);
+          //      ->setSubject($subject);
+           //     ->setBody($body);
+                    // $this->renderView(
+                    //     // templates/emails/registration.html.twig
+                    //     'emails/registration.html.twig',array('name' => "Peter")),'text/html');
+                /*
+                * If you also want to include a plaintext version of the message
+                ->addPart(
+                    $this->renderView(
+                        'emails/registration.txt.twig',
+                        array('name' => $name)
+                    ),
+                    'text/plain'
+                )
+                */
+            $mailer->send($message);
+            return new Response("Mail envoyé");
+            // return $this->render("...");
         return $this->render("/admin/envoyer-newsletter.html.twig");
     }
 }

@@ -7,6 +7,8 @@ use Doctrine\ORM\EntityRepository;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
+use Doctrine\DBAL\Driver\Connection;
 use App\Entity\Boutique;
 use App\Form\BoutiqueType;
 use ORM\EntityManager;
@@ -15,34 +17,44 @@ class BoutiqueController extends Controller{
     /**
      * @Route("/admin/ajouter-boutique", name="ajouter-boutique")
      */
-    function createBoutique(Request $request){
-        // Récupération des datas
-        $boutique = new Boutique();
-        $nomBoutique = $request->get("nom_boutique","");
-        $adresse     = $request->get("adresse","");
-        $horaires    = $request->get("horaires","");
-        $telephone   = $request->get("telephone","");
-        // Creation du formulaire
-        if (isset($_REQUEST["submit"]) && ($_REQUEST["submit"] == "validB")
-        && ($nomBoutique != "") && ($adresse != "") && ($horaires != "") && ($telephone != "")){
-            $boutique->setNomBoutique($nomBoutique);
-            $boutique->setAdresse($adresse);
-            $boutique->setHoraires($horaires);
-            $boutique->setTelephone($telephone);
-            // sauve dans la BDD
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($boutique);
-            $em->flush();
-            $this->addFlash("success","yay §§§");
-        }
-        // return $this->render("admin/boutique-ajouter.html.twig", ["form" => $form->createView()]);
-        ob_start();
-        $path     = $this->getParameter('kernel.project_dir');
-        $pathtoTemplate  = "$path/templates";
-        $pathtoBack     = "$pathtoTemplate/part-back";
-        require_once("$pathtoTemplate/back/boutique-ajouter.php");
-        $cache = ob_get_clean();
-        return new Response($cache);
+    function createBoutique(Request $request, Connection $objetConnection, SessionInterface $objetSession){
+        $checkLevel  = $objSession->get("level");
+        $checkPseudo = $objSession->get("pseudo");
+
+        if ($checkLevel >= 9){
+        // Récupération des données
+            $boutique = new Boutique();
+            $nomBoutique = $request->get("nom_boutique","");
+            $adresse     = $request->get("adresse","");
+            $horaires    = $request->get("horaires","");
+            $telephone   = $request->get("telephone","");
+            // Creation du formulaire
+            if (isset($_REQUEST["submit"]) && ($_REQUEST["submit"] == "validB")
+            && ($nomBoutique != "") && ($adresse != "") && ($horaires != "") && ($telephone != "")){
+                $boutique->setNomBoutique($nomBoutique);
+                $boutique->setAdresse($adresse);
+                $boutique->setHoraires($horaires);
+                $boutique->setTelephone($telephone);
+                // sauve dans la BDD
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($boutique);
+                $em->flush();
+                $this->addFlash("success","yay §§§");
+            }
+            // return $this->render("admin/boutique-ajouter.html.twig", ["form" => $form->createView()]);
+            ob_start();
+            $path     = $this->getParameter('kernel.project_dir');
+            $pathtoTemplate  = "$path/templates";
+            $pathtoBack     = "$pathtoTemplate/part-back";
+            require_once("$pathtoTemplate/back/boutique-ajouter.php");
+            $cache = ob_get_clean();
+            return new Response($cache);
+            }
+        else
+        {
+        $urlLogin = $this->generateUrl("login");
+            return new RedirectResponse($urlLogin);
+    }
 }
 
     /**

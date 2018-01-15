@@ -1,14 +1,14 @@
 <?php
 // JE RECUPERE LES URLS DES PAGES GRACE AU NOM DE LEUR ROUTE
-$urlAccueil     = $this->generateUrl("accueil");
-// $urlLogin         = $this->generateUrl("login");
-$urlAdmin               = $this->generateUrl("admin");
-$urlAdminCatalogue      = $this->generateUrl("admin-catalogue");
-$urlAdminNewsletter     = $this->generateUrl("admin-newsletter");
-$urlAdminBoutique       = $this->generateUrl("admin-boutique");
-$urlLogout              = $this->generateUrl("logout");
-//pour afficher le bienvenue 
-$verifPseudo            = $objetSession->get("pseudo");
+$urlAccueil         = $this->generateUrl("accueil");
+// $urlLogin        = $this->generateUrl("login");
+$urlAdmin           = $this->generateUrl("admin");
+$urlAdminCatalogue  = $this->generateUrl("admin-catalogue");
+$urlAdminNewsletter = $this->generateUrl("admin-newsletter");
+$urlAdminBoutiques  = $this->generateUrl("admin-boutiques");
+$urlLogout          = $this->generateUrl("logout");
+//pour afficher le bienvenue
+$verifPseudo        = $objetSession->get("pseudo");
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,7 +26,7 @@ $verifPseudo            = $objetSession->get("pseudo");
             <h1>Maison Saint Honoré ADMIN</h1>
             </div>
             <h4>BIENVENUE <span class="admin-user"><?php echo $verifPseudo ?></span></h4>
-            
+
             <nav>
                 <ul>
                     <li><i class="fa fa-lock" aria-hidden="true"></i>
@@ -36,7 +36,7 @@ $verifPseudo            = $objetSession->get("pseudo");
                     <li><i class="fa fa-envelope-open-o" aria-hidden="true"></i>
 <a href="<?php echo $urlAdminNewsletter  ?>">   Créér une nouvelle Newsletter et gérer les contacts</a></li><br>
                     <li><i class="fa fa-shopping-basket" aria-hidden="true"></i>
-<a href="<?php echo $urlAdminBoutique  ?>">   Gérer les boutiques et points de vente</a></li><br>
+<a href="<?php echo $urlAdminBoutiques  ?>">   Gérer les boutiques et points de vente</a></li><br>
                     <li><i class="fa fa-sign-out" aria-hidden="true"></i><a href="<?php echo $urlLogout ?>">   Logout Admin</a></li>
                 </ul>
             </nav>
