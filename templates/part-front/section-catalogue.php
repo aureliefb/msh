@@ -1,5 +1,6 @@
 <section class="page-catalogue">
 	<h2>Catalogue</h2>
+
 	<section class="contenu-catalogue">
 		<nav class="nav-catalogue">
 			<ul>
@@ -13,6 +14,7 @@
 				<li><a data-categorie="autres" class="ajax" href="#">Et autres...</a></li>
 			</ul>
 		</nav>
+
 
 		<div class="grid">
 			

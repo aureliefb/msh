@@ -146,7 +146,7 @@ $(function(){
     // ON PREND LA MAIN SUR LE CLICK SUR LES LIENS .ajax
     $(".ajax").on("click", function(event){
         //DEBUG
-        //console.log("click");
+        console.log("click");
         // JE BLOQUE LE LIEN
         event.preventDefault();
 
@@ -155,8 +155,7 @@ $(function(){
 
         // ON VEUT ENVOYER UNE REQUETE AJAX POUR REMPLACER LE CONTENU .grid
         // AVEC JQUERY C'EST ASSEZ SIMPLE
-        // urlAjax = "/msh/public/ajax"; // A AMELIORER POUR LE RENDRE DYNAMIQUE
-        urlAjax = "/msh/templates/front/ajax"; // A AMELIORER POUR LE RENDRE DYNAMIQUE
+        urlAjax = "/msh/public/ajax"; // A AMELIORER POUR LE RENDRE DYNAMIQUE
         $(".grid").load(urlAjax+ "?ajaxCategorie=" + ajaxCategorie);
     });
 });
