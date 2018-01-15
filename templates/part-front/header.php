@@ -16,7 +16,7 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Maison Saint-Honoré par Pierre Ragot</title>
+        <title>Maison Saint-Honoré Boulangerie bio Marseille</title>
         <!-- Links Google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
@@ -135,38 +135,41 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
             <div class="spacing-mobile"></div>        
        <!---FIN VERSION MOBILE -->  
         
-      </header>
-      <div style="display: none;" id="pierrestory">
-	<h2>Pierre Ragot</h2>
-	<div>
-		<p>Pierre Ragot, parisien d'origine, suit un parcours d'artisan-boulanger auprès de maisons d'exception.</p>
+    </header>
 
-		<p>En 0000, il devient gérant du Fournil des Auffes avant de fonder sa propre marque :  la maison Saint-Honoré par Pierre Ragot. Il ouvre une première adresse dans le quartier d'Endoume en 0000, puis une seconde sur l'avenue du Prado à deux pas de la place Castellane.
-			<a href="<?php echo $urlBoutiques ?>.php">
-				<i class="fa fa-plus-circle" aria-hidden="true"></i>
-			</a>
-		</p>
 
-		<p>Sa passion du métier, son amour pour des matières premières de premier choix, son goût pour les expérimentations culinaires font la renommée de la maison Saint-Honoré. Les spécialités de la maison : le Saint-Honoré, la focaccia au charbon végétal, les bloomers, etc.
-		<a href="<?php echo $urlCatalogue ?>.php">
-				<i class="fa fa-plus-circle" aria-hidden="true"></i>
-			</a>
-		</p>
+    <div style="display: none;" id="pierrestory">
+    	<h2>Pierre Ragot</h2>
+    	<div>
+    		<p>Pierre Ragot, parisien d'origine, suit un parcours d'artisan-boulanger auprès de maisons d'exception.</p>
 
-		<p>Le bouche à oreilles et les articles relayés dans la presse et sur les blogs font que les marseillais se bousculent aux portes des boutiques...</p>
+    		<p>En 0000, il devient gérant du Fournil des Auffes avant de fonder sa propre marque :  la maison Saint-Honoré par Pierre Ragot. Il ouvre une première adresse dans le quartier d'Endoume en 0000, puis une seconde sur l'avenue du Prado à deux pas de la place Castellane.
+    			<a href="<?php echo $urlBoutiques ?>.php">
+    				<i class="fa fa-plus-circle" aria-hidden="true"></i>
+    			</a>
+    		</p>
 
-		<p>Découvrez tout notre savoir-faire et la philosophie de notre maison ...
-			<a href="<?php echo $urlSavoirFaire ?>.php">
-				<i class="fa fa-plus-circle" aria-hidden="true"></i>
-			</a>
-		</p>
-	</div>
-</div>
+    		<p>Sa passion du métier, son amour pour des matières premières de premier choix, son goût pour les expérimentations culinaires font la renommée de la maison Saint-Honoré. Les spécialités de la maison : le Saint-Honoré, la focaccia au charbon végétal, les bloomers, etc.
+    		<a href="<?php echo $urlCatalogue ?>.php">
+    				<i class="fa fa-plus-circle" aria-hidden="true"></i>
+    			</a>
+    		</p>
 
-<div style="display: none;" id="savoirfairefancy">
-	<h2>Savoir Faire</h2>
-	<div>
-	
-	</div>
-</div>
+    		<p>Le bouche à oreilles et les articles relayés dans la presse et sur les blogs font que les marseillais se bousculent aux portes des boutiques...</p>
+
+    		<p>Découvrez tout notre savoir-faire et la philosophie de notre maison ...
+    			<a href="<?php echo $urlSavoirFaire ?>.php">
+    				<i class="fa fa-plus-circle" aria-hidden="true"></i>
+    			</a>
+    		</p>
+    	</div>
+    </div>
+
+    <div style="display: none;" id="savoirfairefancy">
+    	<h2>Savoir Faire</h2>
+    	<div>
+    	<!-- A COMPLETER -->
+    	</div>
+    </div>
+
     <main>
