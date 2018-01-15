@@ -115,7 +115,7 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
                             </ul>
                         </div><!--fin div responsive mobile-->
             </div><!--fin div mobile-nav-->
-             
+             <div class="spacing-mobile"></div>        
        <!---FIN VERSION MOBILE -->  
         
       </header>

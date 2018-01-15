@@ -5,6 +5,9 @@ html {
 	height: 100%;
 }
 
+header {
+}
+
 body {
 	margin: 0;
  	background: radial-gradient(center center, circle cover, #c9c2b6, #5F677D);
@@ -48,9 +51,6 @@ li {
 }
 
 
-.pagination {
-}
-
 .pagination ul {
 	display: flex;
 	flex-direction: row;
@@ -80,21 +80,21 @@ li {
 
 #flou {
 	z-index: 10;
-  	-webkit-box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,1);
+/*  	-webkit-box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,1);
     -moz-box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,1);
-    box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,1);*/
 }
 
 /* RESPONSIVE ICI */
 .sandwich {
-
 	position: absolute;
 	left:0;
 	top: 0;
+	height: auto;
 /* RESPONSIVE ICI */
 	/*width: 100vw !important;*/
 
-	object-fit: cover !important;
+	/*object-fit: cover !important;*/
 /* RESPONSIVE ICI */
 }
  
@@ -818,7 +818,7 @@ form button {
 	position: relative;
 	float: left;
 	overflow: hidden;
-	margin: 20px auto;
+	margin: 10px auto;
 	min-width: 190px;
 	max-width: 350px;
 	max-height: 230px;
@@ -838,7 +838,7 @@ form button {
 }
 
 .grid figure figcaption {
-	padding: 1em;
+	/*padding: 1em;*/
 	color: #fff;
 	/* text-transform: lowercase; */
 	font-size: 1em;
@@ -894,7 +894,7 @@ form button {
 
 figure.effect-winston{
 	background:#5F677D;
-	text-align:center;
+	text-align: center;
 }
 
  figure.effect-winston img{
@@ -941,14 +941,14 @@ figure.effect-winston{
  	position:absolute;
  	left: 0;
  	bottom: 0;
- 	padding:0 1.5em 7% 0;
+ 	padding: 0 1.5em 7% 0;
  	font-size: 1.1em;
  }
 
  figure.effect-winston a{
  	margin:0;
  	color:white;
- 	font-size:100%
+ 	font-size:100%;
  }
  figure.effect-winston a:hover,
  figure.effect-winston a:focus{
