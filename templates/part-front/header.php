@@ -59,7 +59,6 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
                
         
                 <!--clock-->
-                
                 <canvas id="clock" class="clock"></canvas>
                 
             <!--photos dans les cadres-->
@@ -83,12 +82,20 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
                     <a href="<?php echo $urlAccueil ?>">
                     <img class="logoDesktop" src='./img/logomsh.png'>
             </div><!--fin div mainlogo-->
-        
+
+
+        <!-- AJOUTER DE L'ANIM DU DEBUT -->
+
+
+
         <div class="spacing"></div>     
-        
+            
+
+
     </div> <!--fin div desktop-->   
       <!---FIN VERSION DESKTOP -->       
-   
+
+
      <!--- VERSION MOBILE NAV--> 
             
             <div class="mobile-nav mobile-one-page">
