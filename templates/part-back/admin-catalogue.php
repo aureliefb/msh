@@ -1,3 +1,30 @@
-<h2>ADMIN CATOLOGUE</h2>
+<h2>ADMIN CATALOGUE</h2>
 
-<p>Norat pacem accidisse in Mediolanum hiberna foedere quod hiberna bella cum pacem crebris crebris consensit sollemnitate consilio autem moverentur Mediolanum finierat maxime gentium civilibus ritu fortunam finierat quae discessit externa multitudo expeditionibus Mediolanum quae omnis malis imperator moverentur maxime perfectaque.</p>
+<section class="page-catalogue">
+	<h2>Catalogue</h2>
+
+    <p>Liste des Produits du Catalogue :</p>
+<table>
+<?php
+$nbProduits = $repo->compterLigne("produit", $objetConnection);
+echo "Il y a $nbProduits produits inscrits au catalogue";
+
+    foreach ($listProduits as $p){
+        $id          = $p->getId();
+        $nomProduit  = $p->getNomProduit();
+        $categorie   = $p->getCategorie();
+        $urlProduit  = $p->getUrlProduit();
+        $urlProduit  = $this->generateUrl("admin-catalogue", [ "nomCategorie" => $categorie, "nomProduit" => $urlProduit ]);
+
+        echo '
+        <thead>
+            <tr>
+                <th>
+                <strong>'.$nomProduit.'</strong> (<a href="./modifier-produit/'.$id.'">Editer ?</a>) (<a href="./supprimer-produit/'.$id.'">Supprimer ?</a>)
+                </th>
+            </tr>
+        </thead>
+        <tr><td>'.$id.'</td></tr>';
+    }
+    ?>
+</table>

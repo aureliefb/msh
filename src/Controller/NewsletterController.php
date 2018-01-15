@@ -10,9 +10,6 @@ use Symfony\Component\HttpFoundation\Request;
 use App\Entity\Newsletter;
 
 class NewsletterController extends Controller{
-    /**
-     * @Route("newsletter", name="newsletter")
-     */
     function subscribeNewsletter(Request $request){
         // Récupération de l'email
         $newsletter = new Newsletter();

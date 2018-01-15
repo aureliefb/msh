@@ -17,9 +17,9 @@ class BoutiqueController extends Controller{
     /**
      * @Route("/admin/ajouter-boutique", name="ajouter-boutique")
      */
-    function createBoutique(Request $request, Connection $objetConnection, SessionInterface $objetSession){
-        $checkLevel  = $objSession->get("level");
-        $checkPseudo = $objSession->get("pseudo");
+    function createBoutique(Request $request, Connection $connection, SessionInterface $objetSession){
+        $checkLevel  = $objetSession->get("level");
+        $checkPseudo = $objetSession->get("pseudo");
 
         if ($checkLevel >= 9){
         // Récupération des données
@@ -58,9 +58,9 @@ class BoutiqueController extends Controller{
 }
 
     /**
-     * @Route("admin/boutiques", name="admin-boutiques")
+     * @Route("/admin/boutiques", name="admin-boutiques")
      */
-    function readBoutiques(){
+    function readBoutiques(Request $request, Connection $connection, SessionInterface $objetSession){
         // entity manager
         $em = $this->getDoctrine()->getManager();
          // lie à la bdd Boutique dans le repository
