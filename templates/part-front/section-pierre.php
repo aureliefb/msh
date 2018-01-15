@@ -7,7 +7,7 @@
 ?>
 
 
-<div style="display: none;" id="pierrestory">
+<div>
 	<h2>Pierre Ragot</h2>
 	<div>
 		<p>Pierre Ragot, parisien d'origine, suit un parcours d'artisan-boulanger auprès de maisons d'exception.</p>
