@@ -60,7 +60,8 @@ CODEHTML;
 		<p>$description</p>
 		<p>
 			<a href="#">
-				<i class="fa fa-plus-circle" aria-hidden="true"></i>
+				<i class="fa fa-plus-circle" aria-hidden="true">
+				</i>
 			</a>
 		</p>
 	</figcaption>
