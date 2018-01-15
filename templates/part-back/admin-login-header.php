@@ -1,5 +1,5 @@
 <?php
-$urlAccueil     = $this->generateUrl("accueil");
+$urlAccueil = $this->generateUrl("accueil");
 ?>
 <!DOCTYPE html>
 <html>
@@ -7,12 +7,10 @@ $urlAccueil     = $this->generateUrl("accueil");
         <meta charset="utf-8">
         <title>Admin</title>
         <link rel="stylesheet" href="<?php echo $urlAccueil ?>/css/styleBack.css" />
-
     </head>
     <body>
             <div class="page">
         <header>
-          <img class="logoadmin" src='./img/logolighthoriz.png'>  
-           
+          <img class="logoadmin" src='../img/logolighthoriz.png'> 
         </header>
         <main>

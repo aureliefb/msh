@@ -22,7 +22,7 @@ $verifPseudo        = $objetSession->get("pseudo");
             <div class="page">
         <header>
             <div class="admin-header">
-            <img class="logoadmin" src='../img/logolighthoriz.png'>
+            <img class="logoadmin" src='./img/logolighthoriz.png'>
             <h1>Maison Saint Honoré ADMIN</h1>
             </div>
             <h4>BIENVENUE <span class="admin-user"><?php echo $verifPseudo ?></span></h4>
@@ -42,5 +42,3 @@ $verifPseudo        = $objetSession->get("pseudo");
             </nav>
         </header>
     <main>
-
-
