@@ -80,7 +80,7 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
         
             <div class="mainlogo">
                     <a href="<?php echo $urlAccueil ?>">
-                    <img class="logoDesktop" src='./img/logomsh.png'>
+                    <img class="logoDesktop" src='./img/logomsh.png'></a>
             </div><!--fin div mainlogo-->
 
 
@@ -106,7 +106,7 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
                         	<span></span>
                     </div><!--fin div menu btn-->
                              <a href="<?php echo $urlAccueil ?>">
-                             <img class="logoMobile" src='./img/logolighthoriz.png'>
+                             <img class="logoMobile" src='./img/logolighthoriz.png'></a>
                              <a href="https://www.facebook.com/maisonsthonorepierreragot/" target="_blank"><i class="mobile-rs fa fa-facebook-official" aria-hidden="true"></i></a>
                              <a href="https://www.instagram.com/maisonsainthonoremarseille/" target="_blank"><i class="mobile-rs fa fa-instagram" aria-hidden="true"></i></a>
                 </div> <!--fin div button logo-->
