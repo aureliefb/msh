@@ -1,5 +1,5 @@
 <section class="actus">
-	<h2>Nos dernières actus</h2>
+	<h2><a id="anchor-actus">Nos dernières actus</h2>
 	<!-- <section class="actus"> -->
         <div class="slideshow-container">
 

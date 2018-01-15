@@ -42,12 +42,12 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
                     #$-:Please do not edit lines starting with "#$"
                     #$VERSION:2.3
                     #$AUTHOR:Etudiant -->
-                    <area shape="rect" id="pierre" coords="76,318,549,731" target="pierre" data-fancybox data-src="#pierrestory" href="" />
-                    <area shape="rect" id="boutiques" coords="991,111,1369,702" target="boutiques" href="<?php echo $urlBoutiques ?>"/>
-                    <area shape="rect" id="philo" coords="556,104,977,638" target="cut" data-fancybox data-src="#savoirfairefancy" href="" />
-                    <area shape="rect" id="contact" coords="1379,122,1798,813" target="telephone" href="<?php echo $urlContact ?>" />
-                    <area shape="rect" id="catalogue" coords="95,736,1373,1100" target="catalogue" href="<?php echo $urlCatalogue ?>" />
-                    <area shape="rect" id="actu" coords="0,15,540,315" target="actualité" href="<?php echo $urlActus ?>" />
+                    <area shape="rect" id="pierre" coords="76,318,549,731" data-fancybox data-src="#pierrestory" href="" />
+                    <area shape="rect" id="boutiques" coords="991,111,1369,702" href="./boutiques#anchor-boutique"/>
+                    <area shape="rect" id="philo" coords="556,104,977,638" data-fancybox data-src="#savoirfairefancy" href="" />
+                    <area shape="rect" id="contact" coords="1379,122,1798,813" href="./boutiques#anchor-contact" />
+                    <area shape="rect" id="catalogue" coords="95,736,1373,1100" href="./catalogue#anchor-catalogue" />
+                    <area shape="rect" id="actu" coords="0,15,540,315" href="./actus#anchor-actus"/>
                 </map>
         
                 <!--Text foor the navigation-->
