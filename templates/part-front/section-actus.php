@@ -31,8 +31,7 @@ foreach ($feed->get_items() as $item) {
     setlocale(LC_ALL, 'fr_FR.UTF8', 'fr_FR','fr','fr','fra','fr_FR@euro');
     $datefr = utf8_encode(strftime('%d %B %Y', strtotime($date)));
 
-
-    // $date = mb_strimwidth($date, 0, 15, '... ');
+    // $description = mb_strimwidth($description, 0, 15, '... ');
 
     echo 
 <<<CODEHTML

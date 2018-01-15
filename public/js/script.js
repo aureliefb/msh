@@ -155,7 +155,8 @@ $(function(){
 
         // ON VEUT ENVOYER UNE REQUETE AJAX POUR REMPLACER LE CONTENU .grid
         // AVEC JQUERY C'EST ASSEZ SIMPLE
-        urlAjax = "/msh/public/ajax"; // A AMELIORER POUR LE RENDRE DYNAMIQUE
+        // urlAjax = "/msh/public/ajax"; // A AMELIORER POUR LE RENDRE DYNAMIQUE
+        urlAjax = "/msh/templates/front/ajax"; // A AMELIORER POUR LE RENDRE DYNAMIQUE
         $(".grid").load(urlAjax+ "?ajaxCategorie=" + ajaxCategorie);
     });
 });

@@ -6,8 +6,8 @@
     <p>Liste des Produits du Catalogue :</p>
 <table>
 <?php
-$nbProduits = $repo->compterLigne("produit", $objetConnection);
-echo "Il y a $nbProduits produits inscrits au catalogue";
+$nbProduits = $repo->compterLigne("produit", $connection);
+echo "Il y a $nbProduits produits dans le catalogue";
 
     foreach ($listProduits as $p){
         $id          = $p->getId();
