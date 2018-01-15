@@ -9,7 +9,7 @@
                         <li><a href="<?php echo $urlCatalogue ?>">Catalogue</a></li>
                         <li><a href="<?php echo $urlPierre ?>">Pierre Ragot</a></li>
                         <li><a href="<?php echo $urlSavoirFaire ?>">Savoir-faire</a></li>
-                        <li><a href="<?php echo $urlBoutiques ?>">Boutiques</a></li>
+                        <li><a href="<?php echo $urlBoutiques ?>">Boutiques / Contact</a></li>
                         <li><a href="<?php echo $urlMentionsLegales ?>">Mentions légales</a></li>
                     </ul>
                 </nav>

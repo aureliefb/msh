@@ -19,7 +19,7 @@ $(function(){
 
 
 
-    // slideshow pour flux rss des actus
+// slideshow pour flux rss des actus
     var slideIndex = 1;
     showSlides(slideIndex);
 
