@@ -716,6 +716,51 @@ footer a:hover {
 #right {
 	transform: rotate(-4deg);
 }
+/* -------------------------- Fancy-box savoirefaire-------------------------- */
+#savoirfairefancy {
+	width:40%;
+	border-radius: 5px;
+	margin: 0 auto;
+	background-color: #5f677d;
+	background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+}
+
+.poloroid {
+	width: 15%;
+	margin-left: 30px;
+}
+
+.poloroid img {
+	border: 10px solid #fff;
+	border-bottom: 45px solid #fff;
+	-webkit-box-shadow: 3px 3px 3px #777;
+	-moz-box-shadow: 3px 3px 3px #777;
+	box-shadow: 3px 3px 3px #777;
+}
+
+#savoirfairefancy section {
+	display:flex;
+	flex-direction:row;
+	color: white;
+}
+
+.top {
+	justify-content:space-around;
+}
+
+#savoirfairefancy p {
+	font-size: 1.5em;
+	width: 30%;
+	margin-left: 22px;
+}
+
+#left {
+	transform: rotate(4deg);
+}
+
+#right {
+	transform: rotate(-4deg);
+}
 
 /* -------------------------- CATALOGUE -------------------------- */
 .page-catalogue h2 {
