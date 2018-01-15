@@ -61,20 +61,12 @@
 
 	   <!---FIN VERSION MOBILE -->
 
-	   <!-- formulaire de contact -->
-			    <section class="section-contact">
-					<div class="box">
-					<form>
-					<fieldset>
-						<legend>Votre nom</legend>
-						<input type="text" name="nom">
-						<legend>Votre e-mail</legend>
-						<input type="email" name="email">
-        	            <legend>Votre message</legend>
-            	        <textarea rows="20" cols="50"></textarea>
-						<button type="submit" name"submit" value="validC">Envoyer</button>
-					</fieldset>
-					</form>
-					</div>
-				</section>
+		<section class="welcome">
+		   <h2>Bienvenue à la maison Saint-Honoré par Pierre Ragot</h2>
+		   <p>Boulangerie bio à Marseille, certifiée Ecocert
+		   		<img class="logo-ecocert" src="<?php echo $urlAccueil ?>/img/logo_ecocert.png">
+		   </p>
+		   <p>Pierre et Lisa Ragot ainsi que toute l'équipe vous accueille dans leurs 3 boutiques.</p>
+	   </section>
+
 			</section>

@@ -13,7 +13,16 @@
                         <li><a href="<?php echo $urlMentionsLegales ?>">Mentions légales</a></li>
                     </ul>
                 </nav>
-            
+
+                <!-- formulaire de contact -->
+                <div class="subscribe-newsletter">
+                    <h4>Inscrivez-vous à notre newsletter !</h4>
+                    <form>
+                        <input required type="email" name="email" placeholder="Votre E-mail">
+                        <button type="submit" name="submit" value="validNL">Inscription</button>
+                    </form>
+                </div>
+
                 <!--réseaux sociaux icons-->
                 <ul class="reseaux-sociaux">
                     <p>Retrouvez-nous sur nos réseaux sociaux</p>
@@ -25,15 +34,6 @@
                     </li>
                 </ul>
                 <!--End réseaux sociaux-->
-
-                <!-- formulaire de contact -->
-                <div class="subscribe-newsletter">
-                    <h4>Inscrivez-vous à notre newsletter !</h4>
-                    <form>
-                        <input required type="email" name="email" placeholder="Votre E-mail">
-                        <button type="submit" name="submit" value="validNL">Inscription</button>
-                    </form>
-                </div>
             </div>
 
             <p>Maison Saint-Honoré par Pierre Ragot 2014-<?php echo date("Y")?></p>

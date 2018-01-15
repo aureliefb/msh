@@ -3,7 +3,7 @@
 	$urlCatalogue   = $this->generateUrl("catalogue");
 ?>
 
-<section>
+<section class="section-savoirfaire">
 	<h2>Notre savoir-faire</h2>
 	<section>
 		<article>
