@@ -222,7 +222,7 @@ $(function(){
 
 
 
-
+/*
 /// CLOCK
 
   var oClockAnalog = {
@@ -304,7 +304,7 @@ $(function(){
         //     }
         // }
     }
-  };
+  };*/
 
 });
 

@@ -1,35 +1,55 @@
-// slideshow pour flux rss des actus
-var slideIndex = 1;
-showSlides(slideIndex);
+// AJAX affichage des produits d'une même catégorie
+$(function(){
+    // ON PREND LA MAIN SUR LE CLICK SUR LES LIENS .ajax
+    $(".ajax").on("click", function(event){
+        //DEBUG
+        // console.log("click");
+        // JE BLOQUE LE LIEN
+        event.preventDefault();
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+        // RECUPERER LA CATEGORIE SUR LAQUELLE ON VA FILTRER
+        ajaxCategorie = $(this).attr("data-categorie");
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+        // ON VEUT ENVOYER UNE REQUETE AJAX POUR REMPLACER LE CONTENU .grid
+        // AVEC JQUERY C'EST ASSEZ SIMPLE
+        urlAjax = "/msh/public/ajax"; // A AMELIORER POUR LE RENDRE DYNAMIQUE
+        $(".grid").load(urlAjax+ "?ajaxCategorie=" + ajaxCategorie);
+    });
+});
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1
-    }    
-  if (n < 1) {
-    slideIndex = slides.length
+
+
+    // slideshow pour flux rss des actus
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
     }
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
 
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+        }    
+      if (n < 1) {
+        slideIndex = slides.length
+        }
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
 
 
 
@@ -134,31 +154,3 @@ $(document).ready(function(){
     
     alert("x=" + x + ",y=" + y);
 });
-
-
-
-
- 
-
-// AJAX affichage des produits d'une même catégorie
-$(function(){
-
-    // ON PREND LA MAIN SUR LE CLICK SUR LES LIENS .ajax
-    $(".ajax").on("click", function(event){
-        //DEBUG
-        console.log("click");
-        // JE BLOQUE LE LIEN
-        event.preventDefault();
-
-        // RECUPERER LA CATEGORIE SUR LAQUELLE ON VA FILTRER
-        ajaxCategorie = $(this).attr("data-categorie");
-
-        // ON VEUT ENVOYER UNE REQUETE AJAX POUR REMPLACER LE CONTENU .grid
-        // AVEC JQUERY C'EST ASSEZ SIMPLE
-        urlAjax = "/msh/public/ajax"; // A AMELIORER POUR LE RENDRE DYNAMIQUE
-        $(".grid").load(urlAjax+ "?ajaxCategorie=" + ajaxCategorie);
-    });
-});
-
-
-

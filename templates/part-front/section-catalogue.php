@@ -4,7 +4,6 @@
 	<section class="contenu-catalogue">
 		<nav class="nav-catalogue">
 			<ul>
-				<li><a href="catalogue">Tous nos produits</a></li>
 				<li><a data-categorie="pain" class="ajax" href="#">Pains</a></li>
 				<li><a data-categorie="focaccia" class="ajax" href="#">Foccacia</a></li>
 				<li><a data-categorie="cakes" class="ajax" href="#">Cakes salés et sucrés</a></li>
@@ -58,6 +57,7 @@ CODEHTML;
 		<h2>
 			<a href="$urlProduit">$nomProduit</a>
 		</h2>
+		<p>$description</p>
 		<p>
 			<a href="#">
 				<i class="fa fa-plus-circle" aria-hidden="true"></i>
