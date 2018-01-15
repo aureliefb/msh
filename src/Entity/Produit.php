@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -9,6 +10,9 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Produit
 {
+    public function __construct(){
+        $this->allergene = new ArrayCollection();
+    }
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -66,8 +70,15 @@ class Produit
         return $this->allergene;
     }
 
+    public function removeAllergene(){
+        $this->allergene = new ArrayCollection();
+    }
+
     public function setAllergene(Allergene $allergene) {
-        $this->allergene = $allergene;
+        if ($this->allergene->contains($allergene)) {
+            return;
+        }
+        $this->allergene[] = $allergene;
     }
 
     /**
@@ -110,7 +121,7 @@ class Produit
     public function getUrlProduit(){
         return $this->urlProduit;
     }
-    public function setUrlProd($urlProduit){
+    public function setUrlProduit($urlProduit){
         return $this->urlProduit = $urlProduit;
     }
 }

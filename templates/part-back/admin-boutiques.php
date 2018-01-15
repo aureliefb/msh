@@ -7,7 +7,7 @@
         $id          = $b->getId();
         $nomBoutique = $b->getNomBoutique();
         $adresse     = $b->getAdresse();
-        $horaires    = $b->getAdresse();
+        $horaires    = $b->getHoraires();
         $telephone   = $b->getTelephone();
         echo '
         <thead>

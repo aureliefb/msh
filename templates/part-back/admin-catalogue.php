@@ -1,7 +1,7 @@
 <h2>ADMIN CATALOGUE</h2>
 
 <section class="page-catalogue">
-	<h2>Catalogue</h2>
+    <p><a href="./ajouter-produit">Ajouter un nouveau produit</a></p>
 
     <p>Liste des Produits du Catalogue :</p>
 <table>
@@ -23,8 +23,7 @@ echo "Il y a $nbProduits produits dans le catalogue";
                 <strong>'.$nomProduit.'</strong> (<a href="./modifier-produit/'.$id.'">Editer ?</a>) (<a href="./supprimer-produit/'.$id.'">Supprimer ?</a>)
                 </th>
             </tr>
-        </thead>
-        <tr><td>'.$id.'</td></tr>';
+        </thead>';
     }
     ?>
 </table>
