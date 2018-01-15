@@ -9,7 +9,7 @@
                         <li><a href="<?php echo $urlCatalogue ?>">Catalogue</a></li>
                         <li><a href="<?php echo $urlPierre ?>">Pierre Ragot</a></li>
                         <li><a href="<?php echo $urlSavoirFaire ?>">Savoir-faire</a></li>
-                        <li><a href="<?php echo $urlBoutiques ?>">Boutiques</a></li>
+                        <li><a href="<?php echo $urlBoutiques ?>">Boutiques / Contact</a></li>
                         <li><a href="<?php echo $urlMentionsLegales ?>">Mentions légales</a></li>
                     </ul>
                 </nav>
@@ -21,7 +21,7 @@
                         <input required type="email" name="email" placeholder="Votre E-mail">
                         <button type="submit" name="submit" value="validNL">Inscription</button>
                     </form>
-                </div>
+                </div><!--fin div subscribe newsletter-->
 
                 <!--réseaux sociaux icons-->
                 <ul class="reseaux-sociaux">
@@ -34,7 +34,7 @@
                     </li>
                 </ul>
                 <!--End réseaux sociaux-->
-            </div>
+            </div><!--fin div footer-->
 
             <p>Maison Saint-Honoré par Pierre Ragot 2014-<?php echo date("Y")?></p>
         </footer>
@@ -51,4 +51,4 @@
 			urlAjax = "<?php echo $this->generateUrl('ajax'); ?>";
 		</script>
     </body>
-</html>
+</html> 

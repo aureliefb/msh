@@ -5,6 +5,9 @@ html {
 	height: 100%;
 }
 
+header {
+}
+
 body {
 	margin: 0;
  	background: radial-gradient(center center, circle cover, #c9c2b6, #5F677D);
@@ -18,20 +21,17 @@ body {
 	
 }
 
-h2, h3 {
-	font-family: 'Fredericka the Great', cursive;
-	font-family: 'Cookie', cursive;
-}
-
 h2 {
-	font-size: 2.5em;
+	font-size: 2.1em;
 	color: #fff9f7;
 	font-weight: normal;
 	margin: 20px;
+	font-family: 'Cookie', cursive;
 }
 
 h3 {
 	font-size: 1.5em;
+	font-family: 'Fredericka the Great', cursive;
 }
 
 p {
@@ -47,8 +47,6 @@ li {
 	list-style-type: none;
 }
 
-.pagination {
-}
 
 .pagination ul {
 	display: flex;
@@ -79,21 +77,21 @@ li {
 
 #flou {
 	z-index: 10;
-  	-webkit-box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,1);
+/*  	-webkit-box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,1);
     -moz-box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,1);
-    box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,1);*/
 }
 
 /* RESPONSIVE ICI */
 .sandwich {
-
 	position: absolute;
 	left:0;
 	top: 0;
+	height: auto;
 /* RESPONSIVE ICI */
 	/*width: 100vw !important;*/
 
-	object-fit: cover !important;
+	/*object-fit: cover !important;*/
 /* RESPONSIVE ICI */
 }
  
@@ -103,17 +101,6 @@ li {
 	font-size:80px;
 }
 
-a {
-	text-decoration: none;
-	color: white;
-	text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);
-}
-
-a:hover {
-	-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.8) 50%, #000 50%, rgba(0,0,0,.8) 70%);
-	-webkit-mask-size: 200%;
-	animation: shine 2s infinite;
-}
 
 @-webkit-keyframes shine {
   from {
@@ -460,14 +447,13 @@ a:hover {
 
 /* section-accueil texte d'introduction */
 .welcome, 
-.section-contact, 
-.actus, 
-.page-catalogue, 
+.actus,  
 .section-pierre, 
+.page-catalogue,
 .section-savoirfaire, 
 .section-boutiques,
 .mentions-legales {
-	width: 80%;
+	width: 75%;
 	margin: 0 auto;
 	text-align: center;
 	font-size: 1.1em;
@@ -482,6 +468,7 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	margin-top: 220px;
+
 }
 
 .actus h2 {
@@ -518,6 +505,7 @@ a:hover {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  z-index: -1000;
 }
 
 /* Next & previous buttons */
@@ -588,12 +576,10 @@ a:hover {
 }
 
 
-
-
 /* ------------------------ FOOTER ------------------------ */
 footer {
 	text-align: center;
-	margin: 10px 0;
+	margin: 40px 0;
 	border: 2px lightgrey solid;
 	border-radius: 10px;
 }
@@ -621,6 +607,9 @@ footer li {
 
 footer a {
 	transition: color 0.4s ease;
+	text-decoration: none;
+	color: white;
+	text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);
 }
 
 footer a:hover {
@@ -661,7 +650,7 @@ footer a:hover {
 	margin: 0 auto;
 }
 
-.subscribe-newsletter form button {
+form button {
 	width: 50%;
 	margin: 10px auto;
 	padding: 5px;
@@ -717,33 +706,87 @@ footer a:hover {
 	transform: rotate(-4deg);
 }
 
+/* -------------------------- Fancy-box savoirefaire-------------------------- */
+#savoirfairefancy {
+	width:40%;
+	border-radius: 5px;
+	margin: 0 auto;
+	background-color: #5f677d;
+	background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+}
+
+.poloroid {
+	width: 15%;
+	margin-left: 30px;
+}
+
+.poloroid img {
+	border: 10px solid #fff;
+	border-bottom: 45px solid #fff;
+	-webkit-box-shadow: 3px 3px 3px #777;
+	-moz-box-shadow: 3px 3px 3px #777;
+	box-shadow: 3px 3px 3px #777;
+}
+
+#savoirfairefancy section {
+	display:flex;
+	flex-direction:row;
+	color: white;
+}
+
+.top {
+	justify-content:space-around;
+}
+
+#savoirfairefancy p {
+	font-size: 1.5em;
+	width: 30%;
+	margin-left: 22px;
+}
+
+#left {
+	transform: rotate(4deg);
+}
+
+#right {
+	transform: rotate(-4deg);
+}
+
 /* -------------------------- CATALOGUE -------------------------- */
+.page-catalogue {
+
+}
+
 .page-catalogue h2 {
 	font-family: 'Cookie', cursive;
+
 }
 
 .contenu-catalogue {
-	display: flex;
-	flex-direction: row;
+	
 }
 
-.nav-catalogue {
-	width: 320px;
+.nav-catalogue a {
+	color: white;
+	text-shadow: 1px 0 1px black;
 }
 
 .contenu-catalogue ul {
 	padding-left: 20px;
+	display: flex;
+	flex-direction: row;
 }
 
 .contenu-catalogue li {
 	font-size: 1.2em;
-	margin: 30px 0;
-
+	margin: 0 auto;
+	color: white;
 }
 
 .contenu-catalogue a:hover {
-	color: black;
+	color: #C55A0F;
 	transition: color 0.3s ease;
+	text-shadow: 0 0 1px black;
 }
 
 /* Affichage CSS avancé */
@@ -754,6 +797,7 @@ footer a:hover {
 } /* required*/
 
 .grid {
+	z-index: -1000;
 	/* mon code */
 	width: 100%;
 	display: flex;
@@ -774,11 +818,11 @@ footer a:hover {
 	position: relative;
 	float: left;
 	overflow: hidden;
-	margin: 10px 1%;
-	min-width: 240px;
-	max-width: 400px;
-	max-height: 280px;
-	width: 45%;
+	margin: 10px auto;
+	min-width: 190px;
+	max-width: 350px;
+	max-height: 230px;
+	width: 30%;
 	height: auto;
 	background: #3085a3;
 	text-align: center;
@@ -794,10 +838,10 @@ footer a:hover {
 }
 
 .grid figure figcaption {
-	padding: 2em;
+	/*padding: 1em;*/
 	color: #fff;
 	/* text-transform: lowercase; */
-	font-size: 1.25em;
+	font-size: 1em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
@@ -827,8 +871,8 @@ footer a:hover {
 
 .grid figure h2 {
 	/* word-spacing: -0.15em; */
-	font-weight: 300;
-	text-shadow: 1px 1px 2px black;
+	font-weight: 200;
+	text-shadow: 1px 1px 5px black;
 }
 
 /* .grid figure h2 span {
@@ -843,21 +887,23 @@ footer a:hover {
 /* circle + dans triangle */
 .grid figure p {
 	letter-spacing: 1px;
-	/* font-size: 68.5%; */
+	/*font-size: 90%;*/ 
 	text-shadow: 1px 1px 2px black;
+	text-align: center;
 }
 
 figure.effect-winston{
-	/* background:#162633; */
 	background:#5F677D;
-	text-align:left
+	text-align: center;
 }
+
  figure.effect-winston img{
  	-webkit-transition:opacity .45s;
  	transition:opacity .45s;
  	-webkit-backface-visibility:hidden;
  	backface-visibility:hidden
  }
+
  figure.effect-winston figcaption::before{
  	position:absolute;
  	top:0;
@@ -883,20 +929,33 @@ figure.effect-winston{
 
  figure.effect-winston p{
  	position:absolute;
- 	right:0;
- 	bottom:0;
- 	padding:0 1.5em 7% 0
+ 	right: 0;
+ 	bottom: 0;
+ 	text-align: left;
+ 	padding:0 1.5em 7% 0;
+ 	font-size: 1.1em;
+ }
+
+
+ figure.effect-winston .fa{
+ 	position:absolute;
+ 	left: 0;
+ 	bottom: 0;
+ 	padding: 0 1.5em 7% 0;
+ 	font-size: 1.1em;
  }
 
  figure.effect-winston a{
- 	margin:0 10px;
+ 	margin:0;
  	color:white;
- 	font-size:100%
+ 	font-size:100%;
  }
+ 
  figure.effect-winston a:hover,
  figure.effect-winston a:focus{
  	color:#fff;
  }
+
  figure.effect-winston p a i{
  	opacity:0;
  	-webkit-transition:opacity .35s,-webkit-transform .35s;
@@ -904,6 +963,7 @@ figure.effect-winston{
  	-webkit-transform:translate3d(0,50px,0);
  	transform:translate3d(0,50px,0)
  }
+
  figure.effect-winston:hover img{
  	opacity:.5
  }
@@ -911,6 +971,7 @@ figure.effect-winston{
  	-webkit-transform:translate3d(0,0,0);
  	transform:translate3d(0,0,0)
  }
+
  figure.effect-winston:hover figcaption::before{
  	opacity:.7;
  	-webkit-transform:rotate3d(0,0,1,20deg);
@@ -920,26 +981,65 @@ figure.effect-winston{
  figure.effect-winston:hover p i{
  	opacity:1;
  	-webkit-transform:translate3d(0,0,0);
- 	transform:translate3d(0,0,0)
+ 	transform:translate3d(0,0,0);
+ 	color: #C55A0F;
  }
+
  figure.effect-winston:hover p a:nth-child(3) i{
  	-webkit-transition-delay:.05s;
  	transition-delay:.05s
  }
+
  figure.effect-winston:hover p a:nth-child(2) i{
  	-webkit-transition-delay:.1s;
  	transition-delay:.1s
  }
+
  figure.effect-winston:hover p a:first-child i{
  	-webkit-transition-delay:.15s;
  	transition-delay:.15s
  }
+
 /* fin css avancé */
+
+/* -------------------------- pages boutiques + contact -------------------------- */
+.section-boutiques {
+	
+}
+
+.adress-map {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.adresses {
+	text-align: left;
+}
+
+.section-contact form {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.section-contact form div {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+}
+
+.section-contact label {
+	text-align: left;
+}
+
+.section-contact input {
+	padding: 5px;
+}
+
 
 
 /* -------------------------- Mentions légales -------------------------- */
-
-
 .mentions-legales h2,
 .mentions-legales h3 {
 	padding: 10px;

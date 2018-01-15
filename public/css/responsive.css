@@ -14,9 +14,20 @@
     	margin-right: 10%;
     }
     .mainlogo{
-    top: 10%; left: 94%;
+    top: 15%; left: 94%;
 	width: 52%; height: 60%;
     }
+    
+    .logoDesktop{
+    	width:30%;
+    }
+    .clock {
+	width: 25%;
+	z-index:5;
+	top: 7%; left: 4%;
+	position: absolute;
+	}
+
 }
 
 /*medium+ screen sizes*/
@@ -35,10 +46,20 @@
     	margin-right: 5%;
     }
     .mainlogo{
-    top: 10%; left: 97%;
+    top: 20%; left: 97%;
 	width: 52%; height: 40%;
     	
     }
+     .logoDesktop{
+    	width:30%;
+    }
+    
+    .clock {
+	width: 20%;
+	z-index:5;
+	top:7%; left: 2%;
+	position: absolute;
+	}
 }
 
 /*medium+ screen sizes*/
@@ -65,9 +86,21 @@
 	width: 52%; height: 30%;
     	
     }
+     .logoDesktop{
+    	width:30%;
+    }
+    
+
+	.clock {
+	width: 15%;
+	z-index:5;
+	left: 0%;
+	top: 20%;
+	position: absolute;
+	}
 }
  
-/*small screen sizes*/
+/*small screen sizes mobile tazb*/
 @media screen and (max-width: 990px) {
     .mobile-only {
         display:block !important;
@@ -77,7 +110,9 @@
         display:none !important;
     }
     
-    
+    .logo-ecocert{
+    	width: 5vw;
+    }
 }
 
 /* Version mobile*/
@@ -86,20 +121,24 @@
 	padding: 200px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	
 }
 .mobile-content-section{
 	background-color: rgba(255,255,255, 0.5);
-	font-family: 'Barlow Condensed', sans-serif;
 	display: flex;
 	justify-content: flex-start;
 }
 
 .mobile-content-section h2{
 	font-family: 'Barlow Condensed', sans-serif;
-	
+	text-align: center;
 }
+
+.mobile-content-section h2:hover{
+	color: #C55A0F;
+}
+
 
 .mobile-one-page a {
 	text-transform: uppercase;
@@ -160,7 +199,7 @@
 
 /* BURGER MENU */
 .logoMobile{
-	width: 30%;	
+	width: 50%;	
 }
 
 .mobile-nav{
@@ -202,6 +241,12 @@
 	z-index: 99;	
 }
 
+ .mobile-rs{
+	color: #f26D31;
+	margin-right: 10px;
+	font-size: 1.5em;
+    }
+    
 .responsive-menu{
 	display: none;
 	background-color: #5f677d;
@@ -209,8 +254,21 @@
 	padding-right: 10px;
 }
 
+.responsive-menu li{
+	margin: 10px 0;
+}
+
+.responsive-menu a:hover{
+	color:#C55A0F;
+}
+
+
 .expand {
 	display: inline-block !important; 
 }
 
 /* FIN BURGER MENU */
+
+.spacing-mobile {
+	margin-top: 30%;
+}
