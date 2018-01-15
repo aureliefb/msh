@@ -15,23 +15,38 @@ use ORM\EntityManager;
 
 class BoutiqueController extends Controller{
     /**
+      * @Route("boutiques", name="boutiques")
+      */
+      public function showBoutique(){
+        // entity manager
+        $em = $this->getDoctrine()->getManager();
+        // lie à la bdd Boutique dans le repository
+        $listBoutiques = $em->getRepository(Boutique::class)
+                            ->findAll();
+        ob_start();
+        $path           = $this->getParameter('kernel.project_dir');
+        $pathtoTemplate = "$path/templates";
+        $pathtoFront    = "$pathtoTemplate/part-front";
+        require_once("$pathtoTemplate/front/boutiques.php");
+        $cache = ob_get_clean();
+        return new Response($cache);
+    }
+
+    /**
      * @Route("/admin/ajouter-boutique", name="ajouter-boutique")
      */
-    function createBoutique(Request $request, Connection $connection, SessionInterface $objetSession)
-    {
+    function createBoutique(Request $request, Connection $connection, SessionInterface $objetSession){
         $checkLevel  = $objetSession->get("level");
         $checkPseudo = $objetSession->get("pseudo");
 
         if ($checkLevel >= 9){
-            if (isset($_REQUEST["submit"]) && ($_REQUEST["submit"] == "valid"))
-            {
+            if (isset($_REQUEST["submit"]) && ($_REQUEST["submit"] == "valid")){
                 // Récupération des données
                 $nomBoutique = $request->get("nom_boutique","");
                 $adresse     = $request->get("adresse","");
                 $horaires    = $request->get("horaires","");
                 $telephone   = $request->get("telephone","");
-                if (($nomBoutique != "") && ($adresse != "") && ($horaires != "") && ($telephone != ""))
-                {
+                if (($nomBoutique != "") && ($adresse != "") && ($horaires != "") && ($telephone != "")){
                     $boutique = new Boutique();
                     $boutique->setNomBoutique($nomBoutique);
                     $boutique->setAdresse($adresse);

@@ -36,19 +36,6 @@ class DefaultController extends Controller{
     }
 
     /**
-      * @Route("boutiques", name="boutiques")
-      */
-    public function showBoutique(){
-        ob_start();
-        $path           = $this->getParameter('kernel.project_dir');
-        $pathtoTemplate = "$path/templates";
-        $pathtoFront    = "$pathtoTemplate/part-front";
-        require_once("$pathtoTemplate/front/boutiques.php");
-        $cache = ob_get_clean();
-        return new Response($cache);
-    }
-
-    /**
       * @Route("pierre", name="pierre")
       */
     public function showAbout(){
