@@ -42,7 +42,7 @@
 
         <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-
+        <script type="text/javascript" src="<?php echo $urlAccueil ?>/js/intro.js"></script>
         <script type="text/javascript" src="<?php echo $urlAccueil ?>/js/thomas/javascript.js"></script>
         <script type="text/javascript" src="<?php echo $urlAccueil ?>/js/script.js"></script>
         <script>

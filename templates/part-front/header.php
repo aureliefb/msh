@@ -30,10 +30,26 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
     </head>
     <body class="wrapper">
         <!--VERSION DESKTOP -->
-    <header>
-    <div class="desktop-only">  
-        <!-- <h1>Maison Saint-Honoré par Pierre Ragot</h1>
-        <p>Boulangerie bio à Marseille</p> -->
+
+    <!-- LANDING PAGE -->
+        <section id="animation">
+            <div class="row">
+                <img src="<?php echo $urlAccueil ?>/img/landing-page/pierre.jpg" alt="Pierre Ragot boulanger Maison Saint-Honoré">
+                <img src="<?php echo $urlAccueil ?>/img/landing-page/burger.jpg" alt="Maison Saint-Honoré Burgers">
+                <img src="<?php echo $urlAccueil ?>/img/landing-page/vitrine.jpg" alt="Maison Saint-Honoré vitrine boutique Endoume Marseille">
+            </div>
+            <div class="row">
+                <img src="<?php echo $urlAccueil ?>/img/landing-page/mains.jpg" alt="Maison Saint-Honoré pétrissage">
+                <img src="<?php echo $urlAccueil ?>/img/landing-page/boutique.jpg" alt="Maison Saint-Honoré intérieur boutique Endoume Marseille">
+                <img src="<?php echo $urlAccueil ?>/img/landing-page/produits.jpg" alt="Maison Saint-Honoré produits">
+            </div>            
+        </section>
+    <!-- FIN landing page -->
+
+    <header id="content">
+
+    <div class="desktop-only">
+
         <div id="parent">
                 <img src="<?php echo $urlAccueil ?>/img/accueil/empty.png" id="flou" class ="sandwich" usemap="#map"/>
                 <map name="map">
@@ -74,30 +90,24 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
             <img class ="sandwich" id="telephone" src="<?php echo $urlAccueil ?>/img/accueil/telephone.png">
             <img class ="sandwich" id="ensemble" src="<?php echo $urlAccueil ?>/img/accueil/breadandlights.png">
         </div> 
-        <!--fin div parent-->
+        <!--fin div parent-->   
         
-        
-        
-            <div class="mainlogo">
-                    <a href="<?php echo $urlAccueil ?>">
-                    <img class="logoDesktop" src='./img/logomsh.png'></a>
-            </div><!--fin div mainlogo-->
+        <div class="mainlogo">
+            <a href="<?php echo $urlAccueil ?>">
+                <img class="logoDesktop" src='./img/logomsh.png'>
+            </a>
+        </div>
+        <!--fin div mainlogo-->
 
-
-        <!-- AJOUTER DE L'ANIM DU DEBUT -->
-
-
+    
 
         <div class="spacing"></div>     
-            
-
 
     </div> <!--fin div desktop-->   
       <!---FIN VERSION DESKTOP -->       
 
 
      <!--- VERSION MOBILE NAV--> 
-            
             <div class="mobile-nav mobile-one-page">
                 <div class="buttonetlogo">
                     <div class="menu-btn" id="menu-btn">
