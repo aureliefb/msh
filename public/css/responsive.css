@@ -121,7 +121,7 @@
 	padding: 200px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	
 }
 .mobile-content-section{
@@ -135,6 +135,7 @@
 	font-family: 'Barlow Condensed', sans-serif;
 	
 }
+
 
 .mobile-one-page a {
 	text-transform: uppercase;
@@ -195,7 +196,7 @@
 
 /* BURGER MENU */
 .logoMobile{
-	width: 30%;	
+	width: 50%;	
 }
 
 .mobile-nav{
@@ -238,9 +239,9 @@
 }
 
  .mobile-rs{
-    	color: #f26D31;
-    	margin-right: 10px;
-    	font-size: 1.5em;
+	color: #f26D31;
+	margin-right: 10px;
+	font-size: 1.5em;
     }
     
 .responsive-menu{
