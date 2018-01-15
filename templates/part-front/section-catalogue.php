@@ -1,61 +1,5 @@
 <section class="page-catalogue">
 	<h2>Catalogue</h2>
-
-
-
-<div class="pagination">
-<?php
-
-$objetProduitRepository = $this->getDoctrine()->getRepository(App\Entity\Produit::class);
-
-$nbProduits = $objetProduitRepository->compterLigne("produit", $objetConnection);
-echo "$nbProduits produits inscrits au catalogue";
-
-// // JE VEUX AFFICHER x LIGNES PAR PAGE
-$nbProduitsParPage = 9;
-// ON RECUPERE LE NUMERO DE PAGE DU PARAMETRE GET DANS L'URL
-// if (isset($_REQUEST["nbProduitsParPage"])) {
-//     $nbProduitsParPage = intval($_REQUEST["nbProduitsParPage"]);
-// }
-
-$nbPage = ceil($nbProduits / $nbProduitsParPage);
-
-
-$page = 1;
-// // ON RECUPERE LE NUMERO DE PAGE DU PARAMETRE GET DANS L'URL
-if (isset($_REQUEST["page"])) {
-    $page = intval($_REQUEST["page"]);
-
-    if($page > $nbPage) {
-    	$page = $nbPage;
-    } else {
-    	$page = 1;
-    }
-}
-
-
-
-$indiceDepart = ($page -1) * $nbProduitsParPage;
-
-?>
-
-    <nav>
-        <ul>
-<?php        
-// ON CREE DYNAMIQUEMENT LE NOMBRE DE LIENS NECESSAIRES POUR NAVIGUER
-// AVEC LA PAGINATION
-for($p=1; $p <= $nbPage; $p++) {
-    echo
-<<<CODEHTML
-	<li><a href="?page=page$p">page $p</a></li>
-CODEHTML;
-}
-?>
-        </ul>
-    </nav>
-</div>
-
-
 	<section class="contenu-catalogue">
 		<nav class="nav-catalogue">
 			<ul>
@@ -70,7 +14,6 @@ CODEHTML;
 			</ul>
 		</nav>
 
-
 		<div class="grid">
 			
 		<?php
@@ -79,7 +22,7 @@ CODEHTML;
 		$objetCategorieRepository = $this->getDoctrine()->getRepository(App\Entity\Categorie::class);
 
 	    // récupère la liste des produits de cette categorie
-	    $listProduits = $objetProduitRepository->findBy([], ["nomProduit" => "ASC"], $nbProduitsParPage, $nbPage);
+	    $listProduits = $objetProduitRepository->findBy([], ["nomProduit" => "ASC"]);
 
 		// ON A UN TABLEAU D'OBJETS DE CLASSE Article
 	    foreach ($listProduits as $objetProduit){

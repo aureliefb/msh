@@ -462,6 +462,7 @@ a:hover {
 .welcome, 
 .section-contact, 
 .actus, 
+.page-catalogue, 
 .section-pierre, 
 .section-savoirfaire, 
 .section-boutiques,
@@ -717,13 +718,7 @@ footer a:hover {
 }
 
 /* -------------------------- CATALOGUE -------------------------- */
-.page-catalogue {
-	
-}
-
 .page-catalogue h2 {
-	text-align: center;
-	color: purple;
 	font-family: 'Cookie', cursive;
 }
 
