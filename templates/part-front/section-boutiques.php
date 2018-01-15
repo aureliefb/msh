@@ -1,8 +1,7 @@
-<section>
-	<h2>Où nous trouver</h2>
+<section class="section-boutiques">
+	<h2>Nos boutiques</h2>
 	<section>
 		<ul>
-			<p>Nos boutiques</p>
 			<li><h3>Maison Saint-Honoré par Pierre Ragot - Prado/Castellane</h3>
 			<address>41 avenue du Prado, 13006 Marseille</address></li>
 			<li><h3>Maison Saint-Honoré par Pierre Ragot - Endoume</h3>
@@ -12,7 +11,7 @@
 		</ul>
 
 		<ul>
-			<p>Revendeurs <span>></span></p>
+			<p>Revendeurs</p>
 			<li>Biocoop</li>
 			<li>Revendeur1</li>
 			<li>Revendeur21</li>

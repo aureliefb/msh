@@ -100,7 +100,7 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
                         <p>saint-honoré</p>
                     </div>
                     <p class="sidebar-pierre">par Pierre ragot</p>-->
-                    <img class="logoMobile" src='./img/logomshv6.png'>
+                    <img class="logoMobile" src='./img/logomsh.png'>
                 </a>
             </div>
         
