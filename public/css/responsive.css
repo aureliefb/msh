@@ -21,6 +21,13 @@
     .logoDesktop{
     	width:30%;
     }
+    .clock {
+	width: 25%;
+	z-index:5;
+	top: 7%; left: 4%;
+	position: absolute;
+	}
+
 }
 
 /*medium+ screen sizes*/
@@ -46,6 +53,13 @@
      .logoDesktop{
     	width:30%;
     }
+    
+    .clock {
+	width: 20%;
+	z-index:5;
+	top:7%; left: 2%;
+	position: absolute;
+	}
 }
 
 /*medium+ screen sizes*/
@@ -75,9 +89,18 @@
      .logoDesktop{
     	width:30%;
     }
+    
+
+	.clock {
+	width: 15%;
+	z-index:5;
+	left: 0%;
+	top: 20%;
+	position: absolute;
+	}
 }
  
-/*small screen sizes*/
+/*small screen sizes mobile tazb*/
 @media screen and (max-width: 990px) {
     .mobile-only {
         display:block !important;

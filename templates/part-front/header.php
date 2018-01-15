@@ -59,23 +59,9 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
                 <img class ="sandwich" id="prodtext" src="<?php echo $urlAccueil ?>/img/accueil/produits.png">
         
                 <!--clock-->
-                <!--
-                <div class="clock">
-                   <div class="numbers">
-                        <ul>
-                            <li>12</li>
-                            <li>3</li>
-                            <li>6</li>
-                            <li>9</li>
-                        </ul>
-                    </div>
-                    <div class="clockwise">
-                        <div class="center"></div>
-                        <div class="hand-minute" id="analogminute"></div>
-                        <div class="hand-hour" id="analoghour"></div>
-                    </div>
-                </div> 
-                -->
+                
+                <canvas id="clock" class="clock"></canvas>
+                
             <!--photos dans les cadres-->
             <img class ="sandwich" id="back" src="<?php echo $urlAccueil ?>/img/accueil/background.png">
             <img class ="sandwich" id="light1" src="<?php echo $urlAccueil ?>/img/accueil/lamp1.png">
