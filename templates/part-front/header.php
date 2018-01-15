@@ -84,7 +84,7 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
                     <img class="logoDesktop" src='./img/logomsh.png'>
             </div><!--fin div mainlogo-->
         
-        <div class="spacing"></div>        
+        <div class="spacing"></div>     
         
     </div> <!--fin div desktop-->   
       <!---FIN VERSION DESKTOP -->       
@@ -110,12 +110,12 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
                               <li><a href="<?php echo $urlPierre ?>">PIERRE RAGOT</a></li>
                               <li><a href="<?php echo $urlSavoirFaire ?>">SAVOIR FAIRE</a></li>
                               <li><a href="<?php echo $urlCatalogue ?>">CATALOGUE</a></li>
-                              <li><a href="<?php echo $urlBoutiques ?>">NOS BOUTIQUES</a></li>
-                              <li><a href="<?php echo $urlContact ?>">CONTACT</a></li>
+                              <li><a href="<?php echo $urlBoutiques ?>">BOUTIQUES / CONTACT</a></li>
                             </ul>
                         </div><!--fin div responsive mobile-->
             </div><!--fin div mobile-nav-->
-             <div class="spacing-mobile"></div>        
+            
+            <div class="spacing-mobile"></div>        
        <!---FIN VERSION MOBILE -->  
         
       </header>

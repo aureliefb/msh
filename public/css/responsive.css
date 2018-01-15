@@ -126,14 +126,17 @@
 }
 .mobile-content-section{
 	background-color: rgba(255,255,255, 0.5);
-	font-family: 'Barlow Condensed', sans-serif;
 	display: flex;
 	justify-content: flex-start;
 }
 
 .mobile-content-section h2{
 	font-family: 'Barlow Condensed', sans-serif;
-	
+	text-align: center;
+}
+
+.mobile-content-section h2:hover{
+	color: #C55A0F;
 }
 
 
@@ -251,6 +254,15 @@
 	padding-right: 10px;
 }
 
+.responsive-menu li{
+	margin: 10px 0;
+}
+
+.responsive-menu a:hover{
+	color:#C55A0F;
+}
+
+
 .expand {
 	display: inline-block !important; 
 }
@@ -258,5 +270,5 @@
 /* FIN BURGER MENU */
 
 .spacing-mobile {
-	margin-top: 5%;
+	margin-top: 30%;
 }

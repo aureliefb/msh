@@ -21,20 +21,17 @@ body {
 	
 }
 
-h2, h3 {
-	font-family: 'Fredericka the Great', cursive;
-	font-family: 'Cookie', cursive;
-}
-
 h2 {
-	font-size: 2.5em;
+	font-size: 2.1em;
 	color: #fff9f7;
 	font-weight: normal;
 	margin: 20px;
+	font-family: 'Cookie', cursive;
 }
 
 h3 {
 	font-size: 1.5em;
+	font-family: 'Fredericka the Great', cursive;
 }
 
 p {
@@ -471,6 +468,7 @@ li {
 	display: flex;
 	flex-direction: column;
 	margin-top: 220px;
+
 }
 
 .actus h2 {
@@ -507,6 +505,7 @@ li {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  z-index: -1000;
 }
 
 /* Next & previous buttons */
@@ -798,6 +797,7 @@ form button {
 } /* required*/
 
 .grid {
+	z-index: -1000;
 	/* mon code */
 	width: 100%;
 	display: flex;

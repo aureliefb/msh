@@ -33,7 +33,7 @@
 		<section class="mobile-boutiques">
 			<div class="mobile-content-section">
 				<a href="boutiques.php">
-					<h2>Nos Boutiques</h2>
+					<h2>Boutiques & Contact</h2>
 				</a>
 				
 			</div>
