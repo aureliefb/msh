@@ -34,9 +34,8 @@
                     <div>
                         <label>Votre message</label>
                         <textarea rows="10" cols="50"></textarea>
-                    </div>
                         <button type="submit" name"submit" value="validC">Envoyer</button>
-                    
+                    </div>
                 </form>
         </section>
 

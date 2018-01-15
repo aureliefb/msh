@@ -47,6 +47,7 @@ li {
 	list-style-type: none;
 }
 
+
 .pagination {
 }
 
@@ -103,11 +104,6 @@ li {
 	font-size:80px;
 }
 
-a {
-	text-decoration: none;
-	color: white;
-	text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);
-}
 
 @-webkit-keyframes shine {
   from {
@@ -585,7 +581,7 @@ a {
 /* ------------------------ FOOTER ------------------------ */
 footer {
 	text-align: center;
-	margin: 10px 0;
+	margin: 40px 0;
 	border: 2px lightgrey solid;
 	border-radius: 10px;
 }
@@ -613,6 +609,9 @@ footer li {
 
 footer a {
 	transition: color 0.4s ease;
+	text-decoration: none;
+	color: white;
+	text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);
 }
 
 footer a:hover {
@@ -653,7 +652,7 @@ footer a:hover {
 	margin: 0 auto;
 }
 
-.subscribe-newsletter form button {
+form button {
 	width: 50%;
 	margin: 10px auto;
 	padding: 5px;
@@ -989,10 +988,27 @@ figure.effect-winston{
 	text-align: left;
 }
 
-.section-contact form  {
+.section-contact form {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
 }
+
+.section-contact form div {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+}
+
+.section-contact label {
+	text-align: left;
+}
+
+.section-contact input {
+	width: 70%;
+	padding: 5px;
+}
+
 
 
 /* -------------------------- Mentions légales -------------------------- */
