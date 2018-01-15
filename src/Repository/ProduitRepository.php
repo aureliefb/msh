@@ -13,30 +13,6 @@ class ProduitRepository extends ServiceEntityRepository
     }
 
 
-    // COMPTE TOUTES LES LIGNES D'UNE TABLE
-    // TODO: 
-    // IL FAUDRAIT POUVOIR SELECTIONNER SEULEMENT UN CERTAIN NOMBRE DE LIGNE 
-    // (ET PAS TOUTES...)
-    public function compterLigne ($nomTable, $objetConnection) {
-        
-        $requeteSQL =
-<<<CODESQL
-SELECT COUNT(*) AS nbProduits FROM $nomTable
-CODESQL;
-
-        $objetStatement = $objetConnection->prepare($requeteSQL, []);
-        $objetStatement->execute();
-
-    $nbProduits = 0;
-    foreach($objetStatement as $tabLigne) {
-    // VA ME FOURNIR LA VALEUR DANS LA VARIABLE $nbLigne
-    // extract($tabLigne);
-    $nbProduits = $tabLigne["nbProduits"];
-    }
-    
-    return $nbProduits;
-    }
-
 
 
     /*
