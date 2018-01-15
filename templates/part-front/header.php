@@ -94,14 +94,8 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
         
         
             <div class="mainlogo">
-                <a href="<?php echo $urlAccueil ?>">
-                   <!-- <div class="incline">
-                        <p>maison</p>
-                        <p>saint-honoré</p>
-                    </div>
-                    <p class="sidebar-pierre">par Pierre ragot</p>-->
-                    <img class="logoMobile" src='./img/logomsh.png'>
-                </a>
+                    <a href="<?php echo $urlAccueil ?>">
+                    <img class="logoDesktop" src='./img/logomsh.png'>
             </div><!--fin div mainlogo-->
         
         <div class="spacing"></div>        
@@ -118,7 +112,10 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
                         	<span></span>
                         	<span></span>
                     </div><!--fin div menu btn-->
+                             <a href="<?php echo $urlAccueil ?>">
                              <img class="logoMobile" src='./img/logolighthoriz.png'>
+                             <a href="https://www.facebook.com/maisonsthonorepierreragot/" target="_blank"><i class="mobile-rs fa fa-facebook-official" aria-hidden="true"></i></a>
+                             <a href="https://www.instagram.com/maisonsainthonoremarseille/" target="_blank"><i class="mobile-rs fa fa-instagram" aria-hidden="true"></i></a>
                 </div> <!--fin div button logo-->
                         <div class="responsive-menu">
                             <ul>
