@@ -11,17 +11,19 @@ html {
 
 /* ------------------- GLOBAL ------------------- */
 body {
-	font-family: 'Barlow Condensed', sans-serif;
-	color: #5F677D;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #5F677D;
+    font-size:1.4em;
+    margin: 0 auto;
+    text-align:center;
+     background-image: -webkit-linear-gradient(top left, #f5f7fa 0%, #c3cfe2 100%);
+     background-image: -moz-linear-gradient(top left, #f5f7fa 0%, #c3cfe2 100%);
+     background-image: -o-linear-gradient(top left, #f5f7fa 0%, #c3cfe2 100%);
+     background-image: linear-gradient(to bottom right, #f5f7fa 0%, #c3cfe2 100%);            
+    }
+	
 
-	font-size:1.4em;
-	margin: 0 auto;
-	text-align:center;
-	background: radial-gradient(center center, circle cover, #c9c2b6, #5F677D);
-	background: -moz-radial-gradient(center center, circle cover, #c9c2b6 0%, #5F677D 100%);
-	background: -webkit-radial-gradient(center center, circle cover, #c9c2b6 0%, #5F677D 100%);
 
-}
 
 main {
 	width: 50%;
@@ -39,7 +41,7 @@ main {
 
 nav{
     font-family: 'Barlow Condensed', sans-serif;
-   width: 50%;
+    width: 50%;
 	background-color: rgba(255,255,255, 0.5);
 	margin: 0 auto;
 	text-align:center;
@@ -90,21 +92,67 @@ li{
     background-color: silver;
     margin: 0 auto;
 }
+form{
+  	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	
+}
 
-.formulaire-contact label {
-    display: inline-block;
-    text-align: left;
-    margin-top: 30px;
+
+label {
+ 
 }
-.formulaire-contact input {
-    width: 50%;
-    height: 40px;
-    padding: 8px;
-    margin-left: 10px;
+input, textarea  {
+   padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	color: #2C3E50;
+	font-size: 13px;
 }
-.formulaire-contact textarea {
-    margin-left: 10px;
+
+input:focus, textarea:focus
+{
+  border: 1px solid #4899BE;
 }
+
+
+
+button{
+    width: 100px;
+	background: #5f677d;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+button:hover{
+    background: #f26D31;
+}
+
+
+
+th{
+    border:1px solid black;
+    padding:0.25em;
+     margin: 0 auto;
+     text-align: left;
+     width: 50%;
+     font-family: 'Barlow Condensed', sans-serif;
+}
+
 
 .reponseOK {
     width: 300px;
@@ -142,6 +190,7 @@ footer {
 	align-items: center;
 	justify-content: space-around;
 	padding: 15px;
+          
 
 }
 
