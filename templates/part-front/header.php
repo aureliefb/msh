@@ -56,7 +56,7 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
                 <img class ="sandwich" id="contacttext" src="<?php echo $urlAccueil ?>/img/accueil/contactez.png">
                 <img class ="sandwich" id="philostext" src="<?php echo $urlAccueil ?>/img/accueil/savoirfaire.png">
                 <img class ="sandwich" id="pierretext" src="<?php echo $urlAccueil ?>/img/accueil/pierreragot.png">
-                <img class ="sandwich" id="prodtext" src="<?php echo $urlAccueil ?>/img/accueil/produits.png">
+               
         
                 <!--clock-->
                 
