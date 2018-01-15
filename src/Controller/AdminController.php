@@ -10,11 +10,10 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Doctrine\DBAL\Driver\Connection;
 use ORM\EntityManager;
-use App\Entity\Article;
+use App\Controller\TraitementForm;
 
 
 class AdminController extends Controller{
-
     /**
       * @Route("/admin/login", name="login")
       */
