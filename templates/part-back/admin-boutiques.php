@@ -24,4 +24,4 @@
     ?>
 </table>
 
-<a href=".">Retour</a>
+<a src="<?php echo $this->generateUrl("accueil"); ?>" >Retour</a>

@@ -11,4 +11,4 @@
         <button type="submit" name="submit" value="valid">Modifier</button>
 </form>
 
-<a href="../boutiques">Retour</a>
+<a src="<?php echo $this->generateUrl("accueil"); ?>" >Retour</a>
