@@ -54,9 +54,7 @@ CODEHTML;
 <figure class="effect-winston">
 	<div>$htmlImage</div>
 	<figcaption>
-		<h2>
-			<a href="$urlProduit">$nomProduit</a>
-		</h2>
+			<h2>$nomProduit</h2>
 		<p>
 			<a href="#">
 				<i class="fa fa-plus-circle" aria-hidden="true">
