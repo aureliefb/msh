@@ -8,8 +8,8 @@
                 echo '<option value="'.$c->getId().'" name="categorie">'.$c->getNomCategorie().'</option>';
             }
             ?>
-        </select><br />
-        <textarea name="description" cols="40" rows="10" placeholder="Description du produit"></textarea><br />
+        </select>
+        <textarea name="description" cols="40" rows="10" placeholder="Description du produit"></textarea>
         <?php
         foreach ($allergenes as $a){
             echo '<input type="checkbox" value="'.$a->getId().'" name="allergene[]"><img class="allergene"  src="../img/icones-allergenes/'.$a->getIcone().'" alt="'.$a->getDescription().'">';

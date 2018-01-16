@@ -1,4 +1,4 @@
-<h2>ADMIN NEWSLETTER</h2>
+<h2>Gérer laNewsletter</h2>
 
 <section class="page-newsletter">
 
