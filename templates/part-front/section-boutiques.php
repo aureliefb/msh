@@ -47,10 +47,12 @@
                         <input type="email" name="email" class="select">
                     </div>
                     <div>
+						<label>Sujet</label>
+                        <input type="text" name="sujet" class="select">
                         <label>Votre message</label>
-                        <textarea rows="10" cols="50"></textarea>
-                        <button type="submit" name"submit" value="validC">Envoyer</button>
-                        <div class="response"></<div>
+                        <textarea name="message" rows="10" cols="50"></textarea>
+                        <button type="submit" name="submit" value="validC">Envoyer</button>
+                        <div class="response"><div>
                     </div>
                 </form>
         </section>

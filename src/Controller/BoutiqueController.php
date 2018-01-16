@@ -10,19 +10,20 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Doctrine\DBAL\Driver\Connection;
 use App\Entity\Boutique;
-use App\Form\BoutiqueType;
+use App\Entity\Contact;
 use ORM\EntityManager;
 
 class BoutiqueController extends Controller{
     /**
       * @Route("boutiques", name="boutiques")
       */
-      public function showBoutique(){
+      public function showBoutique(Request $request, \Swift_Mailer $mailer){
         // entity manager
         $em = $this->getDoctrine()->getManager();
         // lie à la bdd Boutique dans le repository
         $listBoutiques = $em->getRepository(Boutique::class)
                             ->findAll();
+        $this->contact($request, $mailer);
         ob_start();
         $path           = $this->getParameter('kernel.project_dir');
         $pathtoTemplate = "$path/templates";
@@ -31,6 +32,37 @@ class BoutiqueController extends Controller{
         $cache = ob_get_clean();
         return new Response($cache);
     }
+
+    function contact(Request $request, \Swift_Mailer $mailer) {
+        if (isset($_REQUEST["submit"]) && ($_REQUEST["submit"] == "validC")){
+            // Récupération des données
+            $nom	 = $request->get("nom","");
+            $email	 = $request->get("email","");
+            $sujet   = $request->get("sujet","");
+            $message = $request->get("message","");
+            if (($nom != "") && ($email != "") && ($sujet != "") && ($message != "")){
+                $contact = new Contact();
+                $contact->setNom($nom);
+                $contact->setEmail($email);
+                $contact->setSujet($sujet);
+                $contact->setMessage($message);
+                // sauve dans la BDD
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($contact);
+                $em->flush();
+                // envoie le mail
+                $courriel = (new \Swift_Message($sujet));
+                $courriel->setFrom([$email => $nom])
+                     ->setBody($message)
+                     ->setTo("rong.peter@gmail.com");
+
+                $mailer->send($courriel);
+                return $this->redirect($this->generateUrl("boutiques"));
+                }
+            echo "message envoyée";
+            }
+            return $this->redirect($this->generateUrl("boutiques"));
+        }
 
     /**
      * @Route("/admin/ajouter-boutique", name="ajouter-boutique")
