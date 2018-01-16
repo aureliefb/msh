@@ -32,6 +32,8 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
         <!--VERSION DESKTOP -->
 
     <!-- LANDING PAGE -->
+    <?php if(isset($hasAnimation) && $hasAnimation) : ?>
+    
         <section id="animation">
             <div class="row">
                 <img src="<?php echo $urlAccueil ?>/img/landing-page/pierre.jpg" alt="Pierre Ragot boulanger Maison Saint-Honoré">
@@ -42,10 +44,21 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
                 <img src="<?php echo $urlAccueil ?>/img/landing-page/mains.jpg" alt="Maison Saint-Honoré pétrissage">
                 <img src="<?php echo $urlAccueil ?>/img/landing-page/boutique.jpg" alt="Maison Saint-Honoré intérieur boutique Endoume Marseille">
                 <img src="<?php echo $urlAccueil ?>/img/landing-page/produits.jpg" alt="Maison Saint-Honoré produits">
-            </div>            
+            </div> 
+
+            <!-- MOT D'ACCUEIL -->
+            <section id="welcome" class="desktop-only">
+                   <h1>Bienvenue à la maison Saint-Honoré par Pierre Ragot</h1>
+                       <p>Boulangerie bio à Marseille, certifiée Ecocert
+                            <img class="logo-ecocert" src="<?php echo $urlAccueil ?>/img/logo_ecocert.png">
+                       </p>
+                   <p>Pierre et Lisa Ragot ainsi que toute l'équipe vous accueille dans leurs 3 boutiques.</p>
+            </section>           
         </section>
     <!-- FIN landing page -->
 
+    <?php endif ?>
+    
     <header id="content">
 
     <div class="desktop-only">
@@ -97,11 +110,10 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
                 <img class="logoDesktop" src='./img/logomsh.png'>
             </a>
         </div>
-        <!--fin div mainlogo-->
+        <!--fin div mainlogo-->  
 
-    
+        <div class="spacing"></div>
 
-        <div class="spacing"></div>     
 
     </div> <!--fin div desktop-->   
       <!---FIN VERSION DESKTOP -->       

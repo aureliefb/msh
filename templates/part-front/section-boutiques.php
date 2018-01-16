@@ -38,7 +38,7 @@
 
 	<!-- formulaire de contact -->
        <section class="section-contact">
-            <h2><a class="anchor-contact">Contactez-nous</h2>
+            <h2><a id="anchor-contact">Contactez-nous</h2>
                 <form>
                 	<div>
                         <label>Votre nom</label>
@@ -56,4 +56,4 @@
                     </div>
                 </form>
         </section>
-</section><a class="anchor-boutique">
+</section><a id="anchor-boutique">

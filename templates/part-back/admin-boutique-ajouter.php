@@ -1,14 +1,16 @@
-<h2>Ajouter une nouvelle boutique</h2>
-<form action="">
-    <label>Nom</label>
-        <input required type="text" name="nom_boutique">
-        <label>Adresse</label>
-        <textarea required name="adresse"></textarea>
-        <label>Horaires</label>
-        <textarea required name="horaires"></textarea>
-        <label>Telephone</label>
-        <input required type="tel" name="telephone">
-        <button type="submit" name="submit" value="valid">Ajouter</button>
-</form>
+<form method="POST" action="">
+	   <fieldset>
+	        <legend>
+	            <strong>Ajouter une nouvelle boutique</strong>
+	        </legend>
+	        <input required type="text" name="nom_boutique" class="select" placeholder="Nom de la boutique">
+	        <textarea required name="adresse" class="select" placeholder="Adresse"></textarea>
+	        <textarea required name="horaires" class="select" placeholder="Horaires"></textarea>
+	        <input required type="tel" name="telephone" class="select" placeholder="Numéro sans espace">
+	    
+	    <button type="submit" name="submit" value="valid">Ajouter</button>
+
+    <div class="response"></div>
+	</fieldset>
 
 <a src="<?php echo $this->generateUrl("accueil"); ?>" >Retour</a>

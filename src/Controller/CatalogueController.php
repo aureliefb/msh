@@ -37,6 +37,11 @@ class CatalogueController extends Controller{
      * @Route("/admin/ajouter-produit", name="ajouter-produit")
      */
     function createProduits (Request $request, Connection $connection, SessionInterface $objetSession){
+
+		$path     = $this->getParameter('kernel.project_dir');
+		$pathtoTemplate  = "$path/templates";
+		$pathtoBack      = "$pathtoTemplate/part-back";
+
         $checkLevel  = $objetSession->get("level");
         $checkPseudo = $objetSession->get("pseudo");
 
@@ -52,7 +57,8 @@ class CatalogueController extends Controller{
 				$description = $request->get("description","");
 				$categorieId = $request->get("categorie","");
 				$allergeneId = $request->get("allergene","");
-				$photo		 = $request->get("photo","");
+				//$photo		 = $request->get("photo","");
+				$photo		 = $this->getUploadedFile("photo", $request, $path);
 				// transforme les espaces en tiret et vire les mascules
 				$urlProduit  = str_replace(" ","-",$nomProduit);
 				$urlProduit  = strtolower($urlProduit);
@@ -87,9 +93,6 @@ class CatalogueController extends Controller{
 			}
             // return $this->render("admin/boutique-ajouter.html.twig", ["form" => $form->createView()]);
 			ob_start();
-			$path     = $this->getParameter('kernel.project_dir');
-			$pathtoTemplate  = "$path/templates";
-			$pathtoBack      = "$pathtoTemplate/part-back";
 			require_once("$pathtoTemplate/back/produit-ajouter.php");
 			$cache = ob_get_clean();
 			return new Response($cache);
@@ -221,8 +224,8 @@ class CatalogueController extends Controller{
 
 	function getUploadedFile ($nameInput, $request, $path)
     {
-        $imagePath = "";
-        $objetUploadedFile = $objetRequest->files->get($nameInput);
+        $cheminImage = "";
+        $objetUploadedFile = $request->files->get($nameInput);
         if ($objetUploadedFile)
         {
             // IL Y A UN FICHIER UPLOADE
@@ -246,19 +249,19 @@ class CatalogueController extends Controller{
                     // OK
                     // http://php.net/manual/fr/splfileinfo.getsize.php
                     $tailleFichier = $objetUploadedFile->getSize();
-                    if ($tailleFichier <= 200 * 1024) // 200 ko
+                    if ($tailleFichier <= 10 * 1024 * 1024) // 200 ko
                     {
                         // OK
                         // https://api.symfony.com/master/Symfony/Component/HttpFoundation/File/UploadedFile.html#method_getClientOriginalName
                         $nomOriginal = $objetUploadedFile->getClientOriginalName();
                         // SORTIR LE FICHIER DE SA QUARANTAINE
                         // ATTENTION: NE PAS OUBLIER DE CREER LE DOSSIER upload...
-                        $dossierCible = "$cheminSymfony/public/assets/upload/";
+                        $dossierCible = "$path/public/img/produits/";
                         // https://api.symfony.com/2.8/Symfony/Component/HttpFoundation/File/UploadedFile.html#method_move
                         $objetUploadedFile->move($dossierCible, $nomOriginal);
 
                         // POUR LE STOCKAGE DANS SQL
-                        $cheminImage = "assets/upload/$nomOriginal";
+                        $cheminImage = "$nomOriginal";
                     }
                     else
                     {

@@ -11,19 +11,16 @@ html {
 
 /* ------------------- GLOBAL ------------------- */
 body {
-    font-family: 'Barlow Condensed', sans-serif;
-    color: #5F677D;
-    font-size:1.4em;
-    margin: 0 auto;
-    text-align:center;
-     background-image: -webkit-linear-gradient(top left, #f5f7fa 0%, #c3cfe2 100%);
-     background-image: -moz-linear-gradient(top left, #f5f7fa 0%, #c3cfe2 100%);
-     background-image: -o-linear-gradient(top left, #f5f7fa 0%, #c3cfe2 100%);
-     background-image: linear-gradient(to bottom right, #f5f7fa 0%, #c3cfe2 100%);            
-    }
-	
-
-
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #5F677D;
+  font-size:1.4em;
+  margin: 0 auto;
+  text-align:center;
+  background-image: -webkit-linear-gradient(top left, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: -moz-linear-gradient(top left, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: -o-linear-gradient(top left, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: linear-gradient(to bottom right, #f5f7fa 0%, #c3cfe2 100%);            
+}
 
 main {
 	width: 50%;
@@ -35,13 +32,13 @@ main {
 /* ------------------- Admin Menu ------------------- */
 
 .admin-header{
-    background-color: #5f677d;
+  background-color: #5f677d;
 	background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
 }
 
-nav{
-    font-family: 'Barlow Condensed', sans-serif;
-    width: 50%;
+nav {
+  font-family: 'Barlow Condensed', sans-serif;
+  width: 50%;
 	background-color: rgba(255,255,255, 0.5);
 	margin: 0 auto;
 	text-align:center;
@@ -51,37 +48,30 @@ nav{
 }
 
 .fa {
-    
     margin-right: 10px;
 }
 
-.admin-user{
+.admin-user {
     color: #f26D31;
     text-transform: uppercase;
-   
 }
-
 
 /* ------------------- Debut Admin ------------------- */
 
-.logoadmin{
+.logoadmin {
 	width: 25%;
 }
 
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 	text-decoration: none;
-	text-align:left;
-	
-	
+	text-align:left;	
 }
 
 
 /* ------------------- Fin Admin ------------------- */
 
 /* formulaire */
-
-
 
 .formulaire-contact {
     width: 50%;
@@ -91,44 +81,39 @@ li{
     border-radius: 5px;
     background-color: silver;
     margin: 0 auto;
-}
-form{
-  	background: white;
+} 
+
+form {
+  background: white;
 	border: 0 none;
 	border-radius: 3px;
 	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
 	padding: 20px 30px;
 	box-sizing: border-box;
-	width: 60%;
+	width: 80%;
 	margin: 0 auto;
 	margin-bottom: 30px;
-	
 }
 
-
-label {
- 
-}
-input, textarea  {
-   padding: 15px;
+input,
+textarea  {
+  padding: 15px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
-	margin-bottom: 10px;
+	margin: 10px;
 	width: 100%;
 	box-sizing: border-box;
 	color: #2C3E50;
 	font-size: 13px;
 }
 
-input:focus, textarea:focus
-{
+input:focus,
+textarea:focus {
   border: 1px solid #4899BE;
 }
 
-
-
-button{
-    width: 100px;
+button {
+  width: 100px;
 	background: #5f677d;
 	font-weight: bold;
 	color: white;
@@ -138,63 +123,75 @@ button{
 	padding: 10px 5px;
 	margin: 10px 5px;
 }
-button:hover{
+
+button:hover {
     background: #f26D31;
 }
 
-
-
-th{
-    border:1px solid black;
-    padding:0.25em;
-     margin: 0 auto;
-     text-align: left;
-     width: 50%;
-     font-family: 'Barlow Condensed', sans-serif;
+select {
+    padding: 5px;
+    margin: 8px;
 }
 
+th {
+  border:1px solid black;
+  padding:0.25em;
+  margin: 0 auto;
+  text-align: left;
+  width: 50%;
+  font-family: 'Barlow Condensed', sans-serif;
+}
 
 .reponseOK {
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 10px;
-    background-color: #143A52;
-    color: silver;
-    padding: 3px;
-    border-radius: 5px;
-    text-align: center;
-    display: visible;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #143A52;
+  color: silver;
+  padding: 3px;
+  border-radius: 5px;
+  text-align: center;
+  display: visible;
 }
 
-
-
 .reponseKO {
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 10px;
-    background-color: #143A52;
-    color: #f53b3b;
-    padding: 3px;
-    border-radius: 5px;
-    text-align: center;
-    }
-    /* fin formulaire */
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #143A52;
+  color: #f53b3b;
+  padding: 3px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* fin formulaire */
+
+/*
+.checkbox-allergene {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}*/
+
+.checkbox-allergene {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.checkbox-allergene input {
+}
 
 
 /* ------------------- FOOTER ------------------- */
 footer {
-
 	margin: 40px auto;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-	padding: 15px;
-          
-
+	padding: 15px;   
 }
-
-
 
 footer p {
 	text-transform: uppercase;

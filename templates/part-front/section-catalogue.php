@@ -1,5 +1,5 @@
 <section class="page-catalogue">
-	<h2><a class="anchor-catalogue">Catalogue</a></h2>
+	<h2><a id="anchor-catalogue">Catalogue</a></h2>
 
 	<section class="contenu-catalogue">
 		<nav class="nav-catalogue">
