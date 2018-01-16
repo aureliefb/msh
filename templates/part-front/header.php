@@ -32,6 +32,8 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
         <!--VERSION DESKTOP -->
 
     <!-- LANDING PAGE -->
+    <?php if(isset($hasAnimation) && $hasAnimation) : ?>
+    
         <section id="animation">
             <div class="row">
                 <img src="<?php echo $urlAccueil ?>/img/landing-page/pierre.jpg" alt="Pierre Ragot boulanger Maison Saint-Honoré">
@@ -46,6 +48,8 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
         </section>
     <!-- FIN landing page -->
 
+    <?php endif ?>
+    
     <header id="content">
 
     <div class="desktop-only">
