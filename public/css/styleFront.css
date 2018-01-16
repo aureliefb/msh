@@ -984,7 +984,8 @@ figure.effect-winston{
  }
 
  figure.effect-winston:hover img{
- 	opacity:.5
+ 	opacity:.5;
+ 	
  }
  figure.effect-winston:hover h2{
  	-webkit-transform:translate3d(0,0,0);
