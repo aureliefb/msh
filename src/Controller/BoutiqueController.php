@@ -186,7 +186,7 @@ class BoutiqueController extends Controller{
     /**
      * @Route("admin/supprimer-boutique/{id}", name="supprimer-boutique")
      */
-    function deleteBoutique($id){
+    function deleteBoutique($id, SessionInterface $objetSession){
         $checkLevel  = $objetSession->get("level");
         $checkPseudo = $objetSession->get("pseudo");
 
