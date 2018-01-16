@@ -17,7 +17,7 @@ $(function(){
     });
 });
 
-
+/*
 
 // slideshow pour flux rss des actus
     var slideIndex = 1;
@@ -52,7 +52,7 @@ $(function(){
     }
 
 
-
+*/
 
 ///
 function CSVToArray( strData, strDelimiter ){
@@ -141,16 +141,3 @@ function CSVToArray( strData, strDelimiter ){
 
 
 
-
-$(document).ready(function(){
-    $("p").click(function(){
-        $(this).hide();
-    });
-    
-    var coords = $("#monc").attr("coords");
-    tabCoords = coords.split(",");
-    x = tabCoords[0];
-    y = tabCoords[1];
-    
-    alert("x=" + x + ",y=" + y);
-});

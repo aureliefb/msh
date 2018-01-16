@@ -221,7 +221,6 @@ class CatalogueController extends Controller{
 
 	function getUploadedFile ($nameInput, $request, $path)
     {
-		$path      = $this->getParameter('kernel.project_dir');
         $imagePath = "";
         $objetUploadedFile = $objetRequest->files->get($nameInput);
         if ($objetUploadedFile)
@@ -247,7 +246,7 @@ class CatalogueController extends Controller{
                     // OK
                     // http://php.net/manual/fr/splfileinfo.getsize.php
                     $tailleFichier = $objetUploadedFile->getSize();
-                    if ($tailleFichier <= 10 * 1024 * 1024) // 10 Mo
+                    if ($tailleFichier <= 200 * 1024) // 200 ko
                     {
                         // OK
                         // https://api.symfony.com/master/Symfony/Component/HttpFoundation/File/UploadedFile.html#method_getClientOriginalName

@@ -12,6 +12,5 @@
 
     <div class="response"></div>
 	</fieldset>
-</form>
 
-<a href="./boutiques">Retour</a>
+<a src="<?php echo $this->generateUrl("accueil"); ?>" >Retour</a>
