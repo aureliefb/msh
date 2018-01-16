@@ -1,5 +1,9 @@
 /*xtra resolutions only*/
  @media screen and (min-width: 1801px) {
+ 	main:first-child {
+ 		padding-top: 20px;
+ 	}
+
    .desktop-only {
         display:block !important;
     }
@@ -32,7 +36,10 @@
 
 /*medium+ screen sizes*/
 @media screen and (max-width: 1800px) and (min-width: 1401px) {  
-    .desktop-only {
+    main:first-child {
+ 		padding-top: 20px;
+ 	}
+ 	.desktop-only {
         display:block !important;
     }
         
@@ -65,7 +72,10 @@
 
 /*medium+ screen sizes*/
 @media screen and (max-width: 1400px) and (min-width: 991px) {  
-    .desktop-only {
+    main:first-child {
+ 		padding-top: 20px;
+ 	}
+ 	.desktop-only {
         display:block !important;
     }
         

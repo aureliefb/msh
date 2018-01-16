@@ -152,7 +152,10 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
 
     <div style="display: none;" id="pierrestory">
     	<h2>Pierre Ragot</h2>
-    	<article>
+    	<div class="poloroid">
+            <img src="<?php echo $urlAccueil ?>/img/accueil/pierre2.jpg">
+        </div>
+        <article>
     		<p>Pierre Ragot, parisien d'origine, suit un parcours d'artisan-boulanger auprès de maisons d'exception.</p>
 
     		<p>Il devient gérant du Fournil des Auffes avant de fonder sa propre marque :  la maison Saint-Honoré par Pierre Ragot. Il ouvre une première adresse dans le quartier d'Endoume, puis une seconde sur l'avenue du Prado à deux pas de la place Castellane.
@@ -172,6 +175,9 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
 
     <div style="display: none;" id="savoirfairefancy">
     	<h2>Savoir-faire</h2>
+        <div class="poloroid">
+            <img src="<?php echo $urlAccueil ?>/img/Pierrenb.jpg">
+        </div>
         <section>
             <article>
                 <h3>La passion du métier</h3>

@@ -703,17 +703,18 @@ form button {
 }
 
 .poloroid {
-	width: 15%;
-	margin-left: 30px;
+	margin-left: 30px;   
 }
 
 .poloroid img {
+	width: 40%;
 	border: 10px solid #fff;
 	border-bottom: 45px solid #fff;
 	-webkit-box-shadow: 3px 3px 3px #777;
 	-moz-box-shadow: 3px 3px 3px #777;
-	box-shadow: 3px 3px 3px #777;
+	 box-shadow: 3px 3px 3px #777;
 }
+
 
 #pierrestory section,
 #savoirfairefancy section {
