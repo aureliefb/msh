@@ -8,7 +8,7 @@
         <textarea required name="horaires"></textarea>
         <label>Telephone</label>
         <input required type="tel" name="telephone">
-        <button type="submit" name="submit" value="validB">Ajouter</button>
+        <button type="submit" name="submit" value="valid">Ajouter</button>
 </form>
 
 <a href="./boutiques">Retour</a>
