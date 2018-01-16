@@ -5,14 +5,15 @@
                 <nav class="desktop-only">
                     <ul>
                         <li><a href="<?php echo $urlAccueil ?>">Accueil</a></li>
-                        <li><a href="<?php echo $urlActus ?>">Actualités</a></li>
-                        <li><a href="<?php echo $urlCatalogue ?>">Catalogue</a></li>
-                        <li><a href="<?php echo $urlPierre ?>">Pierre Ragot</a></li>
-                        <li><a href="<?php echo $urlSavoirFaire ?>">Savoir-faire</a></li>
-                        <li><a href="<?php echo $urlBoutiques ?>">Boutiques / Contact</a></li>
-                        <li><a href="<?php echo $urlMentionsLegales ?>">Mentions légales</a></li>
+                        <li><a href="<?php echo $urlActus ?>#anchor-actus">Actualités</a></li>
+                        <li><a href="<?php echo $urlCatalogue ?>#anchor-catalogue">Catalogue</a></li>
+                        <li><a href="<?php echo $urlPierre ?>#anchor-pierre">Pierre Ragot</a></li>
+                        <li><a href="<?php echo $urlSavoirFaire ?>#anchor-savoirfaire">Savoir-faire</a></li>
+                        <li><a href="<?php echo $urlBoutiques ?>#anchor-boutique">Boutiques </a> / <a href="<?php echo $urlBoutiques ?>#anchor-contact">Contact</a></li>
+                        <li><a href="<?php echo $urlMentionsLegales ?>#anchor-mentionslegales">Mentions légales</a></li>
                     </ul>
                 </nav>
+
 
                 <!-- formulaire de contact -->
                 <div class="subscribe-newsletter">

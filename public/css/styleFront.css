@@ -21,25 +21,26 @@ body {
 	
 }
 
+h1, h2, h3 {
+	font-family: 'Cookie', cursive;
+}
+
 h1 {
 	font-size: 2.1em;
 	color: #fff9f7;
 	font-weight: normal;
 	margin: 20px;
-	font-family: 'Cookie', cursive;
 }
 
 h2 {
-	font-size: 1.8em;
-	color: #fff9f7;
+	font-size: 2.9em;
+	color: #fff;
 	font-weight: normal;
 	margin: 20px;
-	font-family: 'Cookie', cursive;
 }
 
 h3 {
-	font-size: 1.5em;
-	font-family: 'Fredericka the Great', cursive;
+	font-size: 1.8em;
 }
 
 p {
@@ -53,6 +54,15 @@ a {
 
 li {
 	list-style-type: none;
+}
+
+#anchor-boutique h2,
+#anchor-catalogue h2,
+#anchor-contact h2,
+#anchor-savoirfaire h2,
+#anchor-pierre h2,
+#anchor-mentionslegales h2, {
+	color: #fff;
 }
 
 .pagination ul {
@@ -682,55 +692,10 @@ form button {
 }
 
 
-/* -------------------------- Fancy-box Pierre -------------------------- */
-#pierrestory {
-	width:40%;
-	border-radius: 5px;
-	margin: 0 auto;
-	background-color: #5f677d;
-	background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
-}
-
-.poloroid {
-	width: 15%;
-	margin-left: 30px;
-}
-
-.poloroid img {
-	border: 10px solid #fff;
-	border-bottom: 45px solid #fff;
-	-webkit-box-shadow: 3px 3px 3px #777;
-	-moz-box-shadow: 3px 3px 3px #777;
-	box-shadow: 3px 3px 3px #777;
-}
-
-#pierrestory section {
-	display:flex;
-	flex-direction:row;
-	color: white;
-}
-
-.top {
-	justify-content:space-around;
-}
-
-#pierrestory p {
-	font-size: 1.5em;
-	width: 30%;
-	margin-left: 22px;
-}
-
-#left {
-	transform: rotate(4deg);
-}
-
-#right {
-	transform: rotate(-4deg);
-}
-
-/* -------------------------- Fancy-box savoirefaire-------------------------- */
+/* -------------------------- Fancy-box Pierre et Savoir Faire -------------------------- */
+#pierrestory,
 #savoirfairefancy {
-	width:40%;
+	width: 40%;
 	border-radius: 5px;
 	margin: 0 auto;
 	background-color: #5f677d;
@@ -750,9 +715,12 @@ form button {
 	box-shadow: 3px 3px 3px #777;
 }
 
+#pierrestory section,
 #savoirfairefancy section {
 	display:flex;
-	flex-direction:row;
+	flex-direction:column;
+	margin: 0 auto;
+	text-align: center;
 	color: white;
 }
 
@@ -760,10 +728,11 @@ form button {
 	justify-content:space-around;
 }
 
+#pierrestory p,
 #savoirfairefancy p {
-	font-size: 1.5em;
-	width: 30%;
+	font-size: 1.2em;
 	margin-left: 22px;
+
 }
 
 #left {
@@ -773,6 +742,7 @@ form button {
 #right {
 	transform: rotate(-4deg);
 }
+
 
 /* -------------------------- CATALOGUE -------------------------- */
 .page-catalogue {
@@ -781,7 +751,6 @@ form button {
 
 .page-catalogue h2 {
 	font-family: 'Cookie', cursive;
-
 }
 
 .contenu-catalogue {
@@ -1059,8 +1028,6 @@ figure.effect-winston{
 .mentions-legales h2,
 .mentions-legales h3 {
 	padding: 10px;
-	font-family: 'Fredericka the Great', cursive;
-	color: black;
 }
 
 .mentions-legales article {

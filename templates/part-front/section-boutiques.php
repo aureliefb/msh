@@ -1,5 +1,5 @@
 <section class="section-boutiques">
-	<h2>Nos boutiques</h2>
+	<h2><a id="anchor-boutique">Nos boutiques</a></h2>
 	<section class="adress-map">
 		<div class="adresses">
 			<ul>
@@ -54,4 +54,4 @@
                     </div>
                 </form>
         </section>
-</section><a id="anchor-boutique">
+</section>
