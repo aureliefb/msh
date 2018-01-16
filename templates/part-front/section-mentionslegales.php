@@ -1,6 +1,6 @@
 <section class="mentions-legales">
 	<article>
-		<h2>Mentions légales</h2>
+		<h2><a id="anchor-mentionslegales">Mentions légales</a></h2>
 
 		<p>Ce site web est la propriété de <strong>Maison Saint-Honoré par Pierre Ragot</strong>.</p>
 

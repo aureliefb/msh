@@ -72,11 +72,11 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
                     #$VERSION:2.3
                     #$AUTHOR:Etudiant -->
                     <area shape="rect" id="pierre" coords="76,318,549,731" data-fancybox data-src="#pierrestory" href="" />
-                    <area shape="rect" id="boutiques" coords="991,111,1369,702" href="./boutiques#anchor-boutique"/>
+                    <area shape="rect" id="boutiques" coords="991,111,1369,702" href="<?php echo $urlBoutiques ?>#anchor-boutique"/>
                     <area shape="rect" id="philo" coords="556,104,977,638" data-fancybox data-src="#savoirfairefancy" href="" />
-                    <area shape="rect" id="contact" coords="1379,122,1798,813" href="./boutiques#anchor-contact" />
-                    <area shape="rect" id="catalogue" coords="95,736,1373,1100" href="./catalogue#anchor-catalogue" />
-                    <area shape="rect" id="actu" coords="0,15,540,315" href="./actus#anchor-actus"/>
+                    <area shape="rect" id="contact" coords="1379,122,1798,813" href="<?php echo $urlBoutiques ?>#anchor-contact" />
+                    <area shape="rect" id="catalogue" coords="95,736,1373,1100" href="<?php echo $urlCatalogue ?>#anchor-catalogue" />
+                    <area shape="rect" id="actu" coords="0,15,540,315" href="<?php echo $urlActus ?>#anchor-actus"/>
                 </map>
         
                 <!--Text foor the navigation-->
@@ -146,9 +146,9 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
             
             <div class="spacing-mobile"></div>        
        <!---FIN VERSION MOBILE -->  
-        
     </header>
 
+    <div class="spacing"></div>
 
     <div style="display: none;" id="pierrestory">
     	<h2>Pierre Ragot</h2>
@@ -179,9 +179,25 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
 
     <div style="display: none;" id="savoirfairefancy">
     	<h2>Savoir Faire</h2>
-    	<div>
-    	<!-- A COMPLETER -->
-    	</div>
+        <section>
+            <article>
+                <div>
+                    <h3>La passion du métier</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem pariatur illum aspernatur nostrum hic dolor omnis quis, dolorum perferendis obcaecati explicabo minus error sint, ducimus.</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>Des matières premières de premier choix ...</h3>
+                <p><span>...pour des produits de qualité ! </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quos, accusamus veritatis iure facere numquam consequatur quasi ipsa perspiciatis.</p>
+                <p>Découvrez toute notre gamme de produits <a href="<?php echo $urlCatalogue ?>"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></p>
+            </article>
+
+            <article>
+                <h3>On parle de nous</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quisquam neque eaque delectus, in placeat, voluptatibus dolorem dicta consequuntur, unde qui quod voluptate ullam eveniet similique.</p>
+            </article>
+        </section>
     </div>
 
     <main>

@@ -4,7 +4,7 @@
 ?>
 
 <section class="section-savoirfaire">
-	<h2>Notre savoir-faire</h2>
+	<h2><a id="anchor-savoirfaire">Notre savoir-faire</a></h2>
 	<section>
 		<article>
 			<div>
@@ -21,7 +21,14 @@
 
 		<article>
 			<h3>On parle de nous</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quisquam neque eaque delectus, in placeat, voluptatibus dolorem dicta consequuntur, unde qui quod voluptate ullam eveniet similique. Corporis nemo et deleniti, quas, fugiat quis reiciendis amet eveniet tempora, nesciunt facere minima!</p>
+			<p>Le bouche à oreilles et les articles relayés dans la presse et sur les blogs font que les marseillais se bousculent aux portes des boutiques...</p>
+
+			<p>Découvrez tout notre savoir-faire et la philosophie de notre maison ...
+				<a href="<?php echo $urlSavoirFaire ?>">
+					<i class="fa fa-plus-circle" aria-hidden="true"></i>
+				</a>
+			</p>
 		</article>
+
 	</section>
 </section>
