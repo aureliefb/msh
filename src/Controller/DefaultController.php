@@ -14,9 +14,7 @@ class DefaultController extends Controller{
       */
     public function showIndex(Request $objetRequest, Connection $objetConnection){
         ob_start();
-        
         $hasAnimation = true;
-        
         $path           = $this->getParameter("kernel.project_dir");
         $pathtoTemplate = "$path/templates";
         $pathtoFront    = "$pathtoTemplate/part-front";
