@@ -74,7 +74,7 @@ class DefaultController extends Controller{
         return new Response($cache);
    }
 
-/**
+	/**
       * @Route("ajax", name="ajax")
       */
       public function ajax(Request $objetRequest, Connection $objetConnection) {
