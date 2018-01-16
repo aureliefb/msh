@@ -1,54 +1,70 @@
- $('form').on('submit',function(e)
+$(function(){
+
+//light green en touche   
+   
+$('.select').on('focus', function(e) {
+   $(this).css('background-color', 'lightgreen');
+       
+   });
+
+   $('.select').on('blur', function(e) {
+      $(this).css('background-color', 'white');
+       
+   });
+   
+//messages d'erreurs   
+
+$('form').on('submit',function(e)
    {
-      //e.preventDefault();
-      var email = $('input[name=email]').val();
-      console.log(email);
+   //e.preventDefault();
+   var email = $('input[name=email]').val();
+   console.log(email);
       if (email =="")
       {
-         e.preventDefault();
-         $('.select').css('background-color', '#FF6666');
-        $('.response').text("*missing field").css("color", 'red');
+      e.preventDefault();
+      $('.select').css('background-color', '#FF6666');
+      $('.response').text("*informations manquantes").css("color", 'red');
       }
    });
-     $('form').on('submit',function(e)
+$('form').on('submit',function(e)
    {
-      //e.preventDefault();
+//e.preventDefault();
       var name = $('input[name=name]').val();
       console.log(name);
       if (name =="")
       {
-         e.preventDefault();
-         $('.select').css('background-color', '#FF6666');
-         $('.response').text("*missing field").css("color", 'red');
+      e.preventDefault();
+      $('.select').css('background-color', '#FF6666');
+      $('.response').text("*informations manquantes").css("color", 'red');
       }
    });
-     $('form').on('submit',function(e)
+$('form').on('submit',function(e)
    {
-      //e.preventDefault();
-      var text = $('input[name=text]').val();
-      console.log(text);
+//e.preventDefault();
+   var text = $('input[name=text]').val();
+   console.log(text);
       if (text =="")
       {
-         e.preventDefault();
-         $('.select').css('background-color', '#FF6666');
-         $('.response').text("*missing field").css("color", 'red');
+      e.preventDefault();
+      $('.select').css('background-color', '#FF6666');
+      $('.response').text("*informations manquantes").css("color", 'red');
       }
    });
-
-   $('#inscription').on('submit',function(e)
+$('#inscription').on('submit',function(e)
    {
-      //password validation test
-      var password = $('input[name=password]').val();
-      var passwordCheck = $('input[name=passwordcheck]').val();
-      
-         if (password != passwordCheck)
-               {
-                  e.preventDefault();
-                  $('.select').css('background-color', '#FF6666');
-                  $('.response').text("*Password Not Identical").css("color", 'red');
-               }
-                     
-});
+//password validation test
+   var password = $('input[name=password]').val();
+   var passwordCheck = $('input[name=passwordcheck]').val();
+   if (password != passwordCheck)
+      {
+      e.preventDefault();
+      $('.select').css('background-color', '#FF6666');
+      $('.response').text("*Password pas correct").css("color", 'red');
+      }
+   });
    
+});   
+
+
    
 

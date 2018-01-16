@@ -45,6 +45,7 @@
         <script type="text/javascript" src="<?php echo $urlAccueil ?>/js/intro.js"></script>
         <script type="text/javascript" src="<?php echo $urlAccueil ?>/js/thomas/javascript.js"></script>
         <script type="text/javascript" src="<?php echo $urlAccueil ?>/js/script.js"></script>
+        <script type="text/javascript" src="<?php echo $urlAccueil ?>/js/formValidation.js"></script>
         <script>
 			// JE PEUX ECRIRE DU CODE JS
 			// MAIS JE PEUX AUSSI ECRIRE DU CODE PHP

@@ -2,11 +2,12 @@
             <section>
                 <h3>SECTION LOGIN</h3>
                 <form method="POST" action="">
-                    <input type="text" name="pseudo" required placeholder="VOTRE IDENTIFIANT">
-                    <input type="password" name="password" required placeholder="VOTRE PASSWORD">
+                    <input type="text" name="pseudo" class="select" required placeholder="VOTRE IDENTIFIANT">
+                    <input type="password" name="password" class="select" required placeholder="VOTRE PASSWORD">
                     <button type="submit">LOGIN</button>
                     <input type="hidden" name="codebarre" value="login">
                     <div class="response">
+                     
 <?php
 
 if ($objetRequest->get("codebarre", "") == "login")

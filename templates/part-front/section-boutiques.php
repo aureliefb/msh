@@ -42,14 +42,15 @@
                 <form>
                 	<div>
                         <label>Votre nom</label>
-                        <input type="text" name="nom">
+                        <input type="text" name="nom" class="select">
                         <label>Votre e-mail</label>
-                        <input type="email" name="email">
+                        <input type="email" name="email" class="select">
                     </div>
                     <div>
                         <label>Votre message</label>
                         <textarea rows="10" cols="50"></textarea>
                         <button type="submit" name"submit" value="validC">Envoyer</button>
+                        <div class="response"></<div>
                     </div>
                 </form>
         </section>
