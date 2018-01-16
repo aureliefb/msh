@@ -1,4 +1,4 @@
-<form method="POST" action="">
+<form method="POST" action="" enctype="multipart/form-data">
     <fieldset>
         <legend>
             <strong>Ajouter un nouveau produit</strong>
@@ -24,7 +24,8 @@
             ?>
 
 
-        <input type="text" name="photo" class="select" placeholder="Photo du produit">
+        <input type="file" name="photo" class="select" placeholder="Photo du produit">
+         
         <button type="submit" name="submit" value="valid">Ajouter</button>
 
         <div class="response"></div>
