@@ -1,4 +1,4 @@
-<form method="POST">
+<form method="POST" action="">
     <fieldset>
         <legend>
             <strong>Ajouter un nouveau produit</strong>
@@ -13,12 +13,20 @@
         </select>
 
         <textarea name="description" cols="40" rows="10" class="select" placeholder="Description du produit"></textarea>
-        <?php
-        foreach ($allergenes as $a){
-            echo '<input type="checkbox" value="'.$a->getId().'" name="allergene[]"><img class="allergene"  src="../img/icones-allergenes/'.$a->getIcone().'" alt="'.$a->getDescription().'">';
-        }
-        ?>
+        
+        <legend>Choix des allergènes</legend>
+            <?php
+            foreach ($allergenes as $a){
+                echo '<div class="checkbox-allergene">
+                <input type="checkbox" value="'.$a->getId().'" name="allergene[]">
+                        <img class="allergene"  src="../img/icones-allergenes/'.$a->getIcone().'" alt="'.$a->getDescription().'">        </div>';
+            }
+            ?>
+
+
         <input type="text" name="photo" class="select" placeholder="Photo du produit">
         <button type="submit" name="submit" value="valid">Ajouter</button>
+
+        <div class="response"></div>
     </fieldset>
 </form>

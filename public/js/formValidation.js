@@ -26,18 +26,18 @@ $('form').on('submit',function(e)
 
 
 
-// $('form').on('submit',function(e)
-//    {
-// //e.preventDefault();
-//       var name = $('input[name]').val();
-//       console.log(name);
-//       if (name =="")
-//       {
-//       e.preventDefault();
-//       $('.select').css('background-color', '#FF6666');
-//       $('.response').text("*informations manquantes").css("color", 'red');
-//       }
-//    });
+$('form').on('submit',function(e)
+   {
+//e.preventDefault();
+      var name = $('input[name=nom_boutique]').val();
+      console.log(name);
+      if (name =="")
+      {
+      e.preventDefault();
+      $('.select').css('background-color', '#FF6666');
+      $('.response').text("*informations manquantes").css("color", 'red');
+      }
+   });
 
 
 
