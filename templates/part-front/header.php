@@ -152,39 +152,30 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
 
     <div style="display: none;" id="pierrestory">
     	<h2>Pierre Ragot</h2>
-    	<div>
+    	<article>
     		<p>Pierre Ragot, parisien d'origine, suit un parcours d'artisan-boulanger auprès de maisons d'exception.</p>
 
-    		<p>En 0000, il devient gérant du Fournil des Auffes avant de fonder sa propre marque :  la maison Saint-Honoré par Pierre Ragot. Il ouvre une première adresse dans le quartier d'Endoume en 0000, puis une seconde sur l'avenue du Prado à deux pas de la place Castellane.
-    			<a href="<?php echo $urlBoutiques ?>.php">
+    		<p>Il devient gérant du Fournil des Auffes avant de fonder sa propre marque :  la maison Saint-Honoré par Pierre Ragot. Il ouvre une première adresse dans le quartier d'Endoume, puis une seconde sur l'avenue du Prado à deux pas de la place Castellane.
+    			<a href="<?php echo $urlBoutiques ?>">
     				<i class="fa fa-plus-circle" aria-hidden="true"></i>
     			</a>
     		</p>
 
     		<p>Sa passion du métier, son amour pour des matières premières de premier choix, son goût pour les expérimentations culinaires font la renommée de la maison Saint-Honoré. Les spécialités de la maison : le Saint-Honoré, la focaccia au charbon végétal, les bloomers, etc.
-    		<a href="<?php echo $urlCatalogue ?>.php">
+    		<a href="<?php echo $urlCatalogue ?>">
     				<i class="fa fa-plus-circle" aria-hidden="true"></i>
     			</a>
     		</p>
 
-    		<p>Le bouche à oreilles et les articles relayés dans la presse et sur les blogs font que les marseillais se bousculent aux portes des boutiques...</p>
-
-    		<p>Découvrez tout notre savoir-faire et la philosophie de notre maison ...
-    			<a href="<?php echo $urlSavoirFaire ?>.php">
-    				<i class="fa fa-plus-circle" aria-hidden="true"></i>
-    			</a>
-    		</p>
-    	</div>
+    	</article>
     </div>
 
     <div style="display: none;" id="savoirfairefancy">
-    	<h2>Savoir Faire</h2>
+    	<h2>Savoir-faire</h2>
         <section>
             <article>
-                <div>
-                    <h3>La passion du métier</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem pariatur illum aspernatur nostrum hic dolor omnis quis, dolorum perferendis obcaecati explicabo minus error sint, ducimus.</p>
-                </div>
+                <h3>La passion du métier</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem pariatur illum aspernatur nostrum hic dolor omnis quis, dolorum perferendis obcaecati explicabo minus error sint, ducimus.</p>
             </article>
 
             <article>
