@@ -17,7 +17,7 @@ $(function(){
     });
 });
 
-/*
+
 
 // slideshow pour flux rss des actus
     var slideIndex = 1;
@@ -52,7 +52,7 @@ $(function(){
     }
 
 
-*/
+
 
 ///
 function CSVToArray( strData, strDelimiter ){

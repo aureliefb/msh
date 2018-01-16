@@ -466,7 +466,8 @@ li {
 
 /* section-accueil texte d'introduction */
 .welcome, 
-.actus,  
+.actus, 
+.main-accueil,
 .section-pierre, 
 .page-catalogue,
 .section-savoirfaire, 
@@ -483,11 +484,12 @@ li {
 }
 
 /* ------------------------ RSS fil d'actualités ------------------------ */
+
 .actus {
 	display: flex;
 	flex-direction: column;
 	margin-top: 220px;
-
+	margin: 0 auto;
 }
 
 .actus h2 {

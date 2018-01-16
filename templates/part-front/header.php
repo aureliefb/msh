@@ -97,11 +97,9 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
                 <img class="logoDesktop" src='./img/logomsh.png'>
             </a>
         </div>
-        <!--fin div mainlogo-->
+        <!--fin div mainlogo-->  
 
-    
-
-        <div class="spacing"></div>     
+        <div class="spacing"></div>
 
     </div> <!--fin div desktop-->   
       <!---FIN VERSION DESKTOP -->       
