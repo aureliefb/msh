@@ -6,8 +6,10 @@
         <link rel="stylesheet" href="<?php echo $this->generateUrl("accueil"); ?>css/styleBack.css" />
     </head>
     <body>
-            <div class="page">
-        <header>
-          <img class="logoadmin" src="<?php echo $this->generateUrl("accueil"); ?>img/logolighthoriz.png">
-        </header>
-        <main>
+       
+                <div class="page">
+            <header>
+              <img class="logoadmin" src="<?php echo $this->generateUrl("accueil"); ?>img/logolighthoriz.png">
+            </header>
+            <main>
+               
