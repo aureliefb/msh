@@ -32,7 +32,7 @@ $listProduits = $objetProduitRepository->findBy([ "categorie" => $objetCategorie
 		    if ($photo) {
         	$htmlImage = 
 <<<CODEHTML
-    <img src="$urlAccueil/img/produits/$photo" title="$photo">
+    <img src="{$urlAccueil}img/produits/$photo" title="$photo">
 CODEHTML;
     }
     

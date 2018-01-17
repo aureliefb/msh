@@ -1,14 +1,15 @@
-<h2>ADMIN CATALOGUE</h2>
+<h2>Gestion du catalogue</h2>
 
-<section class="page-catalogue">
-    <p><a href="./ajouter-produit">Ajouter un nouveau produit</a></p>
-
-    <p>Liste des Produits du Catalogue :</p>
-<table>
+<section class="admin-catalogue">
+    <p>
+        <a class="add-produit" href="./ajouter-produit"> + Ajouter un nouveau produit</a>
+    </p>
+    
+    <table>
+                    <tbody>
 <?php
 $nbProduits = $repo->compterLigne("produit", $connection);
 echo "Il y a $nbProduits produits dans le catalogue";
-
     foreach ($listProduits as $p){
         $id          = $p->getId();
         $nomProduit  = $p->getNomProduit();
@@ -16,14 +17,21 @@ echo "Il y a $nbProduits produits dans le catalogue";
         $urlProduit  = $p->getUrlProduit();
         $urlProduit  = $this->generateUrl("admin-catalogue", [ "nomCategorie" => $categorie, "nomProduit" => $urlProduit ]);
 
-        echo '
-        <thead>
-            <tr>
-                <th>
-                <strong>'.$nomProduit.'</strong> (<a href="./modifier-produit/'.$id.'">Editer ?</a>) (<a href="./supprimer-produit/'.$id.'">Supprimer ?</a>)
-                </th>
-            </tr>
-        </thead>';
-    }
-    ?>
-</table>
+            echo '
+                <tr>
+                    <td>
+                        <strong>'.$nomProduit.'</strong>
+                    </td>
+                    <td>
+                        <a href="./modifier-produit/'.$id.'">Modifier ?</a>
+                    </td>
+                    <td>
+                        <a href="./supprimer-produit/'.$id.'">Supprimer ?</a>
+                    </td>
+                </tr>';
+        }
+        ?>
+        </tbody>
+    </table>
+    <a class= "admin-back-button" href ="<?php echo $urlAdmin?>">Retour page d'accueil ADMIN</a>
+</section>

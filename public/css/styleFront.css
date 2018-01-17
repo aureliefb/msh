@@ -650,7 +650,8 @@ footer a:hover {
 }
 
 
-.reseaux-sociaux {
+.reseaux-sociaux,
+.subscribe-newsletter {
 	display: flex;
 	flex-direction: column;
 }
@@ -664,21 +665,15 @@ footer a:hover {
 	font-size: 0.7em;
 }
 
-.subscribe-newsletter {
-	display: flex;
-	flex-direction: column;
-}
-
 .subscribe-newsletter form {
 	width: 40vw;
 	display: flex;
 	flex-direction: column;
 }
 
-
 .subscribe-newsletter form input {
 	width: 70%;
-	padding: 5px;
+	padding: 10px;
 	margin: 0 auto;
 }
 
@@ -1001,6 +996,18 @@ figure.effect-winston{
 
 .adresses {
 	text-align: left;
+}
+
+.adresses ul {
+	border: 2px lightgrey solid;
+	border-radius: 10px;
+	padding: 30px 10px;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.adresses li {
+	
 }
 
 .section-contact form {

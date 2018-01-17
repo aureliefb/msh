@@ -17,7 +17,8 @@ $('.select').on('focus', function(e) {
 
 
 
-// messages d'erreurs   
+// messages d'erreurs et de succès
+
 $('form').on('submit',function(e) {
    e.preventDefault();
    var email = $('input[name=nom_produit]').val();

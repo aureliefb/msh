@@ -15,10 +15,8 @@ class ProduitRepository extends ServiceEntityRepository
     // compte compte le nombre de produits dans la BDD
     public function compterLigne ($nomTable, $connection) {
         $requeteSQL = "SELECT COUNT(*) AS nbProduits FROM $nomTable";
-
         $objetStatement = $connection->prepare($requeteSQL, []);
         $objetStatement->execute();
-
         $nbProduits = 0;
         foreach($objetStatement as $tabLigne) {
         // VA ME FOURNIR LA VALEUR DANS LA VARIABLE $nbLigne
@@ -27,6 +25,7 @@ class ProduitRepository extends ServiceEntityRepository
         }
     return $nbProduits;
     }
+
 
     /*
     public function findBySomething($value)
