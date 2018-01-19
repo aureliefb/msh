@@ -7,8 +7,7 @@
 	        <textarea name="adresse" class="select" placeholder="Adresse"></textarea>
 	        <textarea name="horaires" class="select" placeholder="Horaires"></textarea>
 	        <input  type="tel" name="telephone" class="select" placeholder="Numéro sans espace">
-
-	    <button type="submit" name="submit" value="valid">Ajouter</button>
+	    	<button type="submit" name="submit" value="valid">Ajouter</button>
 
     	<div class="response"></div>
 	</fieldset>

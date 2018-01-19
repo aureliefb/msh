@@ -12,11 +12,10 @@ $(function(){
 
         // ON VEUT ENVOYER UNE REQUETE AJAX POUR REMPLACER LE CONTENU .grid
         // AVEC JQUERY C'EST ASSEZ SIMPLE
-        urlAjax = "/ajax"; // A AMELIORER POUR LE RENDRE DYNAMIQUE
+        urlAjax = "ajax"; // A AMELIORER POUR LE RENDRE DYNAMIQUE
         $(".grid").load(urlAjax+ "?ajaxCategorie=" + ajaxCategorie);
     });
 });
-
 
 
 // slideshow pour flux rss des actus
@@ -37,21 +36,19 @@ $(function(){
       var dots = document.getElementsByClassName("dot");
       if (n > slides.length) {
         slideIndex = 1
-        }    
+        }
       if (n < 1) {
         slideIndex = slides.length
         }
       for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
+          slides[i].style.display = "none";
       }
       for (i = 0; i < dots.length; i++) {
           dots[i].className = dots[i].className.replace(" active", "");
       }
-      slides[slideIndex-1].style.display = "block";  
+      slides[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " active";
     }
-
-
 
 
 ///
@@ -74,7 +71,6 @@ function CSVToArray( strData, strDelimiter ){
             ),
             "gi"
             );
-
 
         // Create an array to hold our data. Give the array
         // a default empty first row.
@@ -137,7 +133,3 @@ function CSVToArray( strData, strDelimiter ){
         // Return the parsed data.
         return( arrData );
     }
-
-
-
-
