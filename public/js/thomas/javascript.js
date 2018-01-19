@@ -366,7 +366,7 @@ $(function(){
 	};
 
 	Clock.prototype.drawHourHand = function() {
-		var hours = (Date.now() / 3600000) % 12;
+		var hours = ((Date.now() / 3600000) + 1) % 12;
 		var handAngle = (Math.PI * 2) * (-hours / 12);
 
 		this.drawHand(handAngle, this.hourHandOptions);

@@ -62,21 +62,4 @@
 		<h3>Art.5 - Contact</h3>
 		<p>Pour tout signalement de contenus ou d'activités illicites, les utilisateurs peuvent contacter les directeurs de publication à l'adresse suivante : <span class="italic">m.sthonore(at)gmail.com</span>, ou par courrier recommandé avec accusé de réception adressé aux directeurs de publication aux coordonnées précisées dans les présentes mentions légales.</p>
 	</article>
-
-
-
-
-	<article>
-		<h3>A GARDER ??????</h3>
-
-		<p>Toute représentation totale ou partielle de ce site par quelque procédé que ce soit, sans l'autorisation expresse de l'exploitant du site Internet est interdite et constituerait une contrefaçon sanctionnée par les article L 335-2 et suivants du Code de la propriété intellectuelle. </p>
-
-		<p>Il en est de même des éventuelles bases de données figurant sur le site Internet qui sont protégées par les dispositions de la loi du 11 juillet 1998 portant transposition dans le Code de la propriété intellectuelle (CPI) de la directive européenne du 11 mars 1996 relative à la protection juridique des bases de données. </p>
-
-		<p>Les marques de l'exploitant du site Internet et de ses partenaires, ainsi que les logos figurant sur le site sont des marques (semi-figuratives ou non) déposées. </p>
-
-		<p>Les liens hypertextes mis en place dans le cadre du site Internet en direction d'autres ressources présentes sur le réseau de l'Internet, et notamment vers ses partenaires ont fait l'objet d'une autorisation préalable expresse et écrite. </p>
-
-		<p>Les utilisateurs visiteurs du site Internet ne peuvent mettre en place un hyperlien en direction de ces sites sans l'autorisation expresse et préalable de l'exploitant du site Internet.</p>
-	</article>
 </section>

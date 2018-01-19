@@ -16,7 +16,6 @@
 
 
 		<div class="grid">
-			
 		<?php
 
 		$objetProduitRepository = $this->getDoctrine()->getRepository(App\Entity\Produit::class);
@@ -40,15 +39,12 @@
 
 	    $htmlImage = "";
 		    if ($photo) {
-        	$htmlImage = 
-<<<CODEHTML
-    <img src="$urlAccueil/img/produits/$photo" title="$photo">
-CODEHTML;
+        	$htmlImage = '<img src="'.$urlAccueil.'img/produits/'.$photo.'" title="'.$photo.'">';
     }
-    
+
     // CREER L'URL POUR LA ROUTE DYNAMIQUE (AVEC PARAMETRE)
      $urlProduit  = $this->generateUrl("catalogue", [ "nomCategorie" => $categorie, "nomProduit" => $urlProduit ]);
-    
+
 			echo
 <<<CODEHTML
 <figure class="effect-winston">
@@ -70,7 +66,7 @@ CODEHTML;
 
 		</div>
 
-<!-- 
+<!--
 /* TEST affichage icones allergènes  */
 
 $listeAllergene = "";
@@ -86,11 +82,11 @@ CODESQL;
 // ligne ON : l'idAllergènes de la table ProduitsAllergènes doit être égal à l'idAllergènes de la table Allergènes
 
     $tabResult = connexionBDD("$requeteSQL2", []);
-    
+
     foreach($tabResult as $tabLigne2) {
         array_map("htmlentities", $tabLigne2);
         extract($tabLigne2);
-        
+
         $iconeAllerg = "";
         if ($icone) {
         $iconeAllerg =
@@ -98,7 +94,7 @@ CODESQL;
     <img src="$icone" title="$icone">
 CODEHTML;
     }
-        
+
         $listeAllergene .= "$icone ($allergene)";
     }
 

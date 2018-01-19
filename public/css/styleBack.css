@@ -25,30 +25,43 @@ body {
 main {
 	width: 50%;
 	margin: 0 auto;
-	text-align:center;
+	text-align: center;
 	border-radius: 4px;
 }
 
 /* ------------------- Admin Menu ------------------- */
 
-.admin-header{
+.admin-header {
   background-color: #5f677d;
 	background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
 }
 
-nav {
+.menu-admin {
   font-family: 'Barlow Condensed', sans-serif;
   width: 50%;
 	background-color: rgba(255,255,255, 0.5);
 	margin: 0 auto;
 	text-align:center;
 	border-radius: 4px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 10px 0;
 }
 
-.fa {
-    margin-right: 10px;
+.menu-admin li {
+  margin: 18px 0;
+}
+
+.menu-admin a {
+  text-decoration: none;
+}
+
+.menu-admin a:hover {
+  text-decoration: none;
+}
+
+.menu-admin .fa {
+    font-size: 1.2em;
+    width: 30px;
+    margin: 0 auto;
 }
 
 .admin-user {
@@ -57,7 +70,6 @@ nav {
 }
 
 /* ------------------- Debut Admin ------------------- */
-
 .logoadmin {
 	width: 25%;
 }
@@ -67,11 +79,50 @@ li {
 	text-decoration: none;
 	text-align:left;	
 }
-
-
 /* ------------------- Fin Admin ------------------- */
 
-/* formulaire */
+/* ADMIN catalogue */
+.add-produit,
+.add-boutique {
+  background-color: rgba(255,255,255, 0.5);
+  width: 50%;
+  margin: 0 auto;
+  text-align:center;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.admin-catalogue table
+.admin-boutiques table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+.admin-catalogue tbody,
+.admin-boutiques tbody {
+  font-size: 0.8em;
+}
+
+.admin-catalogue td,
+.admin-boutiques td {
+  border: 1px black solid;
+  padding: 10px;
+}
+
+.admin-catalogue tr:hover,
+.admin-boutiques tr:hover {
+  background-color: rgba(255,255,255, 0.6);
+}
+
+.admin-catalogue a,
+.admin-boutiques a {
+  text-decoration: none;
+  color: #5F677D;
+}
+
+
+/* formulaires */
 
 .formulaire-contact {
     width: 50%;

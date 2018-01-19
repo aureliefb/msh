@@ -1,5 +1,4 @@
        <!-- formulaire de contact -->
-       
                <section class="section-contact">
                     <h2>Contactez-nous</h2>
                     <div class="box">

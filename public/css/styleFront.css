@@ -568,9 +568,10 @@ li {
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 22px;
-  width: 22px;
-  margin: 20px 4px;
+  font-weight: bold;
+  height: 30px;
+  width: 30px;
+  margin: 15px 5px;
   background-color: lightgrey;
   border-radius: 50%;
   display: inline-block;
@@ -650,7 +651,8 @@ footer a:hover {
 }
 
 
-.reseaux-sociaux {
+.reseaux-sociaux,
+.subscribe-newsletter {
 	display: flex;
 	flex-direction: column;
 }
@@ -664,21 +666,15 @@ footer a:hover {
 	font-size: 0.7em;
 }
 
-.subscribe-newsletter {
-	display: flex;
-	flex-direction: column;
-}
-
 .subscribe-newsletter form {
 	width: 40vw;
 	display: flex;
 	flex-direction: column;
 }
 
-
 .subscribe-newsletter form input {
 	width: 70%;
-	padding: 5px;
+	padding: 10px;
 	margin: 0 auto;
 }
 
@@ -703,17 +699,18 @@ form button {
 }
 
 .poloroid {
-	width: 15%;
-	margin-left: 30px;
+	margin-left: 30px;   
 }
 
 .poloroid img {
+	width: 40%;
 	border: 10px solid #fff;
 	border-bottom: 45px solid #fff;
 	-webkit-box-shadow: 3px 3px 3px #777;
 	-moz-box-shadow: 3px 3px 3px #777;
-	box-shadow: 3px 3px 3px #777;
+	 box-shadow: 3px 3px 3px #777;
 }
+
 
 #pierrestory section,
 #savoirfairefancy section {
@@ -1000,6 +997,18 @@ figure.effect-winston{
 
 .adresses {
 	text-align: left;
+}
+
+.adresses ul {
+	border: 2px lightgrey solid;
+	border-radius: 10px;
+	padding: 30px 10px;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.adresses li {
+	
 }
 
 .section-contact form {

@@ -1,5 +1,9 @@
 /*xtra resolutions only*/
  @media screen and (min-width: 1801px) {
+ 	main:first-child {
+ 		padding-top: 20px;
+ 	}
+
    .desktop-only {
         display:block !important;
     }
@@ -32,7 +36,10 @@
 
 /*medium+ screen sizes*/
 @media screen and (max-width: 1800px) and (min-width: 1401px) {  
-    .desktop-only {
+    main:first-child {
+ 		padding-top: 20px;
+ 	}
+ 	.desktop-only {
         display:block !important;
     }
         
@@ -65,7 +72,10 @@
 
 /*medium+ screen sizes*/
 @media screen and (max-width: 1400px) and (min-width: 991px) {  
-    .desktop-only {
+    main:first-child {
+ 		padding-top: 20px;
+ 	}
+ 	.desktop-only {
         display:block !important;
     }
         
@@ -115,7 +125,46 @@
     .logo-ecocert{
     	width: 5vw;
     }
+
+    .footer {
+    	display: flex;
+    	flex-direction: column;
+    }
+
+    .reseaux-sociaux,
+	.subscribe-newsletter {
+		display: flex;
+    	flex-direction: column;
+	}
+
+	.subscribe-newsletter form {
+		display: block;
+		margin:0 auto;
+	}
+
+	.subscribe-newsletter input {
+		width:80%;
+		padding: 15px;
+	}
+
+	.section-contact form {
+	display: inline-block;
+	margin: 0 auto;	
+	}
+
+	.adress-map {
+	display: flex;
+	flex-direction: column-reverse;
+	margin: 0 auto;
+	}
+
+	.adress-map iframe {
+		width: 100%;
+	}
+
+
 }
+
 
 /* Version mobile*/
 .mobile-one-page section {
@@ -236,9 +285,9 @@
 
 .menu-btn span {
 	display: block;
-	width: 25px;
+	width: 40px;
 	height: 5px;
-	margin: 4px 0;
+	margin: 7px 0;
 	background: #f26D31;
 	z-index: 99;	
 }
@@ -246,18 +295,20 @@
  .mobile-rs{
 	color: #f26D31;
 	margin-right: 10px;
-	font-size: 1.5em;
+	font-size: 2em;
     }
     
 .responsive-menu{
+	width: 80%;
 	display: none;
 	background-color: #5f677d;
 	background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
-	padding-right: 10px;
+	padding-right: 7px;
 }
 
 .responsive-menu li{
 	margin: 10px 0;
+	font-size: 1.8em;
 }
 
 .responsive-menu a:hover{
