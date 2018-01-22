@@ -14,6 +14,20 @@
 			</ul>
 		</nav>
 
+		<nav class="nav-catalogue">
+			<ul>
+				<li><a data-categorie="pain" class="ajax" href="#">Pains classiques</a></li>
+				<li><a data-categorie="pain" class="ajax" href="#">Pains ...</a></li>
+				<li><a data-categorie="pain" class="ajax" href="#">Pains Variétés anciennes</a></li>
+				<li><a data-categorie="cakes" class="ajax" href="#">Petits pains, foccacia et cakes salés</a></li>
+				<li><a data-categorie="viennoiserie" class="ajax" href="#">Viennoiseries</a></li>
+				<li><a data-categorie="gateaux" class="ajax" href="#">Cakes sucrés et pâtisseries</a></li>
+				<li><a data-categorie="gateaux" class="ajax" href="#">Bisuits</a></li>
+				<li><a data-categorie="saisonnier" class="ajax" href="#">Créations saisonnières</a></li>
+				<li><a data-categorie="autres" class="ajax" href="#">Autres</a></li>
+			</ul>
+		</nav>
+
 
 		<div class="grid">
 		<?php

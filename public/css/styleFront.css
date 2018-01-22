@@ -5,9 +5,6 @@ html {
 	height: 100%;
 }
 
-header {
-}
-
 body {
 	margin: 0;
  	background: radial-gradient(center center, circle cover, #c9c2b6, #5F677D);
@@ -18,23 +15,22 @@ body {
 
 .spacing{
 	margin-top: 70%;
-	
 }
 
 h1, h2, h3 {
-	font-family: 'Cookie', cursive;
+	font-family: Papyrus, fantasy;
+	color: #5F677D;
+	text-shadow: 1px 1px 1px grey;
 }
 
 h1 {
 	font-size: 2.1em;
-	color: #fff9f7;
 	font-weight: normal;
 	margin: 20px;
 }
 
 h2 {
 	font-size: 2.9em;
-	color: #fff;
 	font-weight: normal;
 	margin: 20px;
 }
@@ -56,13 +52,13 @@ li {
 	list-style-type: none;
 }
 
-#anchor-boutique h2,
-#anchor-catalogue h2,
-#anchor-contact h2,
-#anchor-savoirfaire h2,
-#anchor-pierre h2,
-#anchor-mentionslegales h2, {
-	color: #fff;
+#anchor-boutique h2 a,
+#anchor-catalogue h2 a,
+#anchor-contact h2 a,
+#anchor-savoirfaire h2 a,
+#anchor-pierre h2 a,
+#anchor-mentionslegales h2 a, {
+	color: #5F677D;
 }
 
 .pagination ul {
@@ -627,7 +623,6 @@ footer {
 footer nav ul {
 	width: 20vw;
 	text-align: center;
-	list-style-type: none;
 	text-transform: uppercase;
 	font-size: 1.2em;
 }
@@ -742,18 +737,6 @@ form button {
 
 
 /* -------------------------- CATALOGUE -------------------------- */
-.page-catalogue {
-
-}
-
-.page-catalogue h2 {
-	font-family: 'Cookie', cursive;
-}
-
-.contenu-catalogue {
-	
-}
-
 .nav-catalogue a {
 	color: white;
 	text-shadow: 1px 0 1px black;
@@ -804,13 +787,13 @@ form button {
 }
 .grid figure{
 	position: relative;
-	float: left;
+	/*float: left;*/
 	overflow: hidden;
-	margin: 10px auto;
+	margin: 15px auto;
 	min-width: 190px;
 	max-width: 350px;
 	max-height: 230px;
-	width: 30%;
+	width: 100%;
 	height: auto;
 	background: #3085a3;
 	text-align: center;
@@ -822,13 +805,9 @@ form button {
 	display: block;
 	min-height: 100%;
 	max-width: 100%;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 .grid figure figcaption{
-	/*padding: 1em;*/
-	color: #fff;
-	/* text-transform: lowercase; */
-	font-size: 1em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
@@ -855,8 +834,11 @@ form button {
 }
 
 .grid figure h2{
-	font-weight:200;
-	text-shadow: 1px 1px 5px black;
+	font-weight:bold;
+	text-shadow: 1px 1px 1px lightgrey;
+	background-color: rgba(255, 255, 255, 0.4);
+	font-size: 1.7em;
+	color: rgba(95,103,125, 1);
 }
 
 /*
@@ -930,14 +912,15 @@ figure.effect-winston{
  }
 
  figure.effect-winston a{
- 	margin:0 10px;
- 	color:#5d504f;
- 	font-size:170%
+ 	/*margin:0 10px;*/
+ 	color:#cc6055;
+ 	font-size:150%;
  }
 
+/* icone + dans le triangle */
  figure.effect-winston a:hover,
  figure.effect-winston a:focus{
- 	color:#cc6055
+ 	color:#cc6055;
  }
 
  figure.effect-winston p a i {
@@ -968,26 +951,14 @@ figure.effect-winston{
  	-webkit-transform:translate3d(0,0,0);
  	transform:translate3d(0,0,0)
  }
- figure.effect-winston:hover p a:nth-child(3) i{
- 	-webkit-transition-delay:.05s;
- 	transition-delay:.05s
- }
- figure.effect-winston:hover p a:nth-child(2) i{
- 	-webkit-transition-delay:.1s;
- 	transition-delay:.1s
- }
 
  figure.effect-winston:hover p a:first-child i{
- 	-webkit-transition-delay:.15s;
- 	transition-delay:.15s
+ 	-webkit-transition-delay:.20s;
+ 	transition-delay:.20s
  }
-
 /* fin css avancé */
 
 /* -------------------------- pages boutiques + contact -------------------------- */
-.section-boutiques {
-	
-}
 
 .adress-map {
 	display: flex;

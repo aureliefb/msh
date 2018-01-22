@@ -10,7 +10,7 @@
                         <li><a href="<?php echo $urlPierre ?>#anchor-pierre">Pierre Ragot</a></li>
                         <li><a href="<?php echo $urlSavoirFaire ?>#anchor-savoirfaire">Savoir-faire</a></li>
                         <li><a href="<?php echo $urlBoutiques ?>#anchor-boutique">Boutiques </a> / <a href="<?php echo $urlBoutiques ?>#anchor-contact">Contact</a></li>
-                        <li><a href="<?php echo $urlMentionsLegales ?>#anchor-mentionslegales">Mentions légales</a></li>
+                        <li><a href="<?php echo $urlMentionsLegales ?>#anchor-mentionslegales">Mentions légales / Crédits</a></li>
                     </ul>
                 </nav>
 

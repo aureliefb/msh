@@ -19,8 +19,6 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
         <title>Maison Saint-Honoré Boulangerie bio Marseille</title>
         <!-- Links Google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
         <!-- FIN links Google fonts -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -52,8 +50,8 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
 
             <!-- MOT D'ACCUEIL -->
             <section id="welcome" class="desktop-only">
-                   <h1>Bienvenue à la maison Saint-Honoré par Pierre Ragot</h1>
-                       <p>Boulangerie bio à Marseille, certifiée Ecocert
+                   <h1>Maison Saint-Honoré par Pierre Ragot, boulangerie bio à Marseille</h1>
+                       <p>Certifiée Ecocert
                             <img class="logo-ecocert" src="<?php echo $urlAccueil ?>img/logo_ecocert.png">
                        </p>
                    <p>Pierre et Lisa Ragot ainsi que toute l'équipe vous accueille dans leurs 3 boutiques.</p>
