@@ -15,6 +15,24 @@ $(function(){
         urlAjax = "ajax"; // A AMELIORER POUR LE RENDRE DYNAMIQUE
         $(".grid").load(urlAjax+ "?ajaxCategorie=" + ajaxCategorie);
     });
+
+
+
+
+
+// Page boutiques & contact
+// Déroulement des blocs d'adresses au clic
+
+
+    $(".adresses ul li").each(function() {
+        $(this).on("click", function(event) {
+             event.stopPropagation();
+            $(".adresses-infos").slideToggle("slow");
+        });
+    });
+
+
+
 });
 
 
@@ -49,6 +67,9 @@ $(function(){
       slides[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " active";
     }
+
+
+
 
 
 ///
@@ -96,34 +117,28 @@ function CSVToArray( strData, strDelimiter ){
                 strMatchedDelimiter.length &&
                 strMatchedDelimiter !== strDelimiter
                 ){
-
                 // Since we have reached a new row of data,
                 // add an empty row to our data array.
                 arrData.push( [] );
-
             }
 
             var strMatchedValue;
-
             // Now that we have our delimiter out of the way,
             // let's check to see which kind of value we
             // captured (quoted or unquoted).
             if (arrMatches[ 2 ]){
-
                 // We found a quoted value. When we capture
                 // this value, unescape any double quotes.
                 strMatchedValue = arrMatches[ 2 ].replace(
                     new RegExp( "\"\"", "g" ),
                     "\""
                     );
-
             } else {
 
                 // We found a non-quoted value.
                 strMatchedValue = arrMatches[ 3 ];
 
             }
-
 
             // Now that we have our value string, let's add
             // it to the data array.

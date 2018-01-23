@@ -17,8 +17,8 @@
 
                 <!-- formulaire de contact -->
                 <div class="subscribe-newsletter">
-                    <h4>Inscrivez-vous à notre newsletter !</h4>
                     <form>
+                        <label>Inscrivez-vous à notre newsletter !</label>
                         <input required type="email" name="email" placeholder="Votre E-mail">
                         <button type="submit" name="submit" value="validNL">Inscription</button>
                     </form>

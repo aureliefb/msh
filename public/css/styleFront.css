@@ -1,6 +1,5 @@
 
-/* styles CSS rassemblés */
-
+/* GLOBAL */
 @font-face {
 	font-family: 'papyrus';
 	src: url('./papyrus.ttf') format('truetype');
@@ -59,6 +58,7 @@ li {
 	list-style-type: none;
 }
 
+/* GLOBAL titres h2 ancres */
 #anchor-boutique h2 a,
 #anchor-catalogue h2 a,
 #anchor-contact h2 a,
@@ -66,6 +66,40 @@ li {
 #anchor-pierre h2 a,
 #anchor-mentionslegales h2 a, {
 	color: #5F677D;
+}
+
+/*  GLOBAL formulaires */
+form label {
+	color: #5F677D;
+	text-shadow: 1px 1px 1px grey;
+	font-size: 1.3em;
+	margin: 5px auto;
+	width: 70%;
+}
+
+form input, 
+form textarea {
+	padding: 10px 5px;
+}
+
+form input {
+	width: 90%;
+	margin: 0 auto;
+}
+
+form textarea {
+	width: 90%;
+	height: 180px;
+	margin: 0 auto;
+}
+
+form button {
+	width: 15vw;
+	margin: 10px auto;
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px black;
 }
 
 .pagination ul {
@@ -659,34 +693,19 @@ footer a:hover {
 	flex-direction: column;
 }
 
-.reseaux-sociaux li{
+.reseaux-sociaux li {
 	margin: 5px;
 	font-size: 1.5em;
 }
 
-.reseaux-sociaux span{
+.reseaux-sociaux span {
 	font-size: 0.7em;
 }
 
 .subscribe-newsletter form {
-	width: 40vw;
 	display: flex;
 	flex-direction: column;
-}
-
-.subscribe-newsletter form input {
-	width: 70%;
-	padding: 10px;
-	margin: 0 auto;
-}
-
-form button {
-	width: 50%;
-	margin: 10px auto;
-	padding: 5px;
-	border: none;
-	border-radius: 5px;
-	box-shadow: 1px 1px 5px black;
+	border: 1px red solid;
 }
 
 
@@ -966,27 +985,55 @@ figure.effect-winston{
 /* fin css avancé */
 
 /* -------------------------- pages boutiques + contact -------------------------- */
-
 .adress-map {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.adresses h3 {
+	font-size: 1.4em;
+	margin: 15px auto;
+}
+
+.adresses h3 i {
+	color: #C55A0F;
+	text-shadow: 1px 1px 1px grey;
+}
+
+.adresses ul {
+	width: 60%;
+	margin: 0 auto;
+	padding-left: 0;
+}
+
+.adresses li {
+	border: 2px lightgrey solid;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.adresses-infos {
+	display: none;
+}
+
+.adresses li div:nth-child(2) {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.adresses li div:nth-child(2) div:first-child {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
 
-.adresses {
-	text-align: left;
-}
-
-.adresses ul {
-	border: 2px lightgrey solid;
-	border-radius: 10px;
-	padding: 30px 10px;
-	margin: 20px 0;
-	text-align: center;
-}
-
-.adresses li {
-	
+/*  formulaire de contact */
+.section-contact {
+	width: 70%;
+	margin: 0 auto;
 }
 
 .section-contact form {
@@ -1000,15 +1047,6 @@ figure.effect-winston{
 	flex-direction: column;
 	width: 300px;
 }
-
-.section-contact label {
-	text-align: left;
-}
-
-.section-contact input {
-	padding: 5px;
-}
-
 
 
 /* -------------------------- Mentions légales -------------------------- */

@@ -17,7 +17,7 @@
 		<nav class="nav-catalogue">
 			<ul>
 				<li><a data-categorie="pain" class="ajax" href="#">Pains classiques</a></li>
-				<li><a data-categorie="pain" class="ajax" href="#">Pains ...</a></li>
+				<li><a data-categorie="pain" class="ajax" href="#">Pains d'exception</a></li>
 				<li><a data-categorie="pain" class="ajax" href="#">Pains Variétés anciennes</a></li>
 				<li><a data-categorie="cakes" class="ajax" href="#">Petits pains, foccacia et cakes salés</a></li>
 				<li><a data-categorie="viennoiserie" class="ajax" href="#">Viennoiseries</a></li>

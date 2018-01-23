@@ -2,6 +2,8 @@
 	<h2><a id="anchor-boutique">Nos boutiques</a></h2>
 	<section class="adress-map">
 		<div class="adresses">
+			<iframe src="https://www.google.com/maps/d/embed?mid=1EWxCbC__4H0afdJmBKgBQWEeRnZh1DOg" width="840" height="600"></iframe>
+			<ul>
 			
 			<?php
 			foreach ($listBoutiques as $b) {
@@ -10,21 +12,26 @@
 				$horaires    = $b->getHoraires();
 				$telephone   = $b->getTelephone();
 				echo '
-				<ul>
-				<li>
-					<h3>'.$nomBoutique.'</h3>
-				</li>
-				<li>
-					<adress>Adresse : '.$adresse.'</adress>
-				</li>
-				<li>Horaires : '.$horaires.'</li>
-				<li>Téléphone : +33'.$telephone.'</li></ul>';
+					<li>
+						<h3>'.$nomBoutique.'</h3>
+						<div class="adresses-infos">
+							<div>
+								<p><i class="fa fa-home" aria-hidden="true"></i> '.$adresse.'</p>
+								<p><i class="fa fa-phone" aria-hidden="true"></i> +33'.$telephone.'</p>
+							</div>
+							<div>
+								<p><i class="fa fa-clock-o" aria-hidden="true"></i> Horaires :</br> '.$horaires.'</p>
+							</div>
+						</div>
+					</li>';
 			}
 			?>
-			
+				
+			</ul>
 		</div>
-		<iframe src="https://www.google.com/maps/d/embed?mid=1EWxCbC__4H0afdJmBKgBQWEeRnZh1DOg" width="840" height="600"></iframe>
 	</section>
+
+
 
 	<!-- formulaire de contact -->
        <section class="section-contact">
@@ -40,7 +47,7 @@
 						<label>Sujet</label>
                         <input type="text" name="sujet" class="select">
                         <label>Votre message</label>
-                        <textarea name="message" rows="10" cols="50"></textarea>
+                        <textarea name="message"></textarea>
                         <button type="submit" name="submit" value="validC">Envoyer</button>
                         <div class="response"><div>
                     </div>
