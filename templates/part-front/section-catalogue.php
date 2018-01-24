@@ -2,27 +2,26 @@
 	<h2><a id="anchor-catalogue">Catalogue</a></h2>
 
 	<section class="contenu-catalogue">
-		<nav class="nav-catalogue">
+		<!-- <nav class="nav-catalogue">
 			<ul>
 				<li><a data-categorie="pain" class="ajax" href="#">Pains</a></li>
-				<li><a data-categorie="focaccia" class="ajax" href="#">Foccacia</a></li>
-				<li><a data-categorie="cakes" class="ajax" href="#">Cakes salés et sucrés</a></li>
+				<li><a data-categorie="salés" class="ajax" href="#">Foccacia</a></li>
+				<li><a data-categorie="sucrés" class="ajax" href="#">Cakes salés et sucrés</a></li>
 				<li><a data-categorie="viennoiserie" class="ajax" href="#">Viennoiseries</a></li>
-				<li><a data-categorie="gateaux" class="ajax" href="#">Gâteaux</a></li>
+				<li><a data-categorie="biscuits" class="ajax" href="#">Gâteaux</a></li>
 				<li><a data-categorie="saisonnier" class="ajax" href="#">Créations saisonnières</a></li>
 				<li><a data-categorie="autres" class="ajax" href="#">Et autres...</a></li>
 			</ul>
-		</nav>
+		</nav> -->
 
 		<nav class="nav-catalogue">
 			<ul>
-				<li><a data-categorie="pain" class="ajax" href="#">Pains classiques</a></li>
-				<li><a data-categorie="pain" class="ajax" href="#">Pains d'exception</a></li>
-				<li><a data-categorie="pain" class="ajax" href="#">Pains Variétés anciennes</a></li>
-				<li><a data-categorie="cakes" class="ajax" href="#">Petits pains, foccacia et cakes salés</a></li>
+				<li><a data-categorie="pain" class="ajax" href="#">Pains</a></li>
+				<li><a data-categorie="pain-exception" class="ajax" href="#">Pains d'exception</a></li>
+				<li><a data-categorie="salés" class="ajax" href="#">Foccacia, cakes salés & petits pains</a></li>
 				<li><a data-categorie="viennoiserie" class="ajax" href="#">Viennoiseries</a></li>
-				<li><a data-categorie="gateaux" class="ajax" href="#">Cakes sucrés et pâtisseries</a></li>
-				<li><a data-categorie="gateaux" class="ajax" href="#">Bisuits</a></li>
+				<li><a data-categorie="sucrés" class="ajax" href="#">Bloomers & cakes sucrés</a></li>
+				<li><a data-categorie="biscuits" class="ajax" href="#">Bisuits</a></li>
 				<li><a data-categorie="saisonnier" class="ajax" href="#">Créations saisonnières</a></li>
 				<li><a data-categorie="autres" class="ajax" href="#">Autres</a></li>
 			</ul>

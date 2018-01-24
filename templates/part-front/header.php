@@ -72,8 +72,8 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
                     #$-:Please do not edit lines starting with "#$"
                     #$VERSION:2.3
                     #$AUTHOR:Etudiant -->
-                    <area shape="rect" id="pierre" coords="76,318,549,731" data-fancybox data-src="#pierrestory" href="" />
-                    <area shape="rect" id="boutiques" coords="750,111,1169,702" href="<?php echo $urlBoutiques ?>#anchor-boutique"/>
+                    <area shape="rect" id="pierre" coords="76,318,549,731" data-fancybox data-src="#pierrefancy" href="" />
+                    <area shape="rect" id="boutiques" coords="750,111,1169,702" href="<?php echo $urlBoutiques ?>#anchor-boutique" />
                     <area shape="rect" id="philo" coords="556,104,977,638" data-fancybox data-src="#savoirfairefancy" href="" />
                     <area shape="rect" id="contact" coords="1080,172,1798,813" href="<?php echo $urlBoutiques ?>#anchor-contact" />
                     <area shape="rect" id="catalogue" coords="95,636,1373,900" href="<?php echo $urlCatalogue ?>#anchor-catalogue" />
@@ -152,49 +152,40 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
     </header>
 
 
-    <div style="display: none;" id="pierrestory">
+    <div style="display: none;" id="pierrefancy">
     	<h2>Pierre Ragot</h2>
-    	<div class="poloroid">
-            <img src="<?php echo $urlAccueil ?>img/accueil/pierre2.jpg">
-        </div>
-        <article>
-    		<p>Pierre Ragot, parisien d'origine, suit un parcours d'artisan-boulanger auprès de maisons d'exception.</p>
+    	<section>
+            <div class="polaroid">
+                <img src="<?php echo $urlAccueil ?>img/accueil/pierre2.jpg">
+            </div>
+            <article>
+                <p>Pierre Ragot, parisien pur sucre, est un jeune Artisan Boulanger, bien décidé à bouléguer les habitudes boulangères marseillaises. Riche en expérience sur la Capitale, c'est en 2010 que Pierre décide de s'exiler en terre Marseillaise.</p>
 
-    		<p>Il devient gérant du Fournil des Auffes avant de fonder sa propre marque :  la maison Saint-Honoré par Pierre Ragot. Il ouvre une première adresse dans le quartier d'Endoume, puis une seconde sur l'avenue du Prado à deux pas de la place Castellane.
-    			<a href="<?php echo $urlBoutiques ?>">
-    				<i class="fa fa-plus-circle" aria-hidden="true"></i>
-    			</a>
-    		</p>
+                <p>Il reprend "le Fournil des Auffes" au Vallon des Auffes en 2011 et se fait un Nom auprès de Chef Marseillais. Il crée par la suite" Maison Saint-Honoré par Pierre Ragot" en 2015 dans le quartier d’Endoume, un terrain de jeux, pour laisser libre cours à son Imagination fertile.
+                    <a href="<?php echo $urlBoutiques ?>#anchor-boutique">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                    </a>
+                </p>
 
-    		<p>Sa passion du métier, son amour pour des matières premières de premier choix, son goût pour les expérimentations culinaires font la renommée de la maison Saint-Honoré. Les spécialités de la maison : le Saint-Honoré, la focaccia au charbon végétal, les bloomers, etc.
-    		<a href="<?php echo $urlCatalogue ?>">
-    				<i class="fa fa-plus-circle" aria-hidden="true"></i>
-    			</a>
-    		</p>
-
-    	</article>
+                <p>L'ambition de Pierre : imposer son savoir-faire et devenir une référence à Marseille en matière de Pain. Il ouvre une seconde Maison Saint-Honoré le 25 septembre 2017 sur l’avenue du Prado. Son amour pour les matières premières de premier choix et son goût pour les expérimentations culinaires font la renommée de la maison Saint-Honoré.
+                    <a href="<?php echo $urlCatalogue ?>#anchor-catalogue">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                    </a>
+                </p>
+            </article>
+        </section>
     </div>
 
     <div style="display: none;" id="savoirfairefancy">
     	<h2>Savoir-faire</h2>
-        <div class="poloroid">
-            <img src="<?php echo $urlAccueil ?>img/Pierrenb.jpg">
-        </div>
         <section>
+            <div class="polaroid">
+                <img src="<?php echo $urlAccueil ?>img/Pierrenb.jpg">
+            </div>
             <article>
-                <h3>La passion du métier</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem pariatur illum aspernatur nostrum hic dolor omnis quis, dolorum perferendis obcaecati explicabo minus error sint, ducimus.</p>
-            </article>
-
-            <article>
-                <h3>Des matières premières de premier choix ...</h3>
-                <p><span>...pour des produits de qualité ! </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quos, accusamus veritatis iure facere numquam consequatur quasi ipsa perspiciatis.</p>
-                <p>Découvrez toute notre gamme de produits <a href="<?php echo $urlCatalogue ?>"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></p>
-            </article>
-
-            <article>
-                <h3>On parle de nous</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quisquam neque eaque delectus, in placeat, voluptatibus dolorem dicta consequuntur, unde qui quod voluptate ullam eveniet similique.</p>
+                <p>Pierre Ragot est un boulanger passionné et engagé dans le Bio depuis 2013.</p>
+                <p>Adeptes des circuits-court et sans intermédiaire, il sélectionne des farines d’exceptions de France, farines biologiques issues, pour la plupart, de semences paysannes, et moulues artisanalement sur des meules de pierre.</p>
+                <p>Son travail est exclusivement axé sur des pains aux Levains naturels sur fermentation longue.</p>
             </article>
         </section>
     </div>

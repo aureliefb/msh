@@ -666,11 +666,12 @@ footer nav ul {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 1.2em;
+	padding-left: 0;
 }
 
 footer li {
-	margin: 5px auto;
-	font-size: 0.9em;
+	margin: 8px auto;
+	font-size: 1em;
 	transition: 0.3s ease;
 }
 
@@ -683,7 +684,7 @@ footer a {
 
 footer a:hover {
 	color: #C55A0F;
-	text-shadow: 1px 1px 1px grey;
+	text-shadow: 1px 1px 1px black;
 }
 
 
@@ -699,58 +700,52 @@ footer a:hover {
 }
 
 .reseaux-sociaux span {
-	font-size: 0.7em;
+	font-size: 0.9em;
 }
 
 .subscribe-newsletter form {
 	display: flex;
 	flex-direction: column;
-	border: 1px red solid;
 }
 
 
 /* -------------------------- Fancy-box Pierre et Savoir Faire -------------------------- */
-#pierrestory,
+#pierrefancy,
 #savoirfairefancy {
-	width: 40%;
+	width: 50%;
 	border-radius: 5px;
 	margin: 0 auto;
 	background-color: #5f677d;
 	background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+	color: lightgrey;
+	text-align: center;
+	font-size: 0.9em;
 }
 
-.poloroid {
-	margin-left: 30px;   
+#pierrefancy h2,
+#savoirfairefancy h2 {
+	text-shadow: 1px 1px 1px lightgrey;
+	margin: 0;
 }
 
-.poloroid img {
-	width: 40%;
-	border: 10px solid #fff;
-	border-bottom: 45px solid #fff;
+#savoirfairefancy section {
+	display: flex;
+	flex-direction: row;
+}
+
+.polaroid img {
+	width: 35%;
+	margin: 10px;
+	border: 5px solid #fff;
+	border-bottom: 40px solid #fff;
 	-webkit-box-shadow: 3px 3px 3px #777;
 	-moz-box-shadow: 3px 3px 3px #777;
 	 box-shadow: 3px 3px 3px #777;
-}
-
-
-#pierrestory section,
-#savoirfairefancy section {
-	display:flex;
-	flex-direction:column;
-	margin: 0 auto;
-	text-align: center;
-	color: white;
+	 transform: rotate(3deg);
 }
 
 .top {
 	justify-content:space-around;
-}
-
-#pierrestory p,
-#savoirfairefancy p {
-	font-size: 1.2em;
-	margin-left: 22px;
-
 }
 
 #left {
@@ -1032,7 +1027,7 @@ figure.effect-winston{
 
 /*  formulaire de contact */
 .section-contact {
-	width: 70%;
+	width: 70vw;
 	margin: 0 auto;
 }
 
@@ -1045,7 +1040,7 @@ figure.effect-winston{
 .section-contact form div {
 	display: flex;
 	flex-direction: column;
-	width: 300px;
+	width: 400px;
 }
 
 
@@ -1070,13 +1065,3 @@ figure.effect-winston{
 .mentions-legales .coordonnees {
 	color: #fff;
 }
-
-
-
-
-/* ??????????????????????????????????????? */
-/*
-.textnav {
-	color: white;
-	font-size: 60px;
-}*/

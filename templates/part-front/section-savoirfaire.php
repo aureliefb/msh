@@ -7,28 +7,18 @@
 	<h2><a id="anchor-savoirfaire">Notre savoir-faire</a></h2>
 	<section>
 		<article>
-			<div>
-				<h3>La passion du métier</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem pariatur illum aspernatur nostrum hic dolor omnis quis, dolorum perferendis obcaecati explicabo minus error sint, ducimus.</p>
-			</div>
+			<p>Pierre Ragot est un boulanger passionné et engagé dans le Bio depuis 2013.</p>
+			<p>Adeptes des circuits-court et sans intermédiaire, il sélectionne des farines d’exceptions de France, farines biologiques issues, pour la plupart, de semences paysannes, et moulues artisanalement sur des meules de pierre.</p>
+			<p>Son travail est exclusivement axé sur des pains aux Levains naturels sur fermentation longue.</p>
 		</article>
 
-		<article>
-			<h3>Des matières premières de premier choix ...</h3>
-			<p><span>...pour des produits de qualité ! </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quos, accusamus veritatis iure facere numquam consequatur quasi ipsa perspiciatis. Nobis dicta eaque nemo harum ipsum architecto est veniam sapiente facilis blanditiis unde at, temporibus quia officiis quod cumque eius ad dolorum itaque perferendis molestiae beatae consectetur! Nostrum laboriosam dolore nihil?</p>
-			<p>Découvrez toute notre gamme de produits <a href="<?php echo $urlCatalogue ?>"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></p>
-		</article>
-
-		<article>
-			<h3>On parle de nous</h3>
-			<p>Le bouche à oreilles et les articles relayés dans la presse et sur les blogs font que les marseillais se bousculent aux portes des boutiques...</p>
-
+<!-- 		<article>
 			<p>Découvrez tout notre savoir-faire et la philosophie de notre maison ...
 				<a href="<?php echo $urlSavoirFaire ?>">
 					<i class="fa fa-plus-circle" aria-hidden="true"></i>
 				</a>
 			</p>
-		</article>
+		</article> -->
 
 	</section>
 </section>
