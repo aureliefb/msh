@@ -13,12 +13,15 @@ $urlMentionsLegales   = $this->generateUrl("mentionslegales");
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
+        <!-- <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge"> -->
         <title>Maison Saint-Honoré Boulangerie bio Marseille</title>
         <!-- Links Google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
         <!-- FIN links Google fonts -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 

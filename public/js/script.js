@@ -52,11 +52,11 @@ $(function(){
       var i;
       var slides = document.getElementsByClassName("mySlides");
       var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {
+      if (n > 4) {
         slideIndex = 1
         }
       if (n < 1) {
-        slideIndex = slides.length
+        slideIndex = 1
         }
       for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";

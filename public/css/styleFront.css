@@ -13,9 +13,12 @@ html {
 
 body {
 	margin: 0;
- 	background: radial-gradient(center center, circle cover, #c9c2b6, #5F677D);
-	background: -moz-radial-gradient(center center, circle cover, #c9c2b6 0%, #5F677D 100%);
-	background: -webkit-radial-gradient(center center, circle cover, #c9c2b6 0%, #5F677D 100%);
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c2b6+0,5f677d+100 */
+	background: rgb(201,194,182); /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(201,194,182,1) 0%, rgba(95,103,125,1) 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(201,194,182,1) 0%,rgba(95,103,125,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center,  rgba(201,194,182,1) 0%,rgba(95,103,125,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c2b6', endColorstr='#5f677d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -24,13 +27,13 @@ body {
 }
 
 h1, h2, h3 {
-	font-family: papyrus, fantasy;
+	font-family: papyrus, Cookie, Arial, Verdana;
 	color: #5F677D;
 	text-shadow: 1px 1px 1px grey;
 }
 
 h1 {
-	font-size: 2.1em;
+	font-size: 2.2em;
 	font-weight: normal;
 	margin: 20px;
 }
@@ -563,10 +566,10 @@ form button {
 	/*vertical-align: middle;*/
 	max-width: 370px;
 }
-
+/*
 .mySlides {
-	display: none;
-}
+	display: inline-block;
+}*/
 
 /* Slideshow container */
 .slideshow-container {
@@ -867,12 +870,15 @@ footer a:hover {
 	font-weight:800
 }*/
 
-.grid figure h2,
-.grid figure p{
-	margin:0
+.grid figure h2 {
+	margin:0;
+	font-size: 2.2em;
+	font-weight: normal;
+	font-family: Cookie, Arial;
 }
 
 .grid figure p{
+	margin: 0;
 	letter-spacing:1px;
 	/*font-size:90%;*/
 	text-shadow: 1px 1px 2px black;

@@ -58,8 +58,6 @@ CODEHTML;
         <span class="dot" onclick="currentSlide(2)">2</span> 
         <span class="dot" onclick="currentSlide(3)">3</span>
         <span class="dot" onclick="currentSlide(4)">4</span>
-        <span class="dot" onclick="currentSlide(5)">5</span>
-        <span class="dot" onclick="currentSlide(6)">6</span> 
       </div>
 
       </section><!-- FIN section actus -->
